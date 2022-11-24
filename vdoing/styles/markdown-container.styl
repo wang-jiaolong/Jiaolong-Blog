@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5, h6
         margin-left 0
         box-shadow 3px 2px 5px rgba(0, 0, 0, 0.08)
         transition all .4s
-        background var(--bodyBg)
+        background #fff
+        -webkit-filter brightness(0.95)
       div
         flex 1
         display inline-block
@@ -78,6 +79,12 @@ h1, h2, h3, h4, h5, h6
           line-height 1.1rem
           opacity .8
           margin-bottom .2rem
+          /*超出部分隐藏*/
+          overflow: hidden;
+          /*强制在一行*/
+          white-space: nowrap;
+          /*文本超出部分省略*/
+          text-overflow: ellipsis;
     .card-item.row-1
       width calc(100% - .7rem)
       img

@@ -25,6 +25,13 @@ function setFrontmatter(sourceDir, themeConfig) {
     : '';
 
   files.forEach(file => {
+
+    var isDocs = false
+
+    if (file.filePath.indexOf('__') > -1 || file.filePath.indexOf('Wiki') > -1) {
+      isDocs = true
+    };
+
     let dataStr = fs.readFileSync(file.filePath, 'utf8');// 读取每个md文件内容
 
     // fileMatterObj => {content:'剔除frontmatter后的文件内容字符串', data:{<frontmatter对象>}, ...}
@@ -58,9 +65,11 @@ tags:
       const fmData = `---
 title: ${file.name}
 date: ${dateStr}
-permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? os.EOL + 'sidebar: auto' : ''}${cateStr}${tagsStr}
+permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? os.EOL + 'sidebar: auto' : ''}
 ${extendFrontmatterStr}---`;
 
+
+// ${cateStr}${tagsStr}
       fs.writeFileSync(file.filePath, `${fmData}${os.EOL}${fileMatterObj.content}`); // 写入
       log(chalk.blue('tip ') + chalk.green(`write frontmatter(写入frontmatter)：${file.filePath} `))
 
@@ -85,21 +94,21 @@ ${extendFrontmatterStr}---`;
         hasChange = true;
       }
 
-      if (file.filePath.indexOf('_posts') > -1 && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，_posts文件夹特有
-        matterData.sidebar = "auto";
-        hasChange = true;
-      }
+      // if (file.filePath.indexOf('_posts') > -1 && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，_posts文件夹特有
+      //   matterData.sidebar = "auto";
+      //   hasChange = true;
+      // }
 
-      if (!matterData.hasOwnProperty('pageComponent') && matterData.article !== false) { // 是文章页才添加分类和标签
-        if (isCategory !== false && !matterData.hasOwnProperty('categories')) { // 分类
-          matterData.categories = getCategories(file, categoryText)
-          hasChange = true;
-        }
-        if (isTag !== false && !matterData.hasOwnProperty('tags')) { // 标签
-          matterData.tags = [''];
-          hasChange = true;
-        }
-      }
+      // if (!matterData.hasOwnProperty('pageComponent') && matterData.article !== false && matterData.docs !== true) { // 是文章页才添加分类和标签
+      //   if (isCategory !== false && !matterData.hasOwnProperty('categories')) { // 分类
+      //     matterData.categories = getCategories(file, categoryText)
+      //     hasChange = true;
+      //   }
+      //   if (isTag !== false && !matterData.hasOwnProperty('tags')) { // 标签
+      //     matterData.tags = [''];
+      //     hasChange = true;
+      //   }
+      // }
 
       // 扩展自动生成frontmatter的字段
       if (type(extendFrontmatter) === 'object') {

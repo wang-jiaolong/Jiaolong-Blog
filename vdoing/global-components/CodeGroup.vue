@@ -69,30 +69,36 @@ export default {
 
 <style lang="stylus" scoped>
 .theme-code-group, .theme-code-group__nav
-  background-color var(--codeBg)
-  padding-bottom 22px
   border-radius 6px
-  padding-left 10px
-  padding-top 10px
+  //padding 10px
+  padding-top 0px
+  margin-top 15px
+  box-shadow: 0 0px 9px #00000073
 .theme-code-group__nav
-  margin-bottom -35px
+  margin-bottom -25px
+  padding-bottom 10px
+  background-color var(--codeBg)
 .theme-code-group__ul
   margin auto 0
-  padding-left 0
+  padding-left 10px
+  padding-top 5px
   display inline-flex
   list-style none
 .theme-code-group__li, .theme-code-group__nav-tab
   border 0
   padding 5px
+  padding-bottom 3px
   cursor pointer
   background-color transparent
-  font-size 0.85em
+  font-size 14px
   line-height 1.4
   color var(--codeColor)
   font-weight 600
   opacity 0.85
+  margin-bottom 5px
 .theme-code-group__nav-tab-active
-  border-bottom $accentColor 1px solid
+  border-bottom $accentColor 3px solid
+  color var(--textLightenColor)
   opacity 1
 .pre-blank
   color $accentColor

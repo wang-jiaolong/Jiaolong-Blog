@@ -4,13 +4,13 @@ export default [
         text: 'Wiki',
         link: '/wikis/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     },
-    {
-      text: 'Books',
-      items: [
-        { text: '《计算机组成与设计》', link: '/pages/0bb29a/' },
-        { text: '《程序员的自我修养》', link: '/pages/1bb0d6/' }
-      ],
-    },
+    // {
+    //   text: 'Books',
+    //   items: [
+    //     { text: '《计算机组成与设计》', link: '/pages/0bb29a/' },
+    //     { text: '《程序员的自我修养》', link: '/pages/1bb0d6/' }
+    //   ],
+    // },
     {
       text: '索引',
       link: '/archives/',

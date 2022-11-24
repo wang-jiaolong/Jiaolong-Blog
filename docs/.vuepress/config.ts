@@ -11,7 +11,7 @@ import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 import nav from './config/nav' // 导航栏
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'blog.jiaolong.xyz' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({

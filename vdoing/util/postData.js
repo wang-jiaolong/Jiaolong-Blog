@@ -6,8 +6,8 @@ import { type, compareDate } from './index'
  */
 export function filterPosts (posts) {
   posts = posts.filter(item => {
-    const { frontmatter: { pageComponent, article, home } } = item
-    return !(pageComponent || article === false || home === true) // 存在页面组件、article字段为false，以及首页
+    const { frontmatter: { pageComponent, article, home ,docs} } = item
+    return !(pageComponent || article === false || home === true || docs === true) // 存在页面组件、article字段为false，以及首页
   })
   return posts
 }
@@ -31,6 +31,21 @@ export function sortPosts (posts) {
   })
   return posts
 }
+
+
+/**
+ * 获取首页文章
+ * @param {Array} posts 过滤非文章页之后的文章数据
+ */
+ export function sortHomePosts (posts) {
+  posts = sortPosts(posts)
+  posts = posts.filter(item => {
+    const { frontmatter: { post } } = item
+    return post === true // 存在页面组件、article字段为false，以及首页
+  })
+  return posts
+}
+
 
 /**
  * 按时间排序

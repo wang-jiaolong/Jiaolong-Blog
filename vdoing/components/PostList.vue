@@ -1,89 +1,104 @@
 <template>
   <div class="post-list" ref="postList">
-    <transition-group tag="div" name="post">
-      <div
-        class="post card-box"
-        :class="item.frontmatter.sticky && 'iconfont icon-zhiding'"
-        v-for="item in sortPosts"
-        :key="item.key"
-      >
-        <div class="title-wrapper">
-          <h2>
-            <router-link :to="item.path">
-              {{ item.title }}
-              <span class="title-tag" v-if="item.frontmatter.titleTag">{{
-                item.frontmatter.titleTag
-              }}</span>
-            </router-link>
-          </h2>
-          <div class="article-info">
-            <a
-              title="作者"
-              class="iconfont icon-touxiang"
-              target="_blank"
-              v-if="item.author && item.author.href"
-              :href="item.author.href"
-              >{{ item.author.name ? item.author.name : item.author }}</a
-            >
-            <span
-              title="作者"
-              class="iconfont icon-touxiang"
-              v-else-if="item.author"
-              >{{ item.author.name ? item.author.name : item.author }}</span
-            >
+    <div v-if="isHome">
 
-            <span
-              title="创建时间"
-              class="iconfont icon-riqi"
-              v-if="item.frontmatter.date"
-              >{{ item.frontmatter.date.split(' ')[0] }}</span
-            >
-            <span
-              title="分类"
-              class="iconfont icon-wenjian"
-              v-if="
+    <transition-group tag="div" name="post">
+      <div :class="item.frontmatter.sticky && 'iconfont icon-zhiding'" v-for="item in sortPosts"
+        :key="item.key">
+      
+          <div class="post-item">
+            <router-link :to="item.path">
+              <div class="post-item-img">
+                <img :src="item.frontmatter.img" />
+              </div>
+            </router-link>
+            <div class="post-item-info">
+
+
+              <p title="创建时间" class="date" v-if="item.frontmatter.date">{{
+                  item.frontmatter.date.split(' ')[0]
+              }}</p>
+
+              <router-link :to="item.path" class="post-item-title">
+
+                <h2>
+                  {{ item.title }}
+                  <span class="title-tag" v-if="item.frontmatter.titleTag">{{
+                      item.frontmatter.titleTag
+                  }}</span>
+                </h2>
+
+                <h3 v-if="item.frontmatter.subtitle">
+                  {{ item.frontmatter.subtitle }}
+                </h3>
+              </router-link>
+
+              <div class="post-item-content" v-if="item.excerpt">
+                <div class="excerpt" v-html="item.excerpt"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+      </div>
+    </transition-group>
+</div>
+
+<div v-else>
+  <transition-group tag="div" name="post">
+      <div class="post card-box" :class="item.frontmatter.sticky && 'iconfont icon-zhiding'" v-for="item in sortPosts"
+        :key="item.key">
+        <router-link :to="item.path">
+
+          <div class="title-wrapper">
+            <h2>
+                {{ item.title }}
+                <span class="title-tag" v-if="item.frontmatter.titleTag">{{
+                    item.frontmatter.titleTag
+                }}</span>
+            </h2>
+            <div class="article-info">
+              <a title="作者" class="iconfont icon-touxiang" target="_blank" v-if="item.author && item.author.href"
+                :href="item.author.href">{{ item.author.name ? item.author.name : item.author }}</a>
+              <span title="作者" class="iconfont icon-touxiang" v-else-if="item.author">{{ item.author.name ?
+                  item.author.name : item.author
+              }}</span>
+
+              <span title="创建时间" class="iconfont icon-riqi" v-if="item.frontmatter.date">{{
+                  item.frontmatter.date.split(' ')[0]
+              }}</span>
+              <span title="分类" class="iconfont icon-wenjian" v-if="
                 $themeConfig.category !== false && item.frontmatter.categories
-              "
-            >
-              <router-link
-                :to="`/categories/?category=${encodeURIComponent(c)}`"
-                v-for="(c, index) in item.frontmatter.categories"
-                :key="index"
-                >{{ c }}</router-link
-              >
-            </span>
-            <span
-              title="标签"
-              class="iconfont icon-biaoqian tags"
-              v-if="
+              ">
+                <router-link :to="`/categories/?category=${encodeURIComponent(c)}`"
+                  v-for="(c, index) in item.frontmatter.categories" :key="index">{{ c }}</router-link>
+              </span>
+              <span title="标签" class="iconfont icon-biaoqian tags" v-if="
                 $themeConfig.tag !== false &&
                 item.frontmatter.tags &&
                 item.frontmatter.tags[0]
-              "
-            >
-              <router-link
-                :to="`/tags/?tag=${encodeURIComponent(t)}`"
-                v-for="(t, index) in item.frontmatter.tags"
-                :key="index"
-                >{{ t }}</router-link
-              >
-            </span>
+              ">
+                <router-link :to="`/tags/?tag=${encodeURIComponent(t)}`" v-for="(t, index) in item.frontmatter.tags"
+                  :key="index">{{ t }}</router-link>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="excerpt-wrapper" v-if="item.excerpt">
-          <div class="excerpt" v-html="item.excerpt"></div>
-          <router-link
-            :to="item.path"
-            class="readmore iconfont icon-jiantou-you"
-            >阅读全文</router-link
-          >
-        </div>
+
+          <div class="excerpt-wrapper" v-if="item.excerpt">
+            <div class="excerpt" v-html="item.excerpt"></div>
+          </div>
+ </router-link>
       </div>
     </transition-group>
+</div>
+
+
   </div>
 </template>
 
 <script>
+
 export default {
   props: {
     category: {
@@ -101,6 +116,10 @@ export default {
     perPage: {
       type: Number,
       default: 10
+    },
+    isHome: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -141,14 +160,13 @@ export default {
     setPosts() {
       const currentPage = this.currentPage
       const perPage = this.perPage
-
       let posts = []
       if (this.category) {
         posts = this.$groupPosts.categories[this.category]
       } else if (this.tag) {
         posts = this.$groupPosts.tags[this.tag]
       } else {
-        posts = this.$sortPosts
+        posts = this.isHome ? this.$sortHomePosts : this.$sortPosts
       }
 
       this.sortPosts = posts.slice((currentPage - 1) * perPage, currentPage * perPage)
@@ -163,17 +181,22 @@ export default {
 }
 </script>
 
+
+
+
 <style lang='stylus'>
 .post-list
-  margin-bottom 3rem
+  //padding-bottom 5rem
   .post
     position relative
     padding 1rem 1.5rem
     margin-bottom 0.8rem
     transition all 0.3s
-    // border-bottom 1px solid var(--borderColor)
-    &:last-child
-      border-bottom none
+    border 1px solid var(--borderColor)
+    box-shadow 1px 1px 20px rgba(0,0,0,.2)
+    margin-bottom 20px
+    //&:last-child
+      //border-bottom none
     &.post-leave-active
       display none
     &.post-enter
@@ -187,6 +210,7 @@ export default {
       color $activeColor
       opacity 0.85
     .title-wrapper
+      color var(--textColor)
       a
         color var(--textColor)
         &:hover
@@ -195,6 +219,8 @@ export default {
         margin 0.5rem 0
         font-size 1.4rem
         border none
+        &:hover
+          color $accentColor
         .title-tag
           height 1.2rem
           line-height 1.2rem
@@ -225,7 +251,9 @@ export default {
                 content '/'
         .tags a:not(:first-child)::before
           content '、'
+      
     .excerpt-wrapper
+      color var(--textColor)
       border-top 1px solid var(--borderColor)
       margin 0.5rem 0
       overflow hidden
@@ -246,15 +274,71 @@ export default {
           float right
           font-size 0.8rem
           margin 0.1rem 0 0 0.2rem
+
 .theme-style-line
   .post-list
-    border 1px solid var(--borderColor)
+    //border 1px solid var(--borderColor)
     border-bottom none
     border-radius 5px
     overflow hidden
-    .post
-      margin-bottom 0
-      border none
-      border-bottom 1px solid var(--borderColor)
-      border-radius 0
+
+
+
+
+.post-list
+      .post-item
+        color var(--textColor)
+        position: relative;
+        margin: 80px auto 100px;
+        padding: 0 40px;
+        .post-item-img
+          display inline-block
+          width 550px
+          height 340px
+          overflow hidden
+          position relative
+          z-index 1
+          cursor pointer
+          border-radius 5px
+          img
+            width 100%
+            height 100%
+            object-fit cover
+            transition all 0.6s
+          &:hover
+            img 
+              transform scale(1.1)
+      .post-item-info
+        left 520px
+        position absolute
+        text-align left
+        top 30px
+        height 340px
+        width 490px
+        border 1px solid var(--borderColor)
+        border-radius 5px
+        overflow-y hidden
+      .date
+        color gray  //todo
+        font-size 12px
+        margin 80px 0 0 100px
+      h2
+        font-size 30px
+        font-weight 400
+        line-height 1.1
+        margin 10px 100px 0 100px
+        color var(--textColor)
+        border-bottom none
+
+      h3
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 100px 0 100px;
+        line-height: 1.8;      
+        color var(--textColor)
+      .post-item-content
+        line-height: 1.8;
+        font-size: 14px;
+        margin: 10px 100px 0 100px;
+
 </style>

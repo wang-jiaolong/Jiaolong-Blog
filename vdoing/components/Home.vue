@@ -9,7 +9,7 @@
       <div
         class="banner-conent"
         :style="
-          !homeData.features && !homeData.heroImage && `padding-top: 7rem`
+          !homeData.features && !homeData.heroImage && `padding: 14rem 0`
         "
       >
         <header class="hero">
@@ -125,7 +125,7 @@
         <template
           v-else-if="!homeData.postList || homeData.postList === 'detailed'"
         >
-          <PostList :currentPage="currentPage" :perPage="perPage" />
+          <PostList :currentPage="currentPage" :perPage="perPage" :isHome="true" />
           <Pagination
             :total="total"
             :perPage="perPage"
@@ -138,7 +138,7 @@
         <Content class="theme-vdoing-content custom card-box" />
       </template>
 
-      <template v-if="!homeData.hideRightBar" #mainRight>
+      <!-- <template v-if="!homeData.hideRightBar" #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
         <CategoriesBar
           v-if="
@@ -158,7 +158,7 @@
           v-if="homeSidebarB"
           v-html="homeSidebarB"
         ></div>
-      </template>
+      </template> -->
     </MainLayout>
   </div>
 </template>
@@ -243,7 +243,7 @@ export default {
   },
   components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
   created() {
-    this.total = this.$sortPosts.length
+    this.total = this.$sortHomePosts.length
   },
   beforeMount() {
     this.isMQMobile = window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false; // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
@@ -364,7 +364,7 @@ export default {
           margin 2rem auto 1.5rem
         h1
           margin 0
-          font-size 3.2rem
+          font-size 4rem
         .description, .action
           margin 1.5rem auto
         .description
