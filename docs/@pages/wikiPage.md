@@ -19,8 +19,7 @@ categoriesBar: false
 ```yaml
 
 - name: FFmpeg
-  desc:  A complete, cross-platform solution to record, convert and stream audio and video. form solution to record, convert and stream audio and vi form solution to record, convert and stream audio and vi
-  link: /pages/07bf5a/
+  desc:  A complete, cross-platform solution to record, convert and stream audio and video. 
   avatar: ffmpeg.png
   target: _self
 
@@ -29,6 +28,8 @@ categoriesBar: false
   link: /pages/766f2c/
   avatar: x264.png
   target: _self
+
+
 
 
 ```
@@ -60,8 +61,6 @@ categoriesBar: false
 
 <br>
 <br>
-
-
 
 
 ### 🚀 IDE
