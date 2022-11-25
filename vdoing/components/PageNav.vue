@@ -178,6 +178,7 @@ function flatten (items, res) {
     overflow auto // clear float
   .next
     float right
+
 .page-nav-centre-wrap
   .page-nav-centre
     position fixed

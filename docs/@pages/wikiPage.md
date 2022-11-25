@@ -70,7 +70,7 @@ categoriesBar: false
 ```yaml
 
 - name: Xcode
-  desc: Apple新 UI 开发框架
+  desc: iOS开发环境
   link: /pages/3ef2c6/
   avatar: xcode.png
   target: _self

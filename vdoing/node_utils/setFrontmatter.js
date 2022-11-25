@@ -65,7 +65,7 @@ tags:
       const fmData = `---
 title: ${file.name}
 date: ${dateStr}
-permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? os.EOL + 'sidebar: auto' : ''}
+permalink: ${getPermalink()}${file.filePath.indexOf('00.Posts') > -1 ? os.EOL + 'sidebar: auto' : ''}
 ${extendFrontmatterStr}---`;
 
 
@@ -94,7 +94,7 @@ ${extendFrontmatterStr}---`;
         hasChange = true;
       }
 
-      // if (file.filePath.indexOf('_posts') > -1 && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，_posts文件夹特有
+      // if (file.filePath.indexOf('00.Posts') > -1 && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，00.Posts文件夹特有
       //   matterData.sidebar = "auto";
       //   hasChange = true;
       // }
@@ -137,8 +137,8 @@ ${extendFrontmatterStr}---`;
 function getCategories(file, categoryText) {
   let categories = []
 
-  if (file.filePath.indexOf('_posts') === -1) {
-    // 不在_posts文件夹
+  if (file.filePath.indexOf('00.Posts') === -1) {
+    // 不在00.Posts文件夹
     let filePathArr = file.filePath.split(path.sep) // path.sep用于兼容不同系统下的路径斜杠
     filePathArr.pop()
 
@@ -153,7 +153,7 @@ function getCategories(file, categoryText) {
     }
   } else {
     // 碎片化文章的分类生成
-    const matchResult = file.filePath.match(/_posts\/(\S*)\//);
+    const matchResult = file.filePath.match(/00.Posts\/(\S*)\//);
     const resultStr = matchResult ? matchResult[1] : ''
     const resultArr = resultStr.split('/').filter(Boolean)
 

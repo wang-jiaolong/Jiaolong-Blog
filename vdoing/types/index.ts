@@ -26,7 +26,7 @@ export interface VdoingThemeConfig extends NoSidebar4DefaultThemeConfig {
   archive?: boolean;
 
   /**
-   * 碎片化文章（_posts文件夹的文章）预设生成的分类值
+   * 碎片化文章（00.Posts文件夹的文章）预设生成的分类值
    * @default '随笔'
    */
   categoryText?: string;

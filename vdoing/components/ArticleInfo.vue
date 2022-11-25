@@ -2,7 +2,7 @@
   <div class="articleInfo-wrap">
     <div class="articleInfo">
       <!-- 面包屑 -->
-      <ul class="breadcrumbs" v-if="classify1 && classify1 !== '_posts'">
+      <ul class="breadcrumbs" v-if="classify1 && classify1 !== '00.Posts'">
         <li>
           <router-link to="/" class="iconfont icon-home" title="首页" />
         </li>
@@ -47,7 +47,7 @@
           title="分类"
           v-if="
             $themeConfig.category !== false &&
-            !(classify1 && classify1 !== '_posts') &&
+            !(classify1 && classify1 !== '00.Posts') &&
             categories
           "
         >

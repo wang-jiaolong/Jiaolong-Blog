@@ -291,6 +291,10 @@ export default {
         position: relative;
         margin: 80px auto 100px;
         padding: 0 40px;
+        @media (max-width 1100px)
+          margin 40px auto 0
+          border-bottom none
+          //max-width 400px
         .post-item-img
           display inline-block
           width 550px
@@ -300,6 +304,9 @@ export default {
           z-index 1
           cursor pointer
           border-radius 5px
+          @media (max-width 1100px)
+            width 100%
+            height 100%
           img
             width 100%
             height 100%
@@ -318,10 +325,19 @@ export default {
         border 1px solid var(--borderColor)
         border-radius 5px
         overflow-y hidden
+        @media (max-width 1100px)
+          width:100%
+          border none 
+          border-bottom 1px solid var(--borderColor)
+          height auto;
+          position static
       .date
         color gray  //todo
         font-size 12px
         margin 80px 0 0 100px
+        @media (max-width 1100px)
+          margin-left 5px
+          margin-top 10px
       h2
         font-size 30px
         font-weight 400
@@ -329,6 +345,9 @@ export default {
         margin 10px 100px 0 100px
         color var(--textColor)
         border-bottom none
+        @media (max-width 1100px)
+          margin-left 5px
+          font-size 24px
 
       h3
         font-size: 16px;
@@ -336,9 +355,18 @@ export default {
         margin: 10px 100px 0 100px;
         line-height: 1.8;      
         color var(--textColor)
+        @media (max-width 1100px)
+          margin-left 5px
       .post-item-content
         line-height: 1.8;
         font-size: 14px;
         margin: 10px 100px 0 100px;
+        @media (max-width 1100px)
+          margin-left 5px
+          content-visibility: hidden;
+
+
+
+
 
 </style>

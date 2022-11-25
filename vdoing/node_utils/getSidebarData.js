@@ -16,7 +16,7 @@ function createSidebarData(sourceDir, collapsable) {
   const tocs = readTocs(sourceDir);
   tocs.forEach(toc => { // toc是每个目录的绝对路径
 
-    if (toc.substr(-6) === '_posts') { // 碎片化文章
+    if (toc.substr(-6) === '00.Posts') { // 碎片化文章
 
       // 注释说明：碎片化文章不需要生成结构化侧边栏 2020.05.01
       // const sidebarArr = mapTocToPostSidebar(toc);
@@ -57,7 +57,7 @@ function readTocs(root) {
 
 
 /**
- * 将碎片化文章目录(_posts)映射为对应的侧边栏配置数据
+ * 将碎片化文章目录(00.Posts)映射为对应的侧边栏配置数据
  * @param {String} root
  */
 function mapTocToPostSidebar(root) {
@@ -70,11 +70,11 @@ function mapTocToPostSidebar(root) {
 
     const fileNameArr = filename.split('.');
     if (fileNameArr.length > 2) {
-      log(chalk.yellow(`warning: 该文件 "${file}" 在_posts文件夹中，不应有序号，且文件名中间不应有'.'`))
+      log(chalk.yellow(`warning: 该文件 "${file}" 在00.Posts文件夹中，不应有序号，且文件名中间不应有'.'`))
       return
     }
     if (stat.isDirectory()) { // 是文件夹目录
-      // log(chalk.yellow(`warning: 该目录 "${file}" 内文件无法生成侧边栏，_posts文件夹里面不能有二级目录。`))
+      // log(chalk.yellow(`warning: 该目录 "${file}" 内文件无法生成侧边栏，00.Posts文件夹里面不能有二级目录。`))
       return
     }
 
