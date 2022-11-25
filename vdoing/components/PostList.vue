@@ -368,7 +368,9 @@ export default {
         margin: 10px 100px 0 100px;
         @media (max-width 1100px)
           margin-left 5px
-          content-visibility: hidden;
+          content-visibility hidden
+          width 0px
+          height 0px
 
 
 
