@@ -343,8 +343,8 @@ export default {
           position static
           border-radius 0px
       .date
-        color gray  //todo
-        font-size 12px
+        color #a9a9a9
+        font-size 14px
         margin 80px 0 0 100px
         @media (max-width 1100px)
           margin-left 5px
