@@ -246,7 +246,7 @@ function getCardListDOM(dataList, row, config) {
         <div style="text-align:${align};padding:${item.avatar ? '0.75rem 0 1.25rem 0px' : '1rem 0'}">
           <p class="name">${item.name}</p>
           <hr style="margin: 0 15px;opacity:${item.avatar ? 1 : 0};padding: 2px;" />
-          <p class="desc" style="width:${getTextWidth(row)}">${item.desc}</p>
+          <p class="desc" style="width:${item.avatar ? getTextWidth(row) : 'auto'}">${item.desc}</p>
         </div>
 
       ${item.avatar ? '<img src="/icon/' + withBase(item.avatar) + '" class="no-zoom">' : ''}
