@@ -168,6 +168,12 @@ export default {
         transition padding 0.3s
         padding 0.5rem 2rem
         line-height 1.2rem
+        /*超出部分隐藏*/
+        overflow: hidden;
+        /*强制在一行*/
+        white-space: nowrap;
+        /*文本超出部分省略*/
+        text-overflow: ellipsis;
         &:hover
           padding-left 2.5rem
           color $accentColor

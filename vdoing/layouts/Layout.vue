@@ -261,7 +261,7 @@ export default {
     window.addEventListener('scroll', _.throttle(() => {
       if (!this.isSidebarOpen) { // 侧边栏关闭时
         p = this.getScrollTop()
-        console.log(p)
+      //console.log(p)
         if (t < p && p > NAVBAR_HEIGHT) { // 向下滚动
           this.hideNavbar = true
         } else { // 向上
