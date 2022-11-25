@@ -15,10 +15,11 @@
             <div class="post-item-info">
 
 
-              <p title="创建时间" class="date" v-if="item.frontmatter.date">{{
-                  item.frontmatter.date.split(' ')[0]
-              }}</p>
-
+              <div class="date">
+              <span title="创建时间" class="iconfont icon-riqi" v-if="item.frontmatter.date">
+                {{item.frontmatter.date.split(' ')[0]}}
+              </span>
+                </div>
               <router-link :to="item.path" class="post-item-title">
 
                 <h2>
@@ -308,7 +309,6 @@ export default {
           position relative
           z-index 1
           cursor pointer
-          border-radius 5px
           @media (max-width 1100px)
             width 100%
             height 100%
@@ -317,6 +317,10 @@ export default {
             height 100%
             object-fit cover
             transition all 0.6s
+            @media (max-width 1100px)
+              width 100%
+              height 100%
+              border-radius 10px
           &:hover
             img 
               transform scale(1.1)
@@ -330,12 +334,14 @@ export default {
         border 1px solid var(--borderColor)
         border-radius 5px
         overflow-y hidden
+
         @media (max-width 1100px)
           width:100%
           border none 
           border-bottom 1px solid var(--borderColor)
           height auto;
           position static
+          border-radius 0px
       .date
         color gray  //todo
         font-size 12px
@@ -343,6 +349,8 @@ export default {
         @media (max-width 1100px)
           margin-left 5px
           margin-top 10px
+        span
+          font-size 14px
       h2
         font-size 30px
         font-weight 400

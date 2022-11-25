@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6
   &>:not(.card-list)
     display none
   .card-list
-    margin -0.35rem
+    margin 0 -0.35rem
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6
       color var(--textColor)
       display flex
       box-shadow 1px 1px 2px 0 rgba(0,0,0,.06)
-      transition all .4s
+      transition all .3s
       background-color #282c34bf
       border-radius 10px
       border 1px solid #3c4a5f
@@ -53,11 +53,12 @@ h1, h2, h3, h4, h5, h6
         height 50px
         border-radius 50%
         border 2px solid #3c4a5f
-        margin 1rem
+        margin: auto 1rem;
         margin-left 0 !important
         box-shadow 3px 2px 5px rgba(0, 0, 0, 0.08)
-        transition all .4s
+        transition all .3s
         background #fff
+        object-fit cover
         -webkit-filter brightness(0.95)
       div
         flex 1
@@ -125,10 +126,10 @@ h1, h2, h3, h4, h5, h6
       justify-content: flex-start;
       align-items: stretch;
       align-content: stretch;
-      transition: all .4s
+      transition: all .3s
       &:hover
         box-shadow 1px 1px 20px rgba(0,0,0,.1)
-        transform: translateY(-3px)
+        transform: translateY(-5px)
       .box-img
         overflow hidden
         position relative

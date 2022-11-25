@@ -239,6 +239,7 @@ function getCardListDOM(dataList, row, config) {
   
   dataList.forEach(item => {
     let align = item.avatar ? 'unset' : 'center'
+    let imgStyle = 'width:'+ getImgWidth(row) + ';height:'+ getImgWidth(row)
     listDOM += `
       <${item.link ? 'a href="' + withBase(item.link) + '" target="' + item.target + '"' : 'span'} class="card-item ${row ? 'row-' + row : ''}"
          style="${item.bgColor ? 'background-color:' + item.bgColor + ';--randomColor:' + item.bgColor + ';' : '--randomColor: var(--bodyBg);'}${item.textColor ? 'color:' + item.textColor + ';' : ''}"
@@ -249,7 +250,7 @@ function getCardListDOM(dataList, row, config) {
           <p class="desc" style="width:${item.avatar ? getTextWidth(row) : 'auto'}">${item.desc}</p>
         </div>
 
-      ${item.avatar ? '<img src="/icon/' + withBase(item.avatar) + '" class="no-zoom">' : ''}
+      ${item.avatar ? '<img src="/icon/' + withBase(item.avatar) + '" class="no-zoom" style="' + imgStyle + '" >' : ''}
 
       </${item.link ? 'a' : 'span'}>
     `
@@ -259,10 +260,17 @@ function getCardListDOM(dataList, row, config) {
 
 function getTextWidth(row){
   switch (row) {
-    case 2: return "360px"
+    case 2: return "330px"
     case 3: return "230px"
     case 4: return "100px"
     default: return "unset"
+} 
+
+}
+function getImgWidth(row){
+  switch (row) {
+    case 4: return "45px"
+    default: return "50px"
 } 
 
 }

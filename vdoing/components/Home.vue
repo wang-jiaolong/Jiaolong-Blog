@@ -9,7 +9,7 @@
       <div
         class="banner-conent"
         :style="
-          !homeData.features && !homeData.heroImage && `padding: 14rem 0`
+          !homeData.features && !homeData.heroImage
         "
       >
         <header class="hero">
@@ -349,6 +349,7 @@ export default {
     position relative
     overflow hidden
     .banner-conent
+      padding: 14rem 0rem
       max-width $homePageWidth
       margin 50px auto
       position relative
@@ -514,6 +515,7 @@ export default {
   .home-wrapper
     .banner
       .banner-conent
+        padding: 5rem 1rem
         .features
           display none !important
 // 419px以下

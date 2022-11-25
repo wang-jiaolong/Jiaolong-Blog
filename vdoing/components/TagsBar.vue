@@ -47,7 +47,7 @@ export default {
   },
   created () {
     for (let i = 0, tagH = this.tags.length; i < tagH; i++) {
-      this.tagStyleList.push(this.getTagStyle())
+      this.tagStyleList.push(this.getTagStyle(i))
     }
   },
   computed: {
@@ -60,9 +60,9 @@ export default {
     }
   },
   methods: {
-    getTagStyle () {
+    getTagStyle (index) {
       const tagBgColor = this.tagBgColor
-      const randomColor = tagBgColor[Math.floor(Math.random() * tagBgColor.length)]
+      const randomColor = index < tagBgColor.length-1 ? tagBgColor[index] : tagBgColor[tagBgColor.length-1]
       return `background: ${randomColor};--randomColor:${randomColor};`
     }
   }
