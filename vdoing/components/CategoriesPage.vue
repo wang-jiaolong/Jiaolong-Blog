@@ -126,7 +126,6 @@ export default {
       padding 0.9rem 1.5rem
       margin-bottom 0.9rem
       max-height 15rem
-      border-radius 0
       display none
       @media (max-width $MQMobile)
         display block
@@ -137,8 +136,11 @@ export default {
     .main-left
       .categories-wrapper
         @media (max-width $MQMobile)
-          margin-top -0.91rem
-          margin-bottom -1px
-          padding 0.9rem 0.2rem
+          //margin-top -0.91rem
+          //margin-bottom -1px
+          padding 0.9rem 0.5rem
           padding-bottom 0.5rem
+          margin 0px 20px 20px
+
+
 </style>

@@ -195,6 +195,9 @@ export default {
     border 1px solid var(--borderColor)
     box-shadow 1px 1px 20px rgba(0,0,0,.2)
     margin-bottom 20px
+    @media (max-width 1100px)
+      margin-left 20px
+      margin-right 20px
     //&:last-child
       //border-bottom none
     &.post-leave-active
@@ -219,6 +222,8 @@ export default {
         margin 0.5rem 0
         font-size 1.4rem
         border none
+        @media (max-width $MQMobile)
+          font-size 1.2rem
         &:hover
           color $accentColor
         .title-tag

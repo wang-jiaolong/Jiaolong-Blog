@@ -45,8 +45,7 @@
       width 100%
       .post-list
         margin-bottom 3rem
-        .post
-          border-radius 0
+
       .pagination
         margin-bottom 3rem
     .main-right
@@ -54,7 +53,6 @@
         display none
       .card-box
         margin 0 0 0.9rem 0
-        border-radius 0
         width 100%
   .theme-style-line
     .main-wrapper
