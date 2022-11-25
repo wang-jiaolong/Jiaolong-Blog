@@ -61,6 +61,8 @@ export default {
   position sticky
   top 0
   font-size 0.8rem
+  @media (max-width $MQMobile)
+    width 0px
   .right-menu-margin
     margin-top: ($navbarHeight + 1rem)
     border-radius 3px
