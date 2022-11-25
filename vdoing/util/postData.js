@@ -116,6 +116,15 @@ export function categoriesAndTags (groupPosts) {
       length: groupPosts.tags[key].length
     })
   }
+
+  categoriesArr.sort((prev, next) => {
+    return next.length - prev.length
+  })
+  
+  tagsArr.sort((prev, next) => {
+    return next.length - prev.length
+  })
+
   return {
     categories: categoriesArr,
     tags: tagsArr

@@ -41,7 +41,7 @@ export default {
   },
   data () {
     return {
-      tagBgColor: ['#11a8cd', '#F8B26A', '#67CC86', '#E15B64', '#F47E60', '#849B87'],
+      tagBgColor: ['#00b4d8', '#48cae4', '#90e0ef','#ade8f4','#caf0f8'],
       tagStyleList: []
     }
   },
@@ -79,7 +79,6 @@ export default {
     &::before
       margin-right 0.3rem
   .tags
-    text-align justify
     padding 0.8rem 0.5rem 0.5rem 0.5rem
     margin 0 -0.5rem -0.5rem -0.5rem
     a

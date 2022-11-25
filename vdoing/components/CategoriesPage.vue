@@ -108,7 +108,7 @@ export default {
       a
         padding-right 1.8rem
         span
-          right 0.4rem
+          right 1rem
       &::-webkit-scrollbar-track-piece
         background-color rgba(0, 0, 0, 0.05)
       &::-webkit-scrollbar-thumb:vertical
