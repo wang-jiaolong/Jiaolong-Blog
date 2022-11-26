@@ -97,6 +97,8 @@ export default {
   font-weight 600
   opacity 0.85
   margin-bottom 5px
+  @media (max-width $MQMobile)
+    font-size 8px
 .theme-code-group__nav-tab-active
   border-bottom $accentColor 3px solid
   color var(--textLightenColor)

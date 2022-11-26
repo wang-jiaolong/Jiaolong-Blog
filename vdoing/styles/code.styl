@@ -24,6 +24,8 @@ body {$contentClass}
     background-color $codeBgColor
     border-radius 6px
     overflow auto
+    @media (max-width $MQMobile)
+      margin 0
     code
       // color #fff
       color var(--codeColor)
@@ -80,6 +82,8 @@ div[class*="language-"]
       padding-left 0
       margin-left 42px
       vertical-align middle
+      @media (max-width $MQMobile)
+        margin-left 20px
     .line-numbers-wrapper
       position absolute
       top 0
@@ -89,6 +93,8 @@ div[class*="language-"]
       color rgba(127, 127, 127, .5)
       padding 1.25rem 0
       line-height 1.4
+      @media (max-width $MQMobile)
+        display none
       br
         user-select none
       .line-number
@@ -109,6 +115,8 @@ div[class*="language-"]
       // background-color $codeBgColor
       //border-right 1px solid var(--borderColor)
       background-color var(--codeBg)
+      @media (max-width $MQMobile)
+        display none
 
 
 for lang in $codeLang
