@@ -118,7 +118,7 @@ module.exports = (options, ctx) => {
       }],
       ['container', {
         type: 'theorem',
-        before: info => `<div class="custom-block theorem"><p class="title">${info}</p>`,
+        before: info => `<div class="custom-block theorem"><p class="title" ${info == "THEOREM" ? "style='display:none'" : ""}>${info ? info : ""}</p>`,
         after: '</div>'
       }],
       ['container', {

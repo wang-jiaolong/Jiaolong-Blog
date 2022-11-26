@@ -164,6 +164,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         src: "/assets/js/autopush-baidu.js"
       },
     ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
+    [
+      'script',
+      {
+        src: "//unpkg.com/valine/dist/Valine.min.js"
+      },
+    ], 
   ],
 
 
@@ -239,6 +245,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
     //     },
     //   },
+    // ],
+    //     [
+    //   "vuepress-plugin-comment",
+    //   {
+    //     choosen: "valine",
+    //     // options选项中的所有参数，会传给Valine的配置
+    //     options: {
+    //       el: "#valine-vuepress-comment",
+    //       appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
+    //       appKey: "QnBLYJQWgilA2hzfTMde7CuD",
+    //       path: '<%- frontmatter.to.path %>'
+    //     }
+    //   }
     // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式

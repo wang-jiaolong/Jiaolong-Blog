@@ -4,6 +4,9 @@
     margin-bottom .2rem
   p
     margin 0
+    font-size 1.2rem
+    @media (max-width: $MQMobile)
+        font-size 1rem!important
   &.tip, &.warning, &.danger, &.note
     padding .5rem 1.5rem
     border-left-width .5rem
@@ -38,13 +41,23 @@
     font-size 0.9rem
     text-align right
   &.theorem
-    margin 1rem 0
+    margin 3rem 0
     padding .8rem 1.5rem
-    border-radius 2px
+    border-radius 10px
     background-color var(--customBlockBg)
+    box-shadow: 0 4px 9px #282d34
+    padding-top 2rem
+    padding-bottom 2rem
     .title
       font-weight bold
       margin .5rem 0
+
+
+    .custom-block
+      &.right
+        font-size 16px!important
+
+    
   &.details
     display block
     position relative

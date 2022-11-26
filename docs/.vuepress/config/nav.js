@@ -13,9 +13,17 @@ export default [
       link: '/categories/'
     },
     {
+      text: '摘录',
+      link: '/excerpt/'
+    },
+    {
       text: '导航',
       link: '/favorite/website/'
     },
+    // {
+    //   text: '留言板',
+    //   link: '/talk/'
+    // },
     { text: '关于', link: '/about/' },
   ]
 

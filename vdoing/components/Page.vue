@@ -63,6 +63,7 @@ export default {
   components: { PageEdit, PageNav, ArticleInfo, Catalogue, UpdateArticle, RightMenu },
   created() {
     this.updateBarConfig = this.$themeConfig.updateBar
+
   },
   computed: {
     bgStyle() {

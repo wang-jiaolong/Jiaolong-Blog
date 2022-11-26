@@ -212,6 +212,7 @@ export default {
     }
   },
   created() {
+
     const sidebarOpen = this.$themeConfig.sidebarOpen
     if (sidebarOpen === false) {
       this.isSidebarOpen = sidebarOpen
@@ -231,6 +232,7 @@ export default {
     }
     this.setBodyClass()
 
+
     // 引入图标库
     const social = this.$themeConfig.social
     if (social && social.iconfontCssFile) {
@@ -242,6 +244,7 @@ export default {
     }
   },
   mounted() {
+
     // 初始化页面时链接锚点无法跳转到指定id的解决方案
     const hash = document.location.hash;
     if (hash.length > 1) {

@@ -9,28 +9,36 @@ article: false
 sidebar: false
 bloggerBar: true
 ---
-<img src = "/img/about_blog.png">
 
-## About Me
+### 🧑🏻 About Me
 
 Hi，我是Jiaolong，一个浪漫且孤独的白日梦想家，一个有仪式感的程序员，有一些自己的想法。
 
-## Doing
 
-正在努力成为一个独立开发者，做了一个叫「物品指南」的app，
+<br>
 
+### 📚 Book List
 
-
-### Reading
+**Reading**
 
 - 《史蒂夫·乔布斯传》（📖）
 - 《解密Instagram》（📖）
+
+**To Read**
+
+- 《FaceBook》（📘）
+
+
+**Done**
+
 - 《决策思维》（✅）
 - 《产品思维》（✅）
 
 
 
-## Portfolio
+<br>
+
+### 🎈 Portfolio
 
 ::: cardList 3
 

@@ -32,83 +32,9 @@
           </p>
         </header>
 
-        <!-- PC端features块 s -->
-        <div class="features" v-if="hasFeatures && !isMQMobile">
-          <div
-            class="feature"
-            v-for="(feature, index) in homeData.features"
-            :key="index"
-          >
-            <router-link v-if="feature.link" :to="feature.link">
-              <img
-                class="feature-img"
-                v-if="feature.imgUrl"
-                :src="$withBase(feature.imgUrl)"
-                :alt="feature.title"
-              />
-              <h2>{{ feature.title }}</h2>
-              <p>{{ feature.details }}</p>
-            </router-link>
-            <a v-else href="javascript:;">
-              <img
-                class="feature-img"
-                v-if="feature.imgUrl"
-                :src="$withBase(feature.imgUrl)"
-                :alt="feature.title"
-              />
-              <h2>{{ feature.title }}</h2>
-              <p>{{ feature.details }}</p>
-            </a>
-          </div>
-        </div>
-        <!-- PC端features块 e -->
       </div>
 
-      <!-- 移动端features块 s -->
-      <!-- isMQMobile放到v-if上线后会报错 -->
-      <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
-        <div class="banner-wrapper">
-          <div class="slide-banner-scroll" ref="slide">
-            <div class="slide-banner-wrapper">
-              <div
-                class="slide-item"
-                v-for="(feature, index) in homeData.features"
-                :key="index"
-              >
-                <router-link v-if="feature.link" :to="feature.link">
-                  <img
-                    class="feature-img"
-                    v-if="feature.imgUrl"
-                    :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title"
-                  />
-                  <h2>{{ feature.title }}</h2>
-                  <p>{{ feature.details }}</p>
-                </router-link>
-                <a v-else href="javascript:;">
-                  <img
-                    class="feature-img"
-                    v-if="feature.imgUrl"
-                    :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title"
-                  />
-                  <h2>{{ feature.title }}</h2>
-                  <p>{{ feature.details }}</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="docs-wrapper">
-            <span
-              class="doc"
-              v-for="(item, index) in homeData.features.length"
-              :key="index"
-              :class="{ active: currentPageIndex === index }"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <!-- 移动端features块 e -->
+
     </div>
     <!-- banner块 e -->
 
@@ -136,13 +62,18 @@
 
         <!-- <webInfo /> -->
 
+
         <div
           class="custom-html-box card-box"
           v-if="homeSidebarB && homeData.homeSidebarB"
           v-html="homeSidebarB"
         ></div>
       </template>
+
+
+
     </MainLayout>
+
   </div>
 </template>
 
@@ -162,6 +93,7 @@ import TagsBar from '@theme/components/TagsBar'
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
 BScroll.use(Slide)
+
 
 export default {
   data() {
@@ -275,6 +207,9 @@ export default {
   },
   methods: {
     init() {
+
+      console.log("ccc")
+
       clearTimeout(this.playTimer)
       this.slide = new BScroll(this.$refs.slide, {
         scrollX: true, // x轴滚动
@@ -322,6 +257,8 @@ export default {
 
 };
 </script>
+
+
 
 <style lang="stylus" scoped>
 .home-wrapper
@@ -474,10 +411,11 @@ export default {
         padding 0 2rem
         overflow hidden
         border none
-        &>:first-child
-          padding-top 2rem
-        &>:last-child
-          padding-bottom 2rem
+        padding-top 2rem
+        //&>:first-child
+          //padding-top 2rem
+        //&>:last-child
+          //padding-bottom 2rem
     .main-right
       .custom-html-box
         padding 0

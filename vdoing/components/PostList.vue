@@ -196,7 +196,7 @@ export default {
     border 1px solid var(--borderColor)
     box-shadow 1px 1px 20px rgba(0,0,0,.2)
     margin-bottom 20px
-    @media (max-width 1100px)
+    @media (max-width $MQMobile)
       margin-left 20px
       margin-right 20px
     //&:last-child
@@ -297,7 +297,7 @@ export default {
         position: relative;
         margin: 80px auto 100px;
         padding: 0 40px;
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           margin 40px auto 0
           border-bottom none
           padding: 0 30px
@@ -310,7 +310,7 @@ export default {
           position relative
           z-index 1
           cursor pointer
-          @media (max-width 1100px)
+          @media (max-width $MQMobile)
             width 100%
             height 100%
           img
@@ -318,7 +318,7 @@ export default {
             height 100%
             object-fit cover
             transition all 0.6s
-            @media (max-width 1100px)
+            @media (max-width $MQMobile)
               width 100%
               height 100%
               border-radius 10px
@@ -336,7 +336,7 @@ export default {
         border-radius 5px
         overflow-y hidden
 
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           width:100%
           border none 
           border-bottom 1px solid var(--borderColor)
@@ -347,7 +347,7 @@ export default {
         color #a9a9a9
         font-size 14px
         margin 80px 0 0 100px
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           margin-left 5px
           margin-top 10px
         span
@@ -359,7 +359,7 @@ export default {
         margin 10px 100px 0 100px
         color var(--textColor)
         border-bottom none
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           margin-left 5px
           font-size 24px
 
@@ -369,13 +369,13 @@ export default {
         margin: 10px 100px 0 100px;
         line-height: 1.8;      
         color var(--textColor)
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           margin-left 5px
       .post-item-content
         line-height: 1.8;
         font-size: 14px;
         margin: 10px 100px 0 100px;
-        @media (max-width 1100px)
+        @media (max-width $MQMobile)
           display: none;
 
 

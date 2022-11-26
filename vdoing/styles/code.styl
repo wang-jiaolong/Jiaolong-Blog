@@ -77,13 +77,17 @@ div[class*="language-"]
           width $lineNumbersWrapperWidth
           height 100%
           background-color #363b46
+          @media (max-width $MQMobile)
+            display none
+          
     pre
       //padding-left $lineNumbersWrapperWidth + 0.5 rem
       padding-left 0
       margin-left 42px
       vertical-align middle
       @media (max-width $MQMobile)
-        margin-left 20px
+        margin-left: 0px;
+        padding-left: 15px;
     .line-numbers-wrapper
       position absolute
       top 0
