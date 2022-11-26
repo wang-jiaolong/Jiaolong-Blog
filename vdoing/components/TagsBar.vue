@@ -1,14 +1,14 @@
 <template>
   <div class="tags-wrapper card-box">
     <router-link
-      to="/tags/"
+      to="/categories/"
       class="title iconfont icon-biaoqian1"
       title="全部标签"
     >{{ length === 'all' ? '全部标签' : '热门标签' }}</router-link>
     <div class="tags">
       <template v-for="(item, index) in tags">
         <router-link
-          :to="`/tags/?tag=${encodeURIComponent(item.key)}`"
+          :to="`/categories/?tag=${encodeURIComponent(item.key)}`"
           :key="index"
           :style="tagStyleList[index]"
           :class="{active: item.key === tag}"
@@ -16,7 +16,7 @@
         <span :key="index+tags.length" />
       </template>
       <router-link
-        to="/tags/"
+        to="/categories/"
         v-if="length !== 'all' && tagsData.length > length"
       >更多...</router-link>
     </div>

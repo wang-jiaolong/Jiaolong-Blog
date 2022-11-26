@@ -62,7 +62,7 @@ export default {
   top 0
   font-size 0.8rem
   @media (max-width $MQMobile)
-    width 0px
+    display: none;
   .right-menu-margin
     margin-top: ($navbarHeight + 1rem)
     border-radius 3px

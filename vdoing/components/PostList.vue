@@ -300,6 +300,7 @@ export default {
         @media (max-width 1100px)
           margin 40px auto 0
           border-bottom none
+          padding: 0 30px
           //max-width 400px
         .post-item-img
           display inline-block
@@ -375,10 +376,7 @@ export default {
         font-size: 14px;
         margin: 10px 100px 0 100px;
         @media (max-width 1100px)
-          margin-left 5px
-          content-visibility hidden
-          width 0px
-          height 0px
+          display: none;
 
 
 

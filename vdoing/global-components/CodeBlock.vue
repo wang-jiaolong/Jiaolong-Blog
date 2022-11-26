@@ -30,9 +30,19 @@ export default {
 .theme-code-block > pre {
   background-color: orange;
 }
+
+.theme-code-group div[class*='language-'] {
+    box-shadow: unset;
+  }
+.theme-code-block img{
+  margin-bottom: -7px;
+  box-shadow: unset !important;
+}
+
 @media (max-width: 419px) {
   .theme-code-group div[class*='language-'] {
     margin: 0;
   }
 }
+
 </style>

@@ -68,15 +68,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.theme-code-group
+  box-shadow: 0 4px 9px #00000073
 .theme-code-group, .theme-code-group__nav
+  background-color var(--codeBg)
   border-radius 6px
   //padding 10px
   padding-top 0px
   margin-top 15px
-  box-shadow: 0 0px 9px #00000073
 .theme-code-group__nav
-  margin-bottom -25px
-  padding-bottom 10px
+  margin-bottom -20px
   background-color var(--codeBg)
 .theme-code-group__ul
   margin auto 0

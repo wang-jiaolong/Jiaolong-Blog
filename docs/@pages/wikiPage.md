@@ -1,6 +1,6 @@
 ---
 homePage: true
-title: 关于
+title: Wiki
 heroText: Wikis
 tagline: 到底记住多少命令行才会让脑袋爆炸？
 permalink: /wikis/
@@ -15,7 +15,7 @@ categoriesBar: false
 
 ### 🎬 音视频
 
-::: cardList 3
+::: cardList 4
 ```yaml
 
 - name: FFmpeg
@@ -35,12 +35,10 @@ categoriesBar: false
 ```
 :::
 
-<br>
-<br>
 
 ### 💻 Code
 
-::: cardList 3
+::: cardList 4
 ```yaml
 
 - name: SwiftUI
@@ -60,12 +58,10 @@ categoriesBar: false
 
 
 <br>
-<br>
-
 
 ### 🚀 IDE
 
-::: cardList 3
+::: cardList 4
 ```yaml
 
 - name: Xcode
@@ -84,12 +80,11 @@ categoriesBar: false
 :::
 
 <br>
-<br>
 
 
 ### 🔧 Tools
 
-::: cardList 3
+::: cardList 4
 ```yaml
 
 - name: Git
@@ -105,12 +100,11 @@ categoriesBar: false
 
 
 <br>
-<br>
 
 
 ### ⛄ OS
 
-::: cardList 3
+::: cardList 4
 ```yaml
 
 - name: Windows
