@@ -10,6 +10,6 @@ bloggerBar: false
 homeSidebarB: false
 tagsBar: false
 categoriesBar: false
-comment: true
+article: false
 ---
 

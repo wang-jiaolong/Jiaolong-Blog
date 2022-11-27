@@ -395,7 +395,7 @@ export default {
     width 100%
     height 100%
 
-  // 分页不在第一页时，隐藏banner栏
+  // 分页不在第一页时,隐藏banner栏
   .banner.hide-banner
     display none
     & + .main-wrapper

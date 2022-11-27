@@ -164,12 +164,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         src: "/assets/js/autopush-baidu.js"
       },
     ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
-    [
-      'script',
-      {
-        src: "//unpkg.com/valine/dist/Valine.min.js"
-      },
-    ], 
+    // [
+    //   'script',
+    //   {
+    //     src: "//unpkg.com/valine/dist/Valine.min.js"
+    //   },
+    // ], 
   ],
 
 
@@ -181,7 +181,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         hostname: WEB_SITE,
       },
     ],
-
+    // [
+    //   {
+    //     name: 'custom-plugins',
+    //     globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+    //   }
+    // ],
     'vuepress-plugin-baidu-autopush', // 百度自动推送
 
     [

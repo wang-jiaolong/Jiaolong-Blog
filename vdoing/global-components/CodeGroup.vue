@@ -98,7 +98,8 @@ export default {
   opacity 0.85
   margin-bottom 5px
   @media (max-width $MQMobile)
-    font-size 8px
+    font-size 14px
+    //移动端tab字大小
 .theme-code-group__nav-tab-active
   border-bottom $accentColor 3px solid
   color var(--textLightenColor)
