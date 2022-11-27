@@ -248,7 +248,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         footnote: true,
         tasklist: true,
         tabs: true,
-        codetabs: true
+        codetabs: true,
+        chart: true
       },
     ]
   ],
