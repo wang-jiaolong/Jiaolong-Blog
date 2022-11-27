@@ -41,7 +41,7 @@ export default {
 
 @media (max-width: 419px) {
   .theme-code-group div[class*='language-'] {
-    margin: 0;
+    /* margin: 0; */
   }
 }
 

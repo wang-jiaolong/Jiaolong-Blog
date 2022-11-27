@@ -4,24 +4,23 @@
 export default {
   mounted() {
     setTimeout(() => {
-      this.addExpand(40);
+      this.addExpand(35);
     }, 1000);
   },
   watch: {
     $route(to, from) {
       if (to.path != from.path || this.$route.hash == "") {
         setTimeout(() => {
-          this.addExpand(40);
+          this.addExpand(35);
         }, 1000);
       }
     },
   },
   methods: {
     // 隐藏代码块后，保留 40 的代码块高度
-    addExpand(hiddenHeight = 40) {
+    addExpand(hiddenHeight = 35) {
       let modes = document.getElementsByClassName("line-numbers-mode");
       // 遍历出每一个代码块
-      console.log(modes.length)
 
       Array.from(modes).forEach((item) => {
         // 首先获取 expand 元素
@@ -30,7 +29,7 @@ export default {
         if (!expand) {
           // 获取代码块原来的高度，进行备份
           let modeHeight = item.offsetHeight;
-
+        
           // display:none 的代码块需要额外处理，图文卡片列表本质是代码块，所以排除掉
           if (
             modeHeight == 0 &&
@@ -166,13 +165,13 @@ export default {
 
 /* 代码块内容 */
 div[class*="language-"].line-numbers-mode pre {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 0.85rem;
 }
 /* 代码块的行数 */
 div[class*="language-"].line-numbers-mode .line-numbers-wrapper,
 .highlight-lines {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 /* 箭头关闭后旋转 -90 度 */
 .closed {
