@@ -318,6 +318,7 @@ export default {
             height 100%
             object-fit cover
             transition all 0.6s
+            border-radius 10px
             @media (max-width $MQMobile)
               width 100%
               height 100%
