@@ -21,16 +21,8 @@ export default [
       link: '/favorite/website/'
     },
     {
-      text: '留言板',
+      text: '留言',
       link: '/talk/'
     },
     { text: '关于', link: '/about/' },
   ]
-
-    // {
-    //   text: 'Books',
-    //   items: [
-    //     { text: '《计算机组成与设计》', link: '/pages/0bb29a/' },
-    //     { text: '《程序员的自我修养》', link: '/pages/1bb0d6/' }
-    //   ],
-    // },

@@ -1,8 +1,8 @@
 ---
 homePage: true
-title: talk
+title: 留言
 heroText: 留言板
-tagline: 留下你的痕迹
+tagline: 留下你的足迹
 permalink: /talk/
 bannerBg: /img/talk-bg.png
 sidebar: false

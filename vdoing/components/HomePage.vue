@@ -30,8 +30,8 @@
 
     <MainLayout>
       <template #mainLeft>
-        <Content class="theme-vdoing-content custom card-box" />
 
+        <Content class="theme-vdoing-content custom card-box" />
 
         <main v-if="homeData.comment" class="comment"></main>
       </template>
@@ -192,9 +192,6 @@ export default {
   },
   methods: {
     init() {
-
-      console.log("ccc")
-
       clearTimeout(this.playTimer)
       this.slide = new BScroll(this.$refs.slide, {
         scrollX: true, // x轴滚动

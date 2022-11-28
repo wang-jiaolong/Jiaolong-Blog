@@ -90,7 +90,7 @@ export default {
     showRightMenu() {
       const { $frontmatter, $themeConfig, $page } = this
       const { sidebar } = $frontmatter
-      console.log($frontmatter.toc)
+
       if ($frontmatter.toc == false){
         return false
       }

@@ -18,26 +18,24 @@ Hi，我是Jiaolong，一个浪漫且孤独的白日梦想家，一个有仪式�
 
 <br>
 
-### 📚 Book List
 
-**Reading**
+
+
+
+
+
+### 📚 Book List
 
 - 《史蒂夫·乔布斯传》（📖）
 - 《解密Instagram》（📖）
-
-**To Read**
-
 - 《FaceBook》（📘）
-
-
-**Done**
-
 - 《决策思维》（✅）
 - 《产品思维》（✅）
 
 
 
 <br>
+
 
 ### 🎈 Portfolio
 

@@ -3,6 +3,10 @@
     <div class="avatar">
       <img :src="blogger.avatar" alt="头像" title="我好看吗" />
     </div>
+    <div class="blogger">
+      <span class="name">{{ blogger.name }}</span>
+      <span class="slogan">{{ blogger.slogan }}</span>
+    </div>
     <div class="icons" v-if="social && social.icons && social.icons.length">
       <a
         v-for="(item, index) in social.icons"
@@ -13,10 +17,6 @@
         :style="{ width: 100 / social.icons.length + '%' }"
         target="_blank"
       />
-    </div>
-    <div class="blogger">
-      <span class="name">{{ blogger.name }}</span>
-      <span class="slogan">{{ blogger.slogan }}</span>
     </div>
   </aside>
 </template>
@@ -41,8 +41,12 @@ export default {
   padding-top 0 !important
   overflow hidden
   .avatar
-    width 100%
-    // height 235px
+    width 80%
+    background rgba(40,44,52,0.749)
+    border-radius 20px
+    margin 10% auto
+   
+   
     overflow hidden
     @media (max-width 900px)
       // width 205px
@@ -55,6 +59,7 @@ export default {
     border-top none
     height 35px
     line-height 35px
+    padding 10px 10%
     a
       font-size 20px
       width 33%
@@ -66,11 +71,20 @@ export default {
       &:hover
         color $accentColor
   .blogger
-    padding 0.3rem 0.95rem 0 0.95rem
+    text-align center
+    padding 0.3rem 0.95rem 0.95rem 0.95rem
     .name
       font-size 1.3rem
       display block
-      margin-bottom 6px
+      margin-bottom 15px
     .slogan
+      font-size .8rem
+      color #fff !important
+      padding 5px 20px
+      background rgba(40,44,52,0.749)
       color var(--textColor)
+      border-radius 10px
+      margin-bottom 20px
+      
+
 </style>

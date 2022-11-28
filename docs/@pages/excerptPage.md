@@ -1,6 +1,6 @@
 ---
 homePage: true
-title: Excerpt
+title: 摘录
 heroText: 摘 录
 tagline: Stay foolish ， Stay hungry .
 permalink: /excerpt/

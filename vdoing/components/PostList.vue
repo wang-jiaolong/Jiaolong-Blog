@@ -34,8 +34,8 @@
                 </h3>
               </router-link>
 
-              <div class="post-item-content" v-if="item.excerpt">
-                <div class="excerpt" v-html="item.excerpt"></div>
+              <div class="post-item-content" v-if="item.frontmatter.details">
+                <div class="excerpt" v-html="item.frontmatter.details"></div>
               </div>
 
             </div>
@@ -336,10 +336,10 @@ export default {
         border 1px solid var(--borderColor)
         border-radius 5px
         overflow-y hidden
-
         @media (max-width $MQMobile)
           width:100%
-          border none 
+          border none
+          padding-bottom: 1rem;
           border-bottom 1px solid var(--borderColor)
           height auto;
           position static
