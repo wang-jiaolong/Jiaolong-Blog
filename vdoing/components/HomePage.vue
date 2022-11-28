@@ -270,7 +270,7 @@ export default {
           margin 2rem auto 1.5rem
         h1
           margin 0
-          font-size 5.2rem
+          font-size 3rem
           padding 50px 0px
         .description, .action
           margin 1.5rem auto
