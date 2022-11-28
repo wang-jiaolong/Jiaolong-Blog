@@ -229,6 +229,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           el: "#valine-vuepress-comment",
           appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
           appKey: "QnBLYJQWgilA2hzfTMde7CuD",
+          path: '<%- frontmatter.permalink %>',
           avatar:'wavatar',
           placeholder:'Have a nice day!',
           visitor:true,

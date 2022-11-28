@@ -88,6 +88,10 @@ function renderComment (frontmatter) {
 }
 </script>
 <style lang="stylus">
+.comment
+  padding 0 1rem
 .vsys
   display none !important
+
+
 </style>

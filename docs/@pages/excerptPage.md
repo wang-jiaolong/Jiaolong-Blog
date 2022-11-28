@@ -1,10 +1,10 @@
 ---
 homePage: true
 title: Excerpt
-heroText: 摘录
-tagline: 到底记住多少命令行才会让脑袋爆炸？
+heroText: 摘 录
+tagline: Stay foolish ， Stay hungry .
 permalink: /excerpt/
-bannerBg: /img/wiki-bg.png
+bannerBg: /img/excerpt-bg.png
 article: false
 sidebar: false
 bloggerBar: false
