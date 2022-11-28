@@ -1,9 +1,9 @@
 ---
 homePage: true
 title: 关于
-heroText: About me
-bannerBg: /img/about-bg.jpg
-tagline: 无限进步
+heroText: About
+bannerBg: /img/about-bg.png
+tagline: While the world sleeps, you dream
 permalink: /about/
 # article: false
 sidebar: false

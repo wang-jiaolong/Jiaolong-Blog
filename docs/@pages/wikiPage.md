@@ -2,9 +2,9 @@
 homePage: true
 title: Wiki
 heroText: Wikis
-tagline: 到底记住多少命令行才会让脑袋爆炸？
+tagline: 到底要记住多少命令行才会让脑袋爆炸？
 permalink: /wikis/
-bannerBg: /img/wiki-bg.png
+bannerBg: /img/wiki-bg.jpg
 article: false
 sidebar: false
 bloggerBar: false

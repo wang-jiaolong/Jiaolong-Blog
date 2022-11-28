@@ -276,7 +276,7 @@ export default {
           margin 1.5rem auto
         .description
           max-width 40rem
-          font-size 1.1rem
+          font-size 1.5rem
           line-height 1.3
           opacity 0.9
         .action-button

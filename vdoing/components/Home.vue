@@ -349,7 +349,7 @@ export default {
     position relative
     overflow hidden
     .banner-conent
-      padding: 8rem 0 16rem 0
+      padding: 8rem 0 14rem 0
       max-width $homePageWidth
       margin 50px auto
       position relative
@@ -370,7 +370,7 @@ export default {
           margin 1.5rem auto
         .description
           max-width 40rem
-          font-size 1.1rem
+          font-size 1.5rem
           line-height 1.3
           opacity 0.9
         .action-button
