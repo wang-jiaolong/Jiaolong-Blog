@@ -1,26 +1,16 @@
 <template>
+
   <div class="home-wrapper">
     <!-- banner块 s -->
 
-<div ></div>
+    <div></div>
 
-    <div
-      class="banner"
-      :class="{ 'hide-banner': !showBanner }"
-      :style="bannerBgStyle"
-    >
-      <div
-        class="page-banner-conent"
-        :style="
-          !homeData.features && !homeData.heroImage
-        "
-      >
+    <div class="banner" :class="{ 'hide-banner': !showBanner }" :style="bannerBgStyle">
+      <div class="page-banner-conent" :style="
+        !homeData.features && !homeData.heroImage
+      ">
         <header class="hero">
-          <img
-            v-if="homeData.heroImage"
-            :src="$withBase(homeData.heroImage)"
-            :alt="homeData.heroAlt"
-          />
+          <img v-if="homeData.heroImage" :src="$withBase(homeData.heroImage)" :alt="homeData.heroAlt" />
           <h1 v-if="homeData.heroText" id="main-title">
             {{ homeData.heroText }}
           </h1>
@@ -40,41 +30,36 @@
 
     <MainLayout>
       <template #mainLeft>
-        <Content class="theme-vdoing-content custom card-box" style="padding-bottom:200px"/>
+        <Content class="theme-vdoing-content custom card-box" />
+
+
+        <main v-if="homeData.comment" class="comment"></main>
       </template>
 
       <template v-if="!homeData.hideRightBar" #mainRight>
         <BloggerBar v-if="$themeConfig.blogger && homeData.bloggerBar" />
-        <CategoriesBar
-          v-if="
-            $themeConfig.category !== false &&
-            $categoriesAndTags.categories.length &&
-            homeData.categoriesBar
-          "
-          :categoriesData="$categoriesAndTags.categories"
-          :length="10"
-        />
-        <TagsBar
-          v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length && homeData.tagsBar"
-          :tagsData="$categoriesAndTags.tags"
-          :length="30"
-        />
+        <CategoriesBar v-if="
+          $themeConfig.category !== false &&
+          $categoriesAndTags.categories.length &&
+          homeData.categoriesBar
+        " :categoriesData="$categoriesAndTags.categories" :length="10" />
+        <TagsBar v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length && homeData.tagsBar"
+          :tagsData="$categoriesAndTags.tags" :length="30" />
 
         <!-- <webInfo /> -->
 
 
-        <div
-          class="custom-html-box card-box"
-          v-if="homeSidebarB && homeData.homeSidebarB"
-          v-html="homeSidebarB"
-        ></div>
+        <div class="custom-html-box card-box" v-if="homeSidebarB && homeData.homeSidebarB" v-html="homeSidebarB"></div>
       </template>
-
 
 
     </MainLayout>
 
+
+
   </div>
+
+
 </template>
 
 <script>
@@ -157,7 +142,7 @@ export default {
       };
     }
   },
-  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination   },
+  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
   created() {
     this.total = this.$sortHomePosts.length
   },
@@ -271,7 +256,7 @@ export default {
     overflow hidden
     .page-banner-conent
       max-width $homePageWidth
-      margin 80px auto
+      margin 100px auto
       position relative
       z-index 1
       overflow hidden

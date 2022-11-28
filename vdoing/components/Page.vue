@@ -38,6 +38,8 @@
         :moreArticle="updateBarConfig && updateBarConfig.moreArticle"
         v-if="isShowUpdateBar"
       />
+      <main v-if="$frontmatter.comment" class="comment"></main>
+
     </main>
   </div>
 </template>

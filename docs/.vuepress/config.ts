@@ -220,19 +220,23 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    //     [
-    //   "vuepress-plugin-comment",
-    //   {
-    //     choosen: "valine",
-    //     // options选项中的所有参数，会传给Valine的配置
-    //     options: {
-    //       el: "#valine-vuepress-comment",
-    //       appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
-    //       appKey: "QnBLYJQWgilA2hzfTMde7CuD",
-    //       path: '<%- frontmatter.to.path %>'
-    //     }
-    //   }
-    // ],
+        [
+          resolve(__dirname, '../../vuepress-plugin-comment'),
+      {
+        choosen: "valine",
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: "#valine-vuepress-comment",
+          appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
+          appKey: "QnBLYJQWgilA2hzfTMde7CuD",
+          avatar:'wavatar',
+          placeholder:'Have a nice day!',
+          visitor:true,
+          //requiredFields:['mail']
+          recordIP:false
+        }
+      }
+    ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {

@@ -5,7 +5,7 @@ heroText: About me
 bannerBg: /img/about-bg.jpg
 tagline: 无限进步
 permalink: /about/
-article: false
+# article: false
 sidebar: false
 bloggerBar: true
 ---

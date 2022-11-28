@@ -42,7 +42,7 @@ export default {
 <style lang='stylus'>
 // $mobileSidebarWidth = $sidebarWidth * 0.82
 .footer
-  padding 5rem 1.5rem 2.5rem !important
+  padding 8rem 1.5rem 2.5rem !important
   text-align center
   color var(--textColor)
   box-sizing border-box
