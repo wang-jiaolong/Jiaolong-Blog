@@ -8,7 +8,7 @@
       </dl>
     </div>
     <div class="catalogue-wrapper" v-if="isStructuring">
-      <div class="catalogue-title">目录</div>
+      <div class="catalogue-title">Catalog</div>
       <div class="catalogue-content">
         <template v-for="(item, index) in getCatalogueList()">
           <dl v-if="type(item) === 'array'" :key="index" class="inline">
@@ -31,8 +31,9 @@
               <!-- 二级目录 -->
               <template v-for="(c, i) in item.children">
                 <template v-if="type(c) === 'array'">
-                  <router-link :to="c[2]" :key="i"
-                    >{{ `${index + 1}-${i + 1}. ${c[1]}` }}
+                  <router-link :to="c[2]" :key="i">
+                    <!-- {{ `${index + 1}-${i + 1}. ${c[1]}` }} -->
+                    {{ `${c[1]}` }}
                     <span class="title-tag" v-if="c[3]">
                       {{ c[3] }}
                     </span>
@@ -170,7 +171,7 @@ dl, dd
   border-bottom 1px solid var(--borderColor)
   img
     width 80px
-    height 80px
+    //height 80px
     border-radius 2px
     margin-right 1rem
   .column-info
@@ -200,6 +201,7 @@ dl, dd
           margin-top -($navbarHeight)
           padding-top $navbarHeight
       dt
+        font-weight: bolder;
         font-size 1.1rem
         &:hover .header-anchor
           opacity 1
