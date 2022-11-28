@@ -1,8 +1,52 @@
-# Jiaolong 's Blog
+## Jiaolong 's Blog
 
-> 之前的博客也捣鼓了很久，但开始审美疲劳了，最近有点空余时间，想换个风格。发现Gungnir很好看，但捣鼓了一天后，发现一些不足，在修改过程中，由于本人不擅长前端代码，一些关键代码难以修改。而vdoing的工具链及注释都很清楚，遂决定重新搭建一个基于voding主题的Gungnir风格博客。感谢两位开发大佬。下一个目标，学一下vue，从头开发一个vuepress主题。
+[Jiaolong-Blog](https://jiaolong.xyz/)
+
+> 之前的博客也捣鼓了很久，但开始审美疲劳了，最近有点空余时间，想换个风格。发现Gungnir很好看，但捣鼓了一天后，发现一些不足，在修改过程中，由于本人不擅长前端代码，一些关键代码难以修改。而vdoing的工具链及注释都很清楚，遂决定重新搭建一个基于voding主题的Gungnir风格博客。感谢两位大佬。下一个目标，学一下vue，从头开发一个vuepress主题。
+
+## 关于
+
+本站使用`vuepress`+`github`+`vercel`搭建而成。vuepress作为博客模板，github作为项目仓库，利用vercel自动部署项目。使用 [vdoing](https://doc.xugaoyi.com/) 作为模板，参考 [Gungnir](https://v2-vuepress-theme-gungnir.vercel.app/) 的配色风格进行修改。主要修改如下：
+
+- 增加主页大图显示
+- 增加功能页如Wiki、留言、关于、摘录、关于。
+- 分类、标签合为一个页面
+- 调整卡片链接样式
+- 若干地方的个人向美化
+
+改的代码有点多，详细参考本仓库：
+
+[wang-jiaolong/Jiaolong-Blog](https://github.com/wang-jiaolong/Jiaolong-Blog)
 
 ## 介绍
 
-本站使用`vuepress`+`github`+`vercel`搭建而成。vuepress作为博客模板，github作为项目仓库，利用vercel自动部署项目。
+本博客分为首页、分类、归档、Wiki、摘录、导航、留言、关于8个页面，分别用来展示以下内容：
 
+- 首页：记录一些project，或是思考。
+- 分类：以分类、标签的形式查看所有笔记。
+- 归档：以归档的形式查看所有笔记。
+- Wiki：记录各领域的知识及常用命令，毕生所学。
+- 摘录：一些名人名言。
+- 导航：日常用到的比较好的一些工具/资源网站。
+- 留言：欢迎驻足，让我知道你来过。
+- 关于：关于我的一些介绍，希望以后能有更多的经历可以写。
+
+## 插件
+
+- [vuepress-plugin-md-enhance](https://vuepress-theme-hope.github.io/v1/md-enhance/): VuePress2 Markdown enhancement plugin📄
+
+
+## todo
+
+- banner到顶时自动变透明
+- tags头图
+- 文章内头图
+- post奇偶位置
+
+## Feature
+
+未来有时间的话，还是希望能好好学一下Vue，自己开发一套博客模板。
+
+## 致谢
+
+再次感谢 [vdoing](https://doc.xugaoyi.com/) 和 [Gungnir](https://v2-vuepress-theme-gungnir.vercel.app/) 的作者，不论是技术上，还是内容上，都有太多值得学习和借鉴的地方。

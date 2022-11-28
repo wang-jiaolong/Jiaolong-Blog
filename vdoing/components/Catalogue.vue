@@ -163,8 +163,8 @@ export default {
   margin-left 0rem
   transform translate(0, -0.05rem)
   display inline-block
-dl, dd
-  margin 0
+//dl, dd
+  //margin 0
 .column-wrapper
   margin-top 1rem
   display flex

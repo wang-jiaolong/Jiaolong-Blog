@@ -195,6 +195,9 @@ export default {
 .theme-mode-dark
   .theme-vdoing-wrapper
     --linesColor rgba(125, 125, 125, 0.05)
+.chart-js
+  padding 1rem
+
 /**
  * 右侧菜单的自适应
  */
