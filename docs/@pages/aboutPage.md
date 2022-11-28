@@ -8,6 +8,7 @@ permalink: /about/
 # article: false
 sidebar: false
 bloggerBar: true
+hide: true
 ---
 
 ### 🧑🏻 About Me
