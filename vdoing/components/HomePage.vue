@@ -390,7 +390,7 @@ export default {
       .pagination
         margin-bottom 3rem
       .theme-vdoing-content
-        padding 0 2rem
+        padding 0 5rem
         overflow hidden
         border none
         padding-top 2rem

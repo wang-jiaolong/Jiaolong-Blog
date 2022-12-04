@@ -13,6 +13,12 @@ tagsBar: false
 categoriesBar: false
 ---
 
+::: theorem
+
+For the first 30 years of your life, you make your habits. For the last 30 years of your life, your habits make you.
+::: right
+—— 印度谚语
+:::
 
 ::: theorem
 
