@@ -14,7 +14,7 @@
       v-show="showCommentBut"
       @click="scrollToComment"
     />
-    <!-- <div
+ <div
       title="主题模式"
       class="button blur theme-mode-but iconfont icon-zhuti"
       @mouseenter="showModeBox = true"
@@ -40,7 +40,7 @@
           </li>
         </ul>
       </transition>
-    </div> -->
+    </div> 
   </div>
 </template>
 
@@ -73,11 +73,6 @@ export default {
           name: '深色模式',
           icon: 'icon-yejianmoshi',
           KEY: 'dark'
-        },
-        {
-          name: '阅读模式',
-          icon: 'icon-yuedu',
-          KEY: 'read'
         }
       ],
       _scrollTimer: null,
