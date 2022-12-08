@@ -394,6 +394,9 @@ export default {
         overflow hidden
         border none
         padding-top 2rem
+        @media (max-width $MQMobile)
+          padding 0 2rem
+
         //&>:first-child
           //padding-top 2rem
         //&>:last-child
