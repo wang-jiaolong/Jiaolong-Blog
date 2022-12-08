@@ -179,10 +179,10 @@ export default {
           color $accentColor
           background #f9f9f9
         @media (max-width $contentWidth + 80)
-          padding 0.5rem 1rem
+          padding 0.5rem 0.2rem
           font-weight normal
           &:hover
-            padding-left 1.5rem
+            padding-left 1rem
         span.date
           opacity 0.6
           font-size 0.85rem
