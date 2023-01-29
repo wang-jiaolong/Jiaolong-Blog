@@ -15,11 +15,7 @@
             <div class="post-item-info">
 
 
-              <div class="date">
-              <span title="创建时间" class="iconfont icon-riqi" v-if="item.frontmatter.date">
-                {{item.frontmatter.date.split(' ')[0]}}
-              </span>
-                </div>
+           
               <router-link :to="item.path" class="post-item-title">
 
                 <h2>
@@ -37,6 +33,12 @@
               <div class="post-item-content" v-if="item.frontmatter.details">
                 <div class="excerpt" v-html="item.frontmatter.details"></div>
               </div>
+
+              <div class="date">
+              <span title="创建时间" class="iconfont icon-riqi" v-if="item.frontmatter.date">
+                {{item.frontmatter.date.split(' ')[0]}}
+              </span>
+                </div>
 
             </div>
           </div>
@@ -295,7 +297,7 @@ export default {
       .post-item
         color var(--textColor)
         position: relative;
-        margin: 80px auto 100px;
+        margin: 20px 0px;
         padding: 0 40px;
         @media (max-width $MQMobile)
           margin 40px auto 0
@@ -304,8 +306,8 @@ export default {
           //max-width 400px
         .post-item-img
           display inline-block
-          width 550px
-          height 340px
+          width 450px
+          height 240px
           overflow hidden
           position relative
           z-index 1
@@ -326,16 +328,18 @@ export default {
           &:hover
             img 
               transform scale(1.1)
+              
       .post-item-info
-        left 520px
+        left 480px
         position absolute
         text-align left
-        top 30px
-        height 340px
-        width 490px
-        border 1px solid var(--borderColor)
-        border-radius 5px
+        top 0px
+        height 240px
+        width 500px
+        background var(--codeBg)
+        border-radius 15px
         overflow-y hidden
+      
         @media (max-width $MQMobile)
           width:100%
           border none
@@ -347,17 +351,18 @@ export default {
       .date
         color #a9a9a9
         font-size 14px
-        margin 80px 0 0 100px
+        margin 40px 0 0 50px
+        float b
         @media (max-width $MQMobile)
           margin-left 5px
           margin-top 10px
         span
           font-size 14px
       h2
-        font-size 30px
+        font-size 24px
         font-weight 400
         line-height 1.1
-        margin 10px 100px 0 100px
+        margin 30px 10px 0 50px
         color var(--textColor)
         border-bottom none
         @media (max-width $MQMobile)
@@ -367,7 +372,7 @@ export default {
       h3
         font-size: 16px;
         font-weight: 400;
-        margin: 10px 100px 0 100px;
+        margin: 10px 100px 0 50px;
         line-height: 1.8;      
         color var(--textColor)
         @media (max-width $MQMobile)
@@ -375,7 +380,7 @@ export default {
       .post-item-content
         line-height: 1.8;
         font-size: 14px;
-        margin: 10px 100px 0 100px;
+        margin: 10px 100px 0 50px;
         @media (max-width $MQMobile)
           display: none;
 
