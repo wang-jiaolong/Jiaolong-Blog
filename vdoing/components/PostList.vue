@@ -305,7 +305,7 @@ export default {
           padding: 0 30px
           //max-width 400px
         .post-item-img
-          display inline-block
+          //display inline-block
           width 450px
           height 240px
           overflow hidden
@@ -314,7 +314,7 @@ export default {
           cursor pointer
           @media (max-width $MQMobile)
             width 100%
-            height 100%
+            height 200px
           img
             width 100%
             height 100%
@@ -343,17 +343,18 @@ export default {
         @media (max-width $MQMobile)
           width:100%
           border none
-          padding-bottom: 1rem;
-          border-bottom 1px solid var(--borderColor)
+          //border-bottom 1px solid var(--borderColor)
           height auto;
           position static
           border-radius 0px
+          background none
       .date
         color #a9a9a9
         font-size 14px
         margin 40px 0 0 50px
         float b
         @media (max-width $MQMobile)
+          display none
           margin-left 5px
           margin-top 10px
         span
@@ -367,7 +368,11 @@ export default {
         border-bottom none
         @media (max-width $MQMobile)
           margin-left 5px
-          font-size 24px
+          margin-top 10px
+          margin-left 10px
+          font-size 16px
+         
+          
 
       h3
         font-size: 16px;
@@ -377,6 +382,7 @@ export default {
         color var(--textColor)
         @media (max-width $MQMobile)
           margin-left 5px
+          display none
       .post-item-content
         line-height: 1.8;
         font-size: 14px;
