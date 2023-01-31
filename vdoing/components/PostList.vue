@@ -297,7 +297,7 @@ export default {
       .post-item
         color var(--textColor)
         position: relative;
-        margin: 20px 0px;
+        margin: 40px 0px;
         padding: 0 40px;
         @media (max-width $MQMobile)
           margin 40px auto 0
