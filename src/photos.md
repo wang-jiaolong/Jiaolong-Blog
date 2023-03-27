@@ -1,17 +1,19 @@
 ---
 article: false
-# title: Photos
+title: Photos
+icon: pic
 pageInfo: false
 breadcrumb: false
 toc: false
 ---
 
 
-
-
 <div class="image-preview">
+
+
+
   <img src="/photos/001.png" />
-  <img src="/photos/002.jpg" />
+  <img src="/photos/002.jpg" alter="aaaaaa" />
   <img src="/photos/003.jpg" />
   <img src="/photos/004.png" />
   <img src="/photos/005.jpg" />
@@ -25,17 +27,18 @@ toc: false
 <!-- markdownlint-disable -->
 
 
+
 <style>
 
-/* .page-title{
+.page-title{
             max-width: 1024px !important;
 }
 
     .theme-hope-content {
         max-width: 1024px !important;
-    } */
+    }
 
-  .image-preview {
+  .image-preview , .image-preview > figure {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -43,12 +46,12 @@ toc: false
     
   }
 
-  .image-preview > img {
+  .image-preview > img, .image-preview > figure > img {
      box-sizing: border-box;
      width: 33.3% !important;
      padding: 9px;
      border-radius: 16px;
-         height: 11rem;
+    height: 14rem;
     object-fit: cover;
   }
 
@@ -61,6 +64,8 @@ toc: false
   @media (max-width: 419px){
     .image-preview > img {
       width: 100% !important;
+          height: 13rem;
+
     }
   }
 </style>

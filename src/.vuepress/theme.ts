@@ -93,7 +93,7 @@ export default hopeTheme({
         "SiteInfo"
       ],
     },
-
+    // pure: true,
     blog: true,
 
     // comment: {
