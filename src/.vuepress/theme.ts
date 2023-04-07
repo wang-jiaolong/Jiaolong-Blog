@@ -102,6 +102,7 @@ export default hopeTheme({
 
     blog: {
       excerptLength: 0,
+      photos: "/photos/"
     },
 
     // comment: {
