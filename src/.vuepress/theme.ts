@@ -20,6 +20,8 @@ export default hopeTheme({
   // repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "docs",
+  contributors:false,
+  lastUpdated:false,
 
   // blog: {
   //   medias: {
@@ -58,6 +60,8 @@ export default hopeTheme({
   //   },
   // },
 
+
+
   locales: {
     "/": {
       // navbar
@@ -94,7 +98,11 @@ export default hopeTheme({
       ],
     },
     // pure: true,
-    blog: true,
+    // blog: true,
+
+    blog: {
+      excerptLength: 0,
+    },
 
     // comment: {
     //   // @ts-expect-error: You should generate and use your own comment service

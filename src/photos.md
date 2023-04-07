@@ -10,10 +10,6 @@ toc: false
 
 <div class="image-preview">
 
-
-
-  <img src="/photos/001.png" />
-  <img src="/photos/002.png" />
   <img src="/photos/003.png" />
   <img src="/photos/004.png" />
   <img src="/photos/005.png" />

@@ -1,6 +1,5 @@
 ---
 title: 物品指南-从idea到上线
-details: 聊一聊我是为什么开发这款app的，从idea到上线
 date: 2021-12-24
 icon: page
 star: true

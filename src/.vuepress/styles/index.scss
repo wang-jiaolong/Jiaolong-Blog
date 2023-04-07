@@ -1,1 +1,7 @@
 // place your custom styles here
+@media screen and (max-width: 419px) {
+    .article-item .article {
+    border-radius: 0;
+    margin: 0rem 0.75rem;
+}
+}
