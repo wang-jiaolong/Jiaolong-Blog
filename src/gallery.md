@@ -1,6 +1,6 @@
 ---
 article: false
-title: Photos
+title: Gallery
 icon: pic
 pageInfo: false
 breadcrumb: false
