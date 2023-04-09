@@ -19,7 +19,7 @@ toc: false
   <img src="/photos/009.png" />
   <img src="/photos/010.png" />
   <img src="/photos/011.png" />
-  <img src="/photos/012.JPG" />
+  <img src="/photos/012.png" />
 
 
 </div>
