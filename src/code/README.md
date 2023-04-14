@@ -7,4 +7,10 @@ pageInfo: false
 ---
 
 
-<AutoCatalog base='/code/' />
+```card
+title: Mr.Hope
+desc: Where there is light, there is hope
+logo: https://mrhope.site/logo.svg
+link: /code/C
+color: rgb(40 44 52)
+```
