@@ -8,13 +8,13 @@
 
 
 .vp-card{
-    width: 40% !important;
+    width: 41% !important;
     padding: 0.5rem !important;
     margin: 0.5rem 0.5rem !important;
     }
     .vp-card-logo{
-        width: 2rem !important;
-        height: 2rem !important;
+        width: 1.9rem !important;
+        height: 1.9rem !important;
     }
     .vp-card-desc{
         display: none;
@@ -24,12 +24,18 @@
 
     }
     .vp-card-title{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .vp-card-logo{
         margin-right:0.5rem;
     }
+
+
+    .theme-hope-content:not(.custom){
+        padding: 1rem 0.75rem;
+    }
+
 }
 
 .article-item .article, 
