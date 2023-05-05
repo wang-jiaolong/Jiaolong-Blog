@@ -8,8 +8,15 @@ pageInfo: false
 
 
 ```card
-title: Mr.Hope
-desc: Where there is light, there is hope
+title: C语言
+desc: 回炉重造
+logo: https://mrhope.site/logo.svg
+link: /code/C
+```
+
+```card
+title: Swift
+desc: 回炉重造
 logo: https://mrhope.site/logo.svg
 link: /code/C
 ```
