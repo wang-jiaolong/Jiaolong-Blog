@@ -101,7 +101,8 @@ export default hopeTheme({
     // blog: true,
 
     blog: {
-      excerptLength: 0
+      excerptLength: 50,
+      filter: (page) => page.frontmatter.post
     },
 
     // comment: {

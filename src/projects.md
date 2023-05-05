@@ -1,5 +1,6 @@
 ---
 title: Projects
+permalink: /projects
 icon: app
 article: false
 pageInfo: false

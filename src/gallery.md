@@ -1,6 +1,7 @@
 ---
 article: false
 title: Gallery
+permalink: /gallery
 icon: pic
 pageInfo: false
 breadcrumb: false
