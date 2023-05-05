@@ -11,6 +11,6 @@ pageInfo: false
 title: Mr.Hope
 desc: Where there is light, there is hope
 logo: https://mrhope.site/logo.svg
-link: https://www.jiaolong.xyz/code/C
+link: /code/C
 color: rgb(40 44 52)
 ```
