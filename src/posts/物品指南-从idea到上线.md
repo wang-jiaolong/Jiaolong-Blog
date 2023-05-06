@@ -96,6 +96,6 @@ notion的特点是all in one，什么都可以记录，它的数据库系统自�
 **本文同步发布于**：
 
 
-<SiteInfo name="发布于「少数派」"   desc="「物品指南」- 从idea到上线" url="https://sspai.com/post/71462" preview="./img/mythings.png"  />
+<SiteInfo name="「少数派」"   desc="「物品指南」- 从idea到上线" url="https://sspai.com/post/71462" preview="./img/mythings.png"  />
 
 

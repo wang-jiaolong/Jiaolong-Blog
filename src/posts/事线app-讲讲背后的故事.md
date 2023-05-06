@@ -176,5 +176,5 @@ star: true
 **本文同步发布于**：
 
 
-<SiteInfo name="发布于「少数派」"   desc="「事线」讲讲App背后的故事" url="https://sspai.com/post/77993" preview="./img/eventline.png" />
+<SiteInfo name="「少数派」"   desc="「事线」讲讲App背后的故事" url="https://sspai.com/post/77993" preview="./img/eventline.png" />
 
