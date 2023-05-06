@@ -1,6 +1,6 @@
 ---
-title: Code
-icon: code
+title: Wiki
+icon: wiki
 breadcrumb: false
 article: false
 pageInfo: false
