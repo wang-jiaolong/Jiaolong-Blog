@@ -5,6 +5,14 @@
     margin: 0rem 1.25rem;
 }
 
+
+.article-item .title{
+    font-size: 1.1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+}
 .article-excerpt p:last-child{
     overflow: hidden;
     -webkit-line-clamp: 3;
