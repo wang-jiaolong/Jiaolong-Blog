@@ -3,18 +3,12 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
-
   locales: {
     "/": {
       lang: "zh-CN",
       title: "Jiaolong 's Blog",
       description: "Jiaolong 's Blog",
     }
-    // "/zh/": {
-    //   lang: "zh-CN",
-    //   title: "博客演示",
-    //   description: "vuepress-theme-hope 的博客演示",
-    // },
   },
 
   theme,
@@ -22,3 +16,4 @@ export default defineUserConfig({
   // Enable it with pwa
   // shouldPrefetch: false,
 });
+  
