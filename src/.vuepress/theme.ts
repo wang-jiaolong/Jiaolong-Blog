@@ -66,7 +66,7 @@ export default hopeTheme({
     "/": {
       // navbar
       navbar: enNavbar,
-
+      breadcrumb: false,
       // sidebar
       sidebar: enSidebar,
 
