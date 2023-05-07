@@ -1,7 +1,7 @@
 ---
 title: 物品指南-从idea到上线
 date: 2021-12-24
-icon: page
+icon: app
 star: true
 post: true
 category:
