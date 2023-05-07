@@ -45,8 +45,7 @@ export default hopeTheme({
 
       blog: {
         description: "A Solo Developer",
-        intro: "/about",
-        articleInfo: ["Author","Date","PageView","Category","Word"]
+        intro: "/about"
       }
 
     }
