@@ -4,6 +4,6 @@ export const enSidebar = sidebar({
   "/posts/": "structure",
   "/wiki/": "structure",
   "/study/": "structure",
-  "/posts/weekly": "structure"
+  "/weekly/": "structure"
 
 });

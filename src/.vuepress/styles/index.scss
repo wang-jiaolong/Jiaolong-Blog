@@ -99,3 +99,11 @@ box-shadow:0px 1px 5px 0 var(--card-shadow) !important;
 .page-reading-time-info{
     display: none !important;
 }
+
+.sidebar > .sidebar-links > li > .sidebar-link{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    font-size: 1rem;
+}
