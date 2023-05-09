@@ -2,7 +2,7 @@
 article: false
 title: About
 permalink: /about
-icon: about
+icon: info
 pageInfo: false
 breadcrumb: false
 toc: false

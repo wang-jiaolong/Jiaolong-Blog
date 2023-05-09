@@ -1,6 +1,6 @@
 ---
 title: Wiki
-icon: wiki
+icon: repo
 breadcrumb: false
 article: false
 pageInfo: false
