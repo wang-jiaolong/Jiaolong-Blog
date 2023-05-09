@@ -31,7 +31,7 @@ toc: false
 
 
 
-<style>
+<!-- <style>
 
 .page-title{
             max-width: 1024px !important;
@@ -71,6 +71,6 @@ toc: false
 
     }
   }
-</style>
+</style> -->
 
 <!-- markdownlint-restore -->
