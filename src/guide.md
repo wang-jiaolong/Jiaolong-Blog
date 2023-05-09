@@ -7,6 +7,31 @@ pageInfo: false
 breadcrumb: false
 ---
 
-### 软件安装
 
-- [VSCode 安装Latex环境](http://www.taodudu.cc/news/show-3404331.html) 
+### 个人网站
+
+> 一些有趣的人和他的个人网站
+
+- [翁天信](https://www.dandyweng.com/) —— “你好，我是翁天信，一个自学者”
+- [王禹效 Legolas](https://www.legolas.me/) —— 心光日记开发者
+
+
+
+<br>
+<br>
+
+### 技术博客
+
+>一些时常会拜读的技术博客
+
+- [肘子的Swift记事本](https://www.fatbobman.com/) —— Swift技术博客
+
+
+<br>
+<br>
+
+### 值得一读
+
+> 一些值得一读的文章
+
+[Go Deeper, Not Wider](https://www.raptitude.com/2017/12/go-deeper-not-wider/) —— 走得更深，而不是更宽

@@ -6,7 +6,8 @@ export const enNavbar = navbar([
   // { text: "Study", icon: "study", link: "/study" },
   { text: "Project", icon: "app", link: "/projects" },
   { text: "Gallery", icon: "pic", link: "/gallery" },
-  { text: "About", icon: "info", link: "/about" },
+  { text: "Guide", icon: "guide", link: "/guide" },
+  { text: "About", icon: "info", link: "/about" }
 
   // { text: "Timeline", icon: "time", link: "/timeline" }
 
