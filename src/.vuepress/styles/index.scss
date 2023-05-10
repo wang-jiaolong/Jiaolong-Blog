@@ -130,3 +130,11 @@ box-shadow:0px 1px 5px 0 var(--card-shadow) !important;
 .auto-catalog-wrapper .child-title{
     font-size: 1.2rem;
 }
+
+.sidebar-group .sidebar-link{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    padding: 4px 8px 4px 10px;
+}
