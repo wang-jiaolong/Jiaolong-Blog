@@ -6,6 +6,7 @@ icon: info
 pageInfo: false
 breadcrumb: false
 toc: false
+comment: true
 ---
 
 
@@ -19,7 +20,7 @@ toc: false
 
 
 
-## Reading
+## Reading List
 
 - [x] 《小米传》
 - [ ] 《乔布斯传》
@@ -36,7 +37,7 @@ toc: false
 
 
 
-<TimelineList />
+<br><br><br>
 
 
 <style>
