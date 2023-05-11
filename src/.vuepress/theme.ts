@@ -76,11 +76,13 @@ export default hopeTheme({
       articleInfo: ["Author","Date","PageView","Category","Word"]
 
     },
+    
+      comment: {
+        comment: false,
+        provider: "Waline",
+        serverURL: "blog-comment-nine-phi.vercel.app", // your server url
+      },
 
-    // comment: {
-    //   // @ts-expect-error: You should generate and use your own comment service
-    //   provider: "Giscus",
-    // },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
