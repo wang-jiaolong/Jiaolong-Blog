@@ -142,3 +142,12 @@ box-shadow:0px 1px 5px 0 var(--card-shadow) !important;
 .wl-meta{
     display: none;
 }
+.task-list-container{
+    list-style-type:none;
+    padding: 0px;
+}
+
+input[type=checkbox].task-list-item-checkbox{
+    scale: 1.2;
+    width: 2px;
+}

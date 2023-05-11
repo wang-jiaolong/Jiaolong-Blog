@@ -80,7 +80,7 @@ export default hopeTheme({
       comment: {
         comment: false,
         provider: "Waline",
-        serverURL: "blog-comment-nine-phi.vercel.app", // your server url
+        serverURL: "comment.jiaolong.xyz", // your server url
       
       },
 
