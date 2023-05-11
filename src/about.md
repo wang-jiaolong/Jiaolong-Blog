@@ -6,6 +6,7 @@ icon: info
 pageInfo: false
 breadcrumb: false
 toc: false
+comment: true
 ---
 
 
@@ -33,6 +34,10 @@ toc: false
 - [ ] 自己写一个博客主题
 - [ ] 有自己的工作室
 - [ ] 开一家书店
+
+
+
+
 
 
 <style>
