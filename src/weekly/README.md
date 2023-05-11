@@ -6,6 +6,7 @@ article: false
 pageInfo: false
 toc: false
 sidebar: false
+comment: true
 ---
 
 
@@ -13,3 +14,8 @@ sidebar: false
 <!-- 周记也会同步发布在我的个人公众号上，欢迎你的关注。 -->
 
 <AutoCatalog base='/weekly/' />
+
+
+
+
+<br><br><br>
