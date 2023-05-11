@@ -12,7 +12,7 @@ breadcrumb: false
 
 > 一些有趣的人和他的个人网站
 
-- [Linmi - 探索未知，沉淀新知，迭代认知。](https://linmi.cc/) —— Notion中文社区主理人
+- [Linmi - 探索未知，沉淀新知，迭代认知。](https://linmi.cc/) —— Notion中文社区负责人
 - [翁天信 · Dandy Weng](https://www.dandyweng.com/) —— “你好，我是翁天信，一个自学者”
 - [王禹效 Legolas](https://www.legolas.me/) —— 心光日记开发者
 

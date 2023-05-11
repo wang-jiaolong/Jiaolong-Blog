@@ -26,14 +26,14 @@ comment: true
 title: 事线 - 串事成线
 desc: 一个多项目时间线工具
 logo: /icon/eventline.png
-link: /code/C
+link: https://www.eventline.cc/
 ```
 
 ```card
 title: 物品指南
 desc: 打造你的生活数据库
 logo: /icon/mythings.png
-link: /code/C
+link: https://help.mythings.jiaolong.xyz/
 ```
 
 
