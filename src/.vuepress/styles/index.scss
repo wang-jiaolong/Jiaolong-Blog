@@ -41,28 +41,22 @@ html[data-theme=dark] blockquote{
 
 .vp-card{
     border-radius: 0.4rem;
-    width: 40% !important;
-    padding: 0.5rem !important;
-    margin: 0.4rem !important;
+    width: 85% !important;
+    margin: 0.5rem !important;
     }
+
     .vp-card-logo{
         width: 1.9rem !important;
         height: 1.9rem !important;
     }
-    .vp-card-desc{
-        display: none;
-    }
-    .vp-card hr{
-        display: none;
 
-    }
     .vp-card-title{
         font-size: 0.9rem;
     }
 
-    .vp-card-logo{
-        margin-right:0.5rem;
-    }
+    // .vp-card-logo{
+    //     margin-right:0.5rem;
+    // }
 
 
     // .theme-hope-content:not(.custom){
@@ -71,6 +65,15 @@ html[data-theme=dark] blockquote{
 
 }
 
+
+.vp-card-title{
+    font-size: 1rem;
+}
+
+.vp-card-logo{
+    border-radius: 20%;
+
+}
 .article-item .article, 
 .page .blog-info-wrapper .blogger-info,
 .page .blog-info-list
@@ -95,7 +98,7 @@ h2.main-title{
     border: 1px solid #7e7e7e2b;
     border-radius: 0.5rem;
 width: 26%;
-box-shadow:0px 1px 5px 0 var(--card-shadow) !important;
+box-shadow:0px 0px 10px 0px rgb(94 94 94 / 10%) !important;
 }
 .article-excerpt p:last-child{
     overflow: hidden;
@@ -137,6 +140,13 @@ box-shadow:0px 1px 5px 0 var(--card-shadow) !important;
     word-break: break-all;
     white-space: nowrap;
     padding: 4px 8px 4px 10px;
+}
+
+.vp-card-desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
 }
 
 .wl-meta{
