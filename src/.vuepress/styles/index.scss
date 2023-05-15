@@ -161,3 +161,12 @@ input[type=checkbox].task-list-item-checkbox{
     scale: 1.2;
     width: 2px;
 }
+
+.page-nav .prev,.page-nav .next{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar-sub-headers{
+    display: none;
+}
