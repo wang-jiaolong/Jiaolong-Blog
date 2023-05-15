@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: Jiaolong 's Blog
+title: Home
 image: /img/rabbit.png
 bgImage : /home.jpg
 heroText: Jiaolong 's Blog

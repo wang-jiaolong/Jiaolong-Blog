@@ -1,6 +1,6 @@
 ---
 article: false
-title: About Me
+title: About
 permalink: /about
 icon: info
 pageInfo: false

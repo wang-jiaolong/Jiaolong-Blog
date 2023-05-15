@@ -1,5 +1,5 @@
 ---
-title: Jiaolong 's Weekly
+title: Weekly
 icon: page
 breadcrumb: false
 article: false
