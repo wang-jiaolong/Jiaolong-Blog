@@ -2,7 +2,8 @@
 home: true
 layout: BlogHome
 icon: home
-title: Home
+title: Jiaolong 's Blog
+image: /img/rabbit.png
 bgImage : /home.jpg
 heroText: Jiaolong 's Blog
 tagline: 无限进步
