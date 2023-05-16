@@ -16,12 +16,3 @@ heroFullScreen: false
 
 # footer: customize your footer text
 ---
-
-
-<style>
-    
-.blog-info-wrapper{
-    display:unset;
-}
-
-</style>
