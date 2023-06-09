@@ -80,7 +80,7 @@ export default hopeTheme({
 
     blog: {
       excerptLength: 50,
-      filter: (page) => page.frontmatter.post,
+      // filter: (page) => page.frontmatter.post,
       sorter: (pageA, pageB) =>compareDate(pageA.frontmatter.date - pageB.frontmatter.date),
       articleInfo: ["Author","Date","PageView","Category","Word"]
 

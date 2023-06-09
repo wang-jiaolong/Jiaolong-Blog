@@ -7,4 +7,5 @@ export const enSidebar = sidebar({
   "/weekly/": "structure",
   "/en/weekly/": "structure"
 
+
 });
