@@ -24,7 +24,7 @@ export default defineConfig({
       '/weekly/': [
         {
           text: '2023',
-          items: [
+          items: [   
             { text: 'No.01 | 就这样，从这周开始写周记', link: '/weekly/2023/01' },
             { text: 'No.02 | 克服不了的完美主义', link: '/weekly/2023/02' },
             { text: 'No.03 | 可编辑的数据才有价值', link: '/weekly/2023/03' },

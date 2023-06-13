@@ -11,3 +11,8 @@
         text-overflow:ellipsis;
     }
  } 
+
+ .vp-doc div[class*='language-']{
+    margin: 0 0;
+    border-radius: 5px;
+ }
