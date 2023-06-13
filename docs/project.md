@@ -35,6 +35,6 @@ features:
     icon: 
       src: ./icon/vite.svg
     linkText: 敬请期待
-    link: /pages/theme/theme
+    # link: /pages/theme/theme
 ---
 
