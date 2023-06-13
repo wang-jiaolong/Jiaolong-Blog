@@ -12,18 +12,30 @@ hero:
     # - theme: brand
     #   text: 我的周记
     #   link: /pages/weekly/2023/01
-    - theme: brand
-      text: 项目
-      link: /project
-    - theme: alt
-      text: 关于我
-      link: /about
+    # - theme: brand
+    #   text: 项目
+    #   link: /project
+    # - theme: alt
+    #   text: 关于我
+    #   link: /about
 features:
   - title: 我的周记
     details: 记录下我的成长和一些思考
     icon: 📃
     linkText: 随便看看
     link: /pages/weekly/2023/01
+
+  - title: 我的项目
+    details: 一些正在做和想做的有意思的事
+    icon: 💻
+    linkText: 随便看看
+    link: /project
+
+  - title: 有关于我
+    details: About me
+    icon: 👀
+    linkText: 随便看看
+    link: /about
 
 
 ---
