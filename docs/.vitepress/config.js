@@ -12,7 +12,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Weekly', link: '/pages/weekly/2023/01' }
+      { text: 'Weekly', link: '/pages/weekly/2023/01' },
+      { text: 'Projects', link: '/project' }
+
     ],
 
     sidebar: sidebar,
