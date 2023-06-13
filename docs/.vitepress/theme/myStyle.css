@@ -2,43 +2,45 @@
  * My Style
  * -------------------------------------------------------------------------- */
 
- nav{
-    .text {
-        display: inline-block;
-        white-space: nowrap; 
-        width: 100%; 
-        overflow: hidden;
-        text-overflow:ellipsis;
-    }
- } 
+nav {
+   .text {
+      display: inline-block;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+}
 
- .vp-doc div[class*='language-']{
-    margin: 0 0;
-    /* border-radius: 5px; */
- }
- .vp-doc [class*='language-'] code{
-    padding: 0 20px;
- }
+.vp-doc div[class*='language-'] {
+   margin: 0 0;
+   /* border-radius: 5px; */
+}
 
- .VPFeature{
-   .VPImage{
+.vp-doc [class*='language-'] code {
+   padding: 0 20px;
+}
+
+.VPFeature {
+   .VPImage {
       border-radius: 6px;
-       }
- }
+   }
+}
 
-.VPHomeHero .main{
+.VPHomeHero .main {
    /* margin-top: 30px; */
    margin-bottom: 30px;
 
- }
+}
 
- .VPHomeHero .clip{
-   color: gray;
-
+.VPHomeHero .clip {
+   font-weight: 500;
+   color: #7e7e7e;
    line-height: 70px;
    font-size: 1.5rem;
- }
+   -webkit-text-fill-color: unset;
+}
 
- .VPHomeHero .text{
-   margin: 10px 0 20px 0;
- }
+.VPHomeHero .text {
+   margin: 0px 0 20px 0;
+}

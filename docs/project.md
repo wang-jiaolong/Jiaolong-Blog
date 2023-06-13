@@ -4,7 +4,7 @@ layout: home
 hero:
 #   name: "Jiaolong 's Blog"
   text: Projects
-#   tagline: 无限进步 伴月行乐
+  tagline: 一些正在做和想做的有意思的事
   # image:
   #   src: /logo.png
   #   alt: VitePress
@@ -35,6 +35,6 @@ features:
     icon: 
       src: ./icon/vite.svg
     linkText: 敬请期待
-    # link: /pages/theme/theme
+    link: /pages/theme/theme
 ---
 
