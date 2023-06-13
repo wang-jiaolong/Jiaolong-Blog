@@ -2,9 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  name: "Jiaolong 's Blog"
-  # text: "Jiaolong 's Blog"
-  tagline: 无限进步 伴月行乐
+  # name: "Jiaolong 's Blog"
+  text: "Jiaolong 's Blog"
+  tagline: 无限进步
   # image:
   #   src: /logo.png
   #   alt: VitePress

@@ -14,8 +14,8 @@ const members = [
     name: 'Jiaolong Wang',
     title: 'Creator',
     links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+      // { icon: 'github', link: 'https://github.com/yyx990803' },
+      // { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
     ]
   },
 
