@@ -24,9 +24,7 @@ npx vitepress init
 npm run docs:dev
 ```
 
-<Badge type="info" text="Doing" />
-
-<!-- <script setup>
+<script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
@@ -43,8 +41,9 @@ const members = [
 ]
 </script>
 
-<VPTeamMembers size="small" :members="members" /> -->
+<VPTeamMembers size="medium" :members="members" />
 
+<VPHomeSponsors />
 
 ## 目录自动加载
 

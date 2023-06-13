@@ -15,10 +15,9 @@ hero:
     - theme: brand
       text: 项目
       link: /project
-    # - theme: alt
-    #   text: 主题
-    #   link: /pages/theme/theme
-
+    - theme: alt
+      text: 关于我
+      link: /about
 features:
   - title: 我的周记
     details: 记录下我的成长和一些思考

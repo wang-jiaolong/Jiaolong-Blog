@@ -13,7 +13,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Weekly', link: '/pages/weekly/2023/01' },
-      { text: 'Projects', link: '/project' }
+      { text: 'Projects', link: '/project' },
+      { text: 'About', link: '/about' },
+
 
     ],
 
