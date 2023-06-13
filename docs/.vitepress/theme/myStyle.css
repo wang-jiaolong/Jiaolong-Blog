@@ -1,0 +1,13 @@
+/**
+ * My Style
+ * -------------------------------------------------------------------------- */
+
+ nav{
+    .text {
+        display: inline-block;
+        white-space: nowrap; 
+        width: 100%; 
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+ } 
