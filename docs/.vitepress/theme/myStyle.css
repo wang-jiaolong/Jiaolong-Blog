@@ -14,5 +14,14 @@
 
  .vp-doc div[class*='language-']{
     margin: 0 0;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+ }
+ .vp-doc [class*='language-'] code{
+    padding: 0 20px;
+ }
+
+ .VPFeature{
+   .VPImage{
+      border-radius: 6px;
+       }
  }

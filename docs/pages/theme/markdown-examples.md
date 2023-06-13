@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
@@ -83,3 +87,8 @@ This is a details block.
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+
+### Title <Badge type="info" text="default" />
+### Title <Badge type="tip" text="^1.9.0" />
+### Title <Badge type="warning" text="beta" />
+### Title <Badge type="danger" text="caution" />
