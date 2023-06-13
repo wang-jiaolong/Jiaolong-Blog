@@ -2,9 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  # name: "Jiaolong 's Blog"
+  name: "无限进步"
   text: "Jiaolong 's Blog"
-  tagline: 无限进步
+  tagline: 理想主义的少年永远不会被现实招安
   # image:
   #   src: /logo.png
   #   alt: VitePress

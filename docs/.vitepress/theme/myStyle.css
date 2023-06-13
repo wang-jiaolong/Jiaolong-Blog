@@ -27,7 +27,17 @@
  }
 
 .VPHomeHero .main{
-   margin-top: 80px;
-   margin-bottom: 50px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
 
+ }
+
+ .VPHomeHero .clip{
+
+   line-height: 70px;
+   font-size: 2rem;
+ }
+
+ .VPHomeHero .text{
+   margin: 20px 0;
  }
