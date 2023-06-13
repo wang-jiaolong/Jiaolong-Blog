@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Jiaolong 's Blog",
   description: "A VitePress Site",
   cleanUrls:true,
+  lang: 'zh-cn',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -34,11 +35,26 @@ export default defineConfig({
           ]
         }
       ],
+      '/theme/': [
+        {
+          text: 'Theme',
+          items: [
+            { text: 'About', link: '/theme/theme' },
+            { text: 'Examples', link: '/theme/markdown-examples' }
+
+          ]
+        }
+      ],
 
     },
 
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
+    
+  footer: {
+    // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+    copyright: 'Copyright © 2023 Jiaolong Wang'
+  }
   }
 })
