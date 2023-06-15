@@ -43,7 +43,8 @@ export default {
 
 <style scoped lang="less">
 .quoteList {
-
+    width: 100%;
+    column-gap: 0;
     column-count: 3;
 
     @media (max-width: 860px) {
@@ -63,7 +64,6 @@ export default {
     }
 
     .quoteCard {
-        width: 100%;
         height: 100%;
         display: inline-block;
         margin: 10px;
