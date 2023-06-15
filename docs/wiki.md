@@ -14,10 +14,7 @@ import {
 
 
 const mobile = [
-  {title:"Swift",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png",desc:"SwiftUI"},
-    {title:"Swift",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png",desc:"SwiftUI"},
-  {title:"Swift",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png"}
-
+  {title:"Swift",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png",desc:"SwiftUI"}
 ]
 </script>
 
@@ -32,12 +29,10 @@ const mobile = [
   </VPTeamPageTitle>
 </VPTeamPage>
 
-
-
 ### Mobile
+
 <br>
 <LinkCard  :items ="mobile" />
-
 
 <style>
 

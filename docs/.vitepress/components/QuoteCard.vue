@@ -7,7 +7,6 @@
                 <a v-else class="link" :href="item[2]" target="_blank">
                     <div class="text">{{ item[1] }}</div>
                     <iconLink class="icon" theme="outline" size="16" fill="var(--vp-c-text-2)" />
-                    <!-- <iconLink theme="outline" size="24" fill="#333"/> -->
                 </a>
 
             </div>
@@ -29,13 +28,13 @@ const props = defineProps({
 <script>
 
 import {
-    Share as iconShare,
+    // Share as iconShare,
     LinkOne as iconLink
 } from '@icon-park/vue-next';
 
 export default {
     components: {
-        iconShare,
+        // iconShare,
         iconLink
     }
 }
@@ -68,7 +67,6 @@ export default {
         height: 100%;
         display: inline-block;
         margin: 10px;
-        // display: block;
         border: 1px solid var(--vp-c-bg-soft);
         border-radius: 12px;
         background-color: var(--vp-c-bg-soft);
