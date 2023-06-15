@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
+import { rewrites } from './rewrites'
+
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
@@ -45,4 +47,5 @@ export default defineConfig({
     //     })
     // ]
 },
+rewrites: rewrites,
 })

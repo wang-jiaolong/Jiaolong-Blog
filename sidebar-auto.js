@@ -25,16 +25,20 @@ function traverseFolder(folderPath) {
         const { data } = matter(fileContent);
         const fileName = data.title || path.basename(file, '.md');
         const pathName = path.basename(file, '.md');
-        const fileLink = path.join(parentPath, pathName).replace(/\\/g, '/');
-        const fileObject = { text: fileName, link: `/pages${fileLink}` };
+        var fileLink = "/pages" + path.join(parentPath, pathName).replace(/\\/g, '/');
 
+        //如果frontmatter里有permalink数据的话 就用直接代替
+        if (data.permalink != null) {
+          fileLink = "pages/" + data.permalink.slice(1)
+        }
+        const fileObject = { text: fileName, link: `${fileLink}` };
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 
         if (sidebar[key]) {
           sidebar[key][0].items.push(fileObject);
         } else {
           var folderText = String(parentPath.replace(/\\/g, '/'))
-          sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length-1].toUpperCase(), items: [fileObject] }];
+          sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
 
         }
       }

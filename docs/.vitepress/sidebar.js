@@ -30,12 +30,16 @@ export const sidebar = {
       "text": "THEME",
       "items": [
         {
-          "text": "markdown-examples",
-          "link": "/pages/theme/markdown-examples"
+          "text": "Vitepress",
+          "link": "pages/theme/vitepress"
         },
         {
-          "text": "theme",
-          "link": "/pages/theme/theme"
+          "text": "Theme",
+          "link": "pages/theme/theme"
+        },
+        {
+          "text": "Example",
+          "link": "pages/theme/example"
         }
       ]
     }
