@@ -32,6 +32,7 @@ const mobile = [
 ### Mobile
 
 <br>
+
 <LinkCard  :items ="mobile" />
 
 <style>

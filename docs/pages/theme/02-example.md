@@ -39,6 +39,18 @@ export default {
 }
 ```
 
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code  --]
+      msg: 'Added' // [!code  ++]
+    }
+  }
+}
+```
+
+
 ## Custom Containers
 
 **Input**
@@ -64,6 +76,12 @@ This is a dangerous warning.
 This is a details block.
 :::
 ```
+
+
+
+
+
+
 
 **Output**
 

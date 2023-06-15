@@ -19,7 +19,7 @@ function traverseDirectory(directoryPath) {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(fileContent);
         if(data.permalink != null){
-            rewrites[filePath.replace(/\\/g, '/').slice(5)] = "pages/" + data.permalink.slice(1) + ".md" 
+            rewrites[filePath.replace(/\\/g, '/').slice(5)] = "pages" + data.permalink + ".md" 
         }
     }
   });

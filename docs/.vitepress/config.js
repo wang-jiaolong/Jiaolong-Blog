@@ -11,6 +11,8 @@ export default defineConfig({
   cleanUrls:true,
   lang: 'zh-cn',
   themeConfig: {
+    outline:[2,3,4,5],
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -34,6 +36,8 @@ export default defineConfig({
     copyright: 'Copyright © 2023 Jiaolong Wang'
   },
   markdown: {
+    toc: { level: [1, 2,3] },
+    lineNumbers: true,
     badge: true
   }
   },
@@ -47,5 +51,5 @@ export default defineConfig({
     //     })
     // ]
 },
-rewrites: rewrites,
+// rewrites: rewrites,
 })

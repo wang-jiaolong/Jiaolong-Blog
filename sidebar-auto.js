@@ -27,10 +27,10 @@ function traverseFolder(folderPath) {
         const pathName = path.basename(file, '.md');
         var fileLink = "/pages" + path.join(parentPath, pathName).replace(/\\/g, '/');
 
-        //如果frontmatter里有permalink数据的话 就用直接代替
-        if (data.permalink != null) {
-          fileLink = "pages/" + data.permalink.slice(1)
-        }
+        // 如果frontmatter里有permalink数据的话 就用直接代替
+        // if (data.permalink != null) {
+        //   fileLink = "pages" + data.permalink
+        // }
         const fileObject = { text: fileName, link: `${fileLink}` };
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 

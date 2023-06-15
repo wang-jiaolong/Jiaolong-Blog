@@ -31,15 +31,15 @@ export const sidebar = {
       "items": [
         {
           "text": "Vitepress",
-          "link": "pages/theme/vitepress"
+          "link": "/pages/theme/00-vitepress"
         },
         {
           "text": "Theme",
-          "link": "pages/theme/theme"
+          "link": "/pages/theme/01-theme"
         },
         {
           "text": "Example",
-          "link": "pages/theme/example"
+          "link": "/pages/theme/02-example"
         }
       ]
     }

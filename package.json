@@ -4,12 +4,12 @@
     "vitepress": "^1.0.0-beta.2"
   },
   "scripts": {
-    "docs:dev": "node ./sidebar-auto.js && node ./router-auto.js && vitepress dev docs",
+    "docs:dev": "node ./sidebar-auto.js && vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
     "gray-matter": "^4.0.3"
-  }
+    }
 }
