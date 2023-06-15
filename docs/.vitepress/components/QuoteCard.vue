@@ -96,7 +96,7 @@ export default {
                 // font-weight: 400;
 
                 @media (max-width: 419px) {
-                        font-size: 13px;
+                        font-size: 14px;
                         line-height: 22px;
                     }
             }
