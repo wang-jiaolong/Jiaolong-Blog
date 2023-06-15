@@ -6,7 +6,7 @@ permalink: /theme/theme
 
 # About this theme
 
->  本主题基于[VitePress](https://vitepress.dev/)默认主题修改
+>  本站基于[VitePress](https://vitepress.dev/)默认主题修改
 
 
 
