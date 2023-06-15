@@ -76,10 +76,17 @@ export default {
             margin: 10px 0;
         }
 
-        &:hover {
-            border-color: var(--vp-c-brand);
-            background-color: var(--vp-c-bg-soft-up);
+
+        @media (min-width: 419px) {
+            &:hover {
+                border-color: var(--vp-c-brand);
+                background-color: var(--vp-c-bg-soft-up);
+
+            }
         }
+
+
+
 
         .box {
             width: 100%;
@@ -97,7 +104,7 @@ export default {
 
                 @media (max-width: 419px) {
                     font-size: 15px;
-                    // line-height: 22px;
+                    line-height: 22px;
                 }
             }
 
@@ -107,9 +114,10 @@ export default {
                 color: var(--vp-c-text-2);
                 text-align: right;
                 margin-top: 5px;
+
                 @media (max-width: 419px) {
                     font-size: 13px;
-                    // line-height: 22px;
+                    line-height: 22px;
                 }
             }
 
