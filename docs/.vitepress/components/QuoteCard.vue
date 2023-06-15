@@ -94,6 +94,11 @@ export default {
             .detail {
                 font-family: "serif";
                 // font-weight: 400;
+
+                @media (max-width: 419px) {
+                        font-size: 13px;
+                        line-height: 22px;
+                    }
             }
 
             .quote {
@@ -116,6 +121,9 @@ export default {
                     color: var(--vp-c-text-2);
                     text-align: right;
                     margin-top: 5px;
+
+
+
                 }
 
                 .icon {
