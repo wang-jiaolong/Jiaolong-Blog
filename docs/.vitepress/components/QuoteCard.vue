@@ -72,7 +72,9 @@ export default {
         background-color: var(--vp-c-bg-soft);
         transition: border-color 0.25s, background-color 0.25s;
 
-
+        @media (max-width: 419px) {
+            margin: 10px 0;
+        }
 
         &:hover {
             border-color: var(--vp-c-brand);
@@ -86,13 +88,12 @@ export default {
             align-items: center;
 
             @media (max-width: 419px) {
-                padding: 15px;
+                padding: 20px;
             }
 
             .detail {
                 font-family: "serif";
-                font-weight: 500;
-
+                // font-weight: 400;
             }
 
             .quote {
