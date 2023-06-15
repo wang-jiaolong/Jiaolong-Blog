@@ -1,14 +1,14 @@
 <template>
     <div class="header">
-        <div class="left">
+        <button @click="folder" class="left">
             <div class="title">{{ title }}</div>
-            <iconRight class="iconRight" theme="outline" size="24" fill="#333" />
-        </div>
-        <div class="caption">共收录<span class="number">14</span>条</div>
+            <iconRight class="iconRight" :class="{rotated:isShow}" theme="outline" size="30" fill="#333" />
+        </button>
+        <div class="caption">共<span class="number"> {{ items.length }} </span>条</div>
 
     </div>
 
-    <div class="quoteList">
+    <div v-show="isShow" class="quoteList">
         <div v-for="item in items.reverse()" class="quoteCard">
             <div class="box">
                 <div class="detail">{{ item[0] }}</div>
@@ -27,10 +27,16 @@
 
 <script setup>
 
+var isShow = ref(true)
+
 const props = defineProps({
     title: String,
     items: Object
 })
+
+function folder(){
+    isShow.value = !isShow.value
+}
 
 </script>
 
@@ -41,6 +47,7 @@ import {
     Right as iconRight,
     LinkOne as iconLink
 } from '@icon-park/vue-next';
+import { ref } from 'vue';
 
 
 </script>
@@ -52,6 +59,7 @@ import {
     margin-bottom: 10px;
 
     .left {
+        cursor: pointer;
         display: flex;
         align-items: center;
 
@@ -62,9 +70,13 @@ import {
         }
 
         .iconRight{
-            transform: rotate(90deg);
-            transition: border-color 0.25s, background-color 0.25s;
+            transform: rotate(0deg);
+            transition: transform 0.25s;
+            margin-left: 5px;
 
+            &.rotated{
+                transform: rotate(90deg);
+            }
         }
     }
 
@@ -75,6 +87,7 @@ import {
     column-gap: 0;
     column-count: 3;
     margin-bottom: 50px;
+    transition: all .5s linear;
 
     @media (max-width: 860px) {
         column-count: 2;
