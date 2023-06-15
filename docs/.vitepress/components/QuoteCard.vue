@@ -1,4 +1,13 @@
 <template>
+    <div class="header">
+        <div class="left">
+            <div class="title">{{ title }}</div>
+            <iconRight class="iconRight" theme="outline" size="24" fill="#333" />
+        </div>
+        <div class="caption">共收录<span class="number">14</span>条</div>
+
+    </div>
+
     <div class="quoteList">
         <div v-for="item in items.reverse()" class="quoteCard">
             <div class="box">
@@ -19,6 +28,7 @@
 <script setup>
 
 const props = defineProps({
+    title: String,
     items: Object
 })
 
@@ -28,24 +38,43 @@ const props = defineProps({
 <script>
 
 import {
-    // Share as iconShare,
+    Right as iconRight,
     LinkOne as iconLink
 } from '@icon-park/vue-next';
 
-export default {
-    components: {
-        // iconShare,
-        iconLink
-    }
-}
 
 </script>
 
 <style scoped lang="less">
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        .title {
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .iconRight{
+            transform: rotate(90deg);
+            transition: border-color 0.25s, background-color 0.25s;
+
+        }
+    }
+
+}
+
 .quoteList {
     width: 100%;
     column-gap: 0;
     column-count: 3;
+    margin-bottom: 50px;
 
     @media (max-width: 860px) {
         column-count: 2;
