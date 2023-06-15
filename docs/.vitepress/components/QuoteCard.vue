@@ -14,10 +14,10 @@
             <div class="box">
                 <div class="detail">{{ item[0] }}</div>
                 <div v-if="item[2] == null" class="quote">{{ item[1] }}</div>
-                <a v-else class="link" :href="item[2]" target="_blank">
-                    <div class="text">{{ item[1] }}</div>
+                <div v-else class="link" >
+                    <a :href="item[2]" target="_blank" class="text">{{ item[1] }}</a>
                     <iconLink class="icon" theme="outline" size="16" fill="var(--vp-c-text-2)" />
-                </a>
+                </div>
 
             </div>
 
@@ -137,7 +137,7 @@ import { ref } from 'vue';
 
             .box {
                 width: 100%;
-                padding: 20px;
+                padding: 20px 20px 15px 20px;
                 height: 100%;
                 align-items: center;
 
