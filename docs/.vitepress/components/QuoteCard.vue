@@ -88,7 +88,7 @@ export default {
             align-items: center;
 
             @media (max-width: 419px) {
-                padding: 20px;
+                padding: 15px 20px;
             }
 
             .detail {
@@ -121,9 +121,6 @@ export default {
                     color: var(--vp-c-text-2);
                     text-align: right;
                     margin-top: 5px;
-
-
-
                 }
 
                 .icon {
