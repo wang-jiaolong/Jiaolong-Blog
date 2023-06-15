@@ -12,7 +12,7 @@ export const sidebar = {
   ],
   "/pages/project/": [
     {
-      "text": "/project",
+      "text": "PROJECT",
       "items": [
         {
           "text": "事线app-讲讲背后的故事",
@@ -27,7 +27,7 @@ export const sidebar = {
   ],
   "/pages/theme/": [
     {
-      "text": "/theme",
+      "text": "THEME",
       "items": [
         {
           "text": "markdown-examples",
@@ -42,7 +42,7 @@ export const sidebar = {
   ],
   "/pages/weekly/2023/": [
     {
-      "text": "/weekly/2023",
+      "text": "2023",
       "items": [
         {
           "text": "No.01 | 就这样，从这周开始写周记",
@@ -73,7 +73,7 @@ export const sidebar = {
   ],
   "/pages/wiki/": [
     {
-      "text": "/wiki",
+      "text": "WIKI",
       "items": [
         {
           "text": "swift",
@@ -84,7 +84,7 @@ export const sidebar = {
   ],
   "/pages/wiki/vue/": [
     {
-      "text": "/wiki/vue",
+      "text": "VUE",
       "items": [
         {
           "text": "第一个Vue项目",

@@ -2,6 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
+
+
+
 function traverseFolder(folderPath) {
   const sidebar = {};
 
@@ -30,7 +33,9 @@ function traverseFolder(folderPath) {
         if (sidebar[key]) {
           sidebar[key][0].items.push(fileObject);
         } else {
-          sidebar[key] = [{ text: parentPath.replace(/\\/g, '/'), items: [fileObject] }];
+          var folderText = String(parentPath.replace(/\\/g, '/'))
+          sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length-1].toUpperCase(), items: [fileObject] }];
+
         }
       }
     }
@@ -49,3 +54,4 @@ const sidebar = traverseFolder(folderPath);
 // console.log(JSON.stringify(sidebar, null, 2));
 const prepend = `export const sidebar = `
 fs.writeFileSync("docs\\.vitepress\\sidebar.js", prepend + JSON.stringify(sidebar, null, 2))
+

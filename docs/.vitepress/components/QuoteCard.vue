@@ -91,7 +91,7 @@ export default {
 
             .detail {
                 font-family: "serif";
-                font-weight: 100;
+                font-weight: 500;
 
             }
 
