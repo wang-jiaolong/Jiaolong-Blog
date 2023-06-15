@@ -95,7 +95,7 @@ export default {
             align-items: center;
 
             @media (max-width: 419px) {
-                padding: 15px 20px;
+                padding: 15px 20px 10px 20px;
             }
 
             .detail {
@@ -104,7 +104,7 @@ export default {
 
                 @media (max-width: 419px) {
                     font-size: 15px;
-                    line-height: 22px;
+                    // line-height: 22px;
                 }
             }
 
@@ -117,7 +117,7 @@ export default {
 
                 @media (max-width: 419px) {
                     font-size: 13px;
-                    line-height: 22px;
+                    // line-height: 22px;
                 }
             }
 
