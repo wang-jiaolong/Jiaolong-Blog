@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,6 +14,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Weekly', link: '/pages/weekly/2023/01' },
       { text: 'Projects', link: '/project' },
+      { text: 'Wiki', link: '/wiki' },
+      { text: 'Excerpt', link: '/excerpt' },
       { text: 'About', link: '/about' },
 
 

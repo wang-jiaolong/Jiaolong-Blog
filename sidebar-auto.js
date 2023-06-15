@@ -1,35 +1,51 @@
-const fs = require('fs')
-const path = require("path")
+const fs = require('fs');
+const path = require('path');
+const matter = require('gray-matter');
 
-let sidebar = []
+function traverseFolder(folderPath) {
+  const sidebar = {};
 
-// go through all folders, filter bad ones
-let folders = fs.readdirSync("docs/pages")
-	.filter(folder => !(folder.startsWith(".") || folder.startsWith("_") || folder.endsWith(".md") || folder == 'public'))
-	.forEach(folder => {
-		// create item entries
-		let items = fs.readdirSync(path.join("docs/pages", folder))
-			.filter(item => item.endsWith(".md"))
-			.map(item => {
-				const title = item.slice(0, -3)
-				return { text: title.replaceAll("-", " "), link: ["", folder, title].join("/") }
-			})
-		
-		// push category into sidebar
-		sidebar.push({
-			text: folder,
-			collapsible: true,
-			items: items
-		})
-})
+  function traverseDirectory(directory, parentPath) {
 
-console.log(sidebar)
+    const files = fs.readdirSync(directory);
 
-// syntax needed by vitepress
+    for (const file of files) {
+      const filePath = path.join(directory, file);
+      const stats = fs.statSync(filePath);
+
+      if (stats.isDirectory()) {
+        const directoryPath = path.join(directory, file);
+        const subFolderPath = parentPath ? path.join(parentPath, file) : `/${file}`;
+        traverseDirectory(directoryPath, subFolderPath);
+      } else if (stats.isFile() && path.extname(file) === '.md') {
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        const { data } = matter(fileContent);
+        const fileName = data.title || path.basename(file, '.md');
+        const pathName = path.basename(file, '.md');
+        const fileLink = path.join(parentPath, pathName).replace(/\\/g, '/');
+        const fileObject = { text: fileName, link: `/pages${fileLink}` };
+
+        const key = `/pages${parentPath}/`.replace(/\\/g, '/')
+
+        if (sidebar[key]) {
+          sidebar[key][0].items.push(fileObject);
+        } else {
+          sidebar[key] = [{ text: parentPath.replace(/\\/g, '/'), items: [fileObject] }];
+        }
+      }
+    }
+  }
+
+  traverseDirectory(folderPath, '');
+
+  return sidebar;
+}
+
+// 示例用法
+const folderPath = './docs/pages'; // 替换为实际的文件夹路径
+const sidebar = traverseFolder(folderPath);
+
+// 输出生成的JSON对象
+// console.log(JSON.stringify(sidebar, null, 2));
 const prepend = `export const sidebar = `
-
-fs.writeFileSync("docs\\.vitepress\\test.js", prepend + JSON.stringify(sidebar, null, 4))
-console.log("generated sidebar")
-
-// sidebar.forEach(cat => console.log(cat))
-// folders.forEach(f => console.log(f, typeof f))
+fs.writeFileSync("docs\\.vitepress\\sidebar.js", prepend + JSON.stringify(sidebar, null, 2))

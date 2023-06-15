@@ -3,6 +3,9 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
 import './myStyle.css'
+import LinkCard from "../components/LinkCard.vue"
+import QuoteCard from "../components/QuoteCard.vue"
+import '@icon-park/vue-next/styles/index.css';
 
 export default {
   // ...Theme,
@@ -14,5 +17,12 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+  },
+  enhanceApp(ctx) {
+    // register your custom global components
+    ctx.app.component('LinkCard',LinkCard)
+    ctx.app.component('QuoteCard',QuoteCard)
+
   }
+
 }

@@ -24,27 +24,9 @@ npx vitepress init
 npm run docs:dev
 ```
 
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
 
-const members = [
-  {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Evan You',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
-  },
+<br><hr>
 
-]
-</script>
+#### 参考链接
 
-<VPTeamMembers size="medium" :members="members" />
-
-<VPHomeSponsors />
-
-## 目录自动加载
-
-https://github.com/vuejs/vitepress/issues/1737
+1. [CSS实现瀑布流的两种方式](https://juejin.cn/post/7011333433318178846)

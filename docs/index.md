@@ -16,12 +16,12 @@ hero:
     #   text: 项目
     #   link: /project
     # - theme: alt
-    #   text: 关于我
-    #   link: /about
+    #   text: Wiki
+    #   link: /wiki
 features:
   - title: 我的周记
     details: 记录下我的成长和一些思考
-    icon: 📃
+    icon: 📅
     linkText: 随便看看
     link: /pages/weekly/2023/01
 
@@ -30,6 +30,19 @@ features:
     icon: 💻
     linkText: 随便看看
     link: /project
+
+
+  - title: Wiki
+    details: 到底需要记住多少命令行呢？
+    icon: 📚
+    linkText: 随便看看
+    link: /wiki
+
+  - title: 我的摘录
+    details: 再多一点思考
+    icon: 📃
+    linkText: 随便看看
+    link: /excerpt
 
   - title: 有关于我
     details: About me
