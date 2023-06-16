@@ -12,6 +12,10 @@ import {
   VPTeamMembers
 } from 'vitepress/theme'
 
+import { useData } from 'vitepress'
+
+const { theme, page, frontmatter } = useData()
+
 </script>
 
 <VPTeamPage>
@@ -25,8 +29,7 @@ import {
   </VPTeamPageTitle>
 </VPTeamPage>
 
-
-<Timeline></Timeline>
+<Timeline :items="theme.weekly"></Timeline>
 
 <style>
 

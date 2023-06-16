@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { rewrites } from './rewrites'
+import { weekly } from './weekly'
 
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
@@ -8,15 +9,16 @@ import { rewrites } from './rewrites'
 export default defineConfig({
   title: "Jiaolong 's Blog",
   description: "A VitePress Site",
-  cleanUrls:true,
+  cleanUrls: true,
   lang: 'zh-cn',
   themeConfig: {
-    outline:[2,3,4,5],
+    outline: [2, 3, 4, 5],
+    weekly:weekly,
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Weekly', link: '/pages/weekly/2023/01' },
+      { text: 'Weekly', link: '/weekly' },
       { text: 'Projects', link: '/project' },
       { text: 'Wiki', link: '/wiki' },
       { text: 'Excerpt', link: '/excerpt' },
@@ -30,26 +32,17 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
-    
-  footer: {
-    // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-    copyright: 'Copyright © 2023 Jiaolong Wang'
+
+    footer: {
+      // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2023 Jiaolong Wang'
+    },
+    markdown: {
+      toc: { level: [1, 2, 3] },
+      lineNumbers: true,
+      badge: true
+    }
   },
-  markdown: {
-    toc: { level: [1, 2,3] },
-    lineNumbers: true,
-    badge: true
-  }
-  },
-  vite: {
-    // plugins: [
-    //     // add plugin
-    //     AutoSidebar({ 
-    //       path:"/docs/pages"
-    //         // You can also set options to adjust sidebar data
-    //         // see option document below
-    //     })
-    // ]
-},
-// rewrites: rewrites,
+
+  // rewrites: rewrites,
 })

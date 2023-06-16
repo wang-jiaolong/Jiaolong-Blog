@@ -1,10 +1,9 @@
 <template>
     <div class="timeline">
 
-        <div v-for="item in items" class="timeline-item">
+        <a :href="item.link" v-for="item in items" class="timeline-item">
             <div class="timeline-photo">
-                <img
-                    src="https://images.unsplash.com/photo-1520013817300-1f4c1cb245ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1987&q=80" />
+                <img :src="item.img" />
                 <button class="timeline-cta">READ MORE</button>
             </div>
             <div class="timeline-headline">
@@ -13,34 +12,16 @@
                 <!-- <p class="timeline-excerpt">{{ item.abstract }}</p> -->
             </div>
 
-        </div>
+        </a>
     </div>
     <div class="timeline-overlay"></div>
 </template>
 
 <script setup>
 
-var items = [
-    {
-        title: "就这样，从这周开始写周记",
-        date: "2023-05-07",
-        abstract: "因为之前交毕设时写过周报和网上诸多周报生成器的暗示下，一直默认写周报是一个痛苦且无用的事。但在无意中刷到很多开发者写的个人周报后，才发现写周报和写个人周报是两码事。定期复盘回顾自己其实是一个能提高自己的过程（哪怕是写作能力）。正值今天是周末，遂想写点什么，发现虽然每天过的都很忙碌，但仔细想想却不知道都干了什么，再次觉得写周报是有必要的，也能锻炼自己表达的能力，之前唯二写过的两篇长文都反复斟酌了好久，费劲毕生所学，哈哈哈哈。",
-        link: "aaa"
-    },
-    {
-        title: "就这样，从这周开始写周记",
-        date: "2023-05-07",
-        abstract: "因为之前交毕设时写过周报和网上诸多周报生成器的暗示下，一直默认写周报是一个痛苦且无用的事。但在无意中刷到很多开发者写的个人周报后，才发现写周报和写个人周报是两码事。定期复盘回顾自己其实是一个能提高自己的过程（哪怕是写作能力）。正值今天是周末，遂想写点什么，发现虽然每天过的都很忙碌，但仔细想想却不知道都干了什么，再次觉得写周报是有必要的，也能锻炼自己表达的能力，之前唯二写过的两篇长文都反复斟酌了好久，费劲毕生所学，哈哈哈哈。",
-        link: "aaa"
-    },
-    {
-        title: "就这样，从这周开始写周记",
-        date: "2023-05-07",
-        abstract: "因为之前交毕设时写过周报和网上诸多周报生成器的暗示下，一直默认写周报是一个痛苦且无用的事。但在无意中刷到很多开发者写的个人周报后，才发现写周报和写个人周报是两码事。定期复盘回顾自己其实是一个能提高自己的过程（哪怕是写作能力）。正值今天是周末，遂想写点什么，发现虽然每天过的都很忙碌，但仔细想想却不知道都干了什么，再次觉得写周报是有必要的，也能锻炼自己表达的能力，之前唯二写过的两篇长文都反复斟酌了好久，费劲毕生所学，哈哈哈哈。",
-        link: "aaa"
-    },
-
-]
+const props = defineProps({
+    items: Object
+})
 
 </script>
 
@@ -72,6 +53,7 @@ body {
     flex-direction: column;
     padding-bottom: 100px;
     position: relative;
+
 
     &:before {
         position: absolute;
@@ -133,6 +115,12 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+        @media (max-width: 419px) {
+            font-size: 1em;
+            padding-top: 5px;
+
+        }
     }
 
     &-excerpt {
@@ -159,6 +147,18 @@ body {
 
         &:nth-child(even) {
             align-self: flex-end;
+        }
+
+
+        @media (max-width: 419px) {
+            margin: 15px 0;
+        }
+
+        &:hover {
+            img {
+                scale: 1.3;
+                transition: all 0.3s;
+            }
         }
     }
 
@@ -196,6 +196,9 @@ body {
         object-fit: cover;
         width: 100%;
         height: 100%;
+
+        transition: all 0.3s;
+
     }
 
 
@@ -206,6 +209,12 @@ body {
         font-size: 1em;
         letter-spacing: 2px;
         color: var(--vp-c-text-2);
+
+        @media (max-width: 419px) {
+            margin: 0 0 0 0;
+
+
+        }
     }
 
     &-back {
@@ -234,4 +243,5 @@ body {
             stroke: #fff;
         }
     }
-}</style>
+}
+</style>
