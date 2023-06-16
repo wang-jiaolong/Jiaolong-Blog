@@ -468,7 +468,7 @@ fs.writeFileSync("docs\\.vitepress\\sidebar.js", prepend + JSON.stringify(sideba
 
 2. 修改`config.js`
 
-```js{4}
+```js{5}
 import { sidebar } from './sidebar'
 
 export default defineConfig({

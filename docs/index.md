@@ -23,7 +23,7 @@ features:
     details: 记录下我的成长和一些思考
     icon: 📅
     linkText: 随便看看
-    link: /pages/weekly/2023/01
+    link: /weekly
 
   - title: 我的项目
     details: 一些正在做和想做的有意思的事

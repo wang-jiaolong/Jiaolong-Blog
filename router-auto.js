@@ -31,3 +31,6 @@ traverseDirectory(directoryPath);
 
 const prepend = `export const rewrites = `
 fs.writeFileSync("docs\\.vitepress\\rewrites.js", prepend + JSON.stringify(rewrites, null, 2))
+
+
+// export const result = prepend + JSON.stringify(rewrites, null, 2)
