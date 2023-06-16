@@ -1,0 +1,9 @@
+import{_ as a,o as s,c as e,O as n}from"./chunks/framework.89d0ee0c.js";const A=JSON.parse('{"title":"第一个Vue项目","description":"","frontmatter":{"title":"第一个Vue项目","date":"2023-06-09T00:00:00.000Z"},"headers":[],"relativePath":"pages/wiki/vue/001.第一个Vue项目.md","filePath":"pages/wiki/vue/001.第一个Vue项目.md"}'),l={name:"pages/wiki/vue/001.第一个Vue项目.md"},t=n(`<h2 id="使用vue-cli创建" tabindex="-1">使用vue-cli创建 <a class="header-anchor" href="#使用vue-cli创建" aria-label="Permalink to &quot;使用vue-cli创建&quot;">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">npm create xxx</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">cd xxx</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">npm run dev</span></span></code></pre></div><h2 id="使用vite创建" tabindex="-1">使用vite创建 <a class="header-anchor" href="#使用vite创建" aria-label="Permalink to &quot;使用vite创建&quot;">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">npm init vite-app xxx</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">cd xxx</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">npm run dev</span></span></code></pre></div>`,4),p=[t];function c(o,i,r,d,_,u){return s(),e("div",null,p)}const h=a(l,[["render",c]]);export{A as __pageData,h as default};
