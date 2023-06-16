@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
-    "gray-matter": "^4.0.3",
-    "node-sass-install": "^1.0.2"
+    "gray-matter": "^4.0.3"
   }
 }
