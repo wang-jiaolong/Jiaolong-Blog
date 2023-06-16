@@ -89,6 +89,10 @@ body {
         top: 100%;
         font-size: calc(.2vw + 10px);
         padding: 20px 0 0 0;
+
+        @media (max-width: 419px) {
+            padding: 10px 0 0 0;
+        }
     }
 
     &-content {
@@ -118,7 +122,7 @@ body {
 
         @media (max-width: 419px) {
             font-size: 1em;
-            padding-top: 5px;
+            padding-top: 0px;
 
         }
     }
