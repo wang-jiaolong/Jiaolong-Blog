@@ -47,9 +47,9 @@ const product = [
 </VPTeamPage>
 
 
-<QuoteCard title="人生" :items ="life" />
+<QuoteCard title="Life" :items ="life.reverse()" />
 
-<QuoteCard title="产品" :items ="product" />
+<QuoteCard title="Product" :items ="product" />
 
 
 <style>

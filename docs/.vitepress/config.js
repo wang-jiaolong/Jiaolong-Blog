@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
-import { rewrites } from './rewrites'
-import { weekly } from './weekly'
+import { navbar } from './navbar'
+import { weekly } from './js/weekly-auto'
+
+// import { rewrites } from './rewrites'
+// import { weekly } from './weekly'
 
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
@@ -14,18 +17,9 @@ export default defineConfig({
   themeConfig: {
     outline: [2, 3, 4, 5],
     weekly:weekly,
-
+    // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Weekly', link: '/weekly' },
-      { text: 'Projects', link: '/project' },
-      { text: 'Wiki', link: '/wiki' },
-      { text: 'Excerpt', link: '/excerpt' },
-      { text: 'About', link: '/about' },
-
-
-    ],
+    nav:navbar,
 
     sidebar: sidebar,
 

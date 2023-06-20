@@ -71,6 +71,10 @@ export const sidebar = {
         {
           "text": "No.06 | 迈出Web端的第一步",
           "link": "/pages/weekly/2023/06"
+        },
+        {
+          "text": "No.07 | 初探效率生活",
+          "link": "/pages/weekly/2023/07"
         }
       ]
     }

@@ -10,7 +10,7 @@
     </div>
 
     <div v-show="isShow" class="quoteList">
-        <div v-for="item in items.reverse()" class="quoteCard">
+        <div v-for="item in items" class="quoteCard">
             <div class="box">
                 <div class="detail">{{ item[0] }}</div>
                 <div v-if="item[2] == null" class="quote">{{ item[1] }}</div>

@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: doc
 aside: false
 ---
@@ -12,10 +11,18 @@ import {
   VPTeamMembers
 } from 'vitepress/theme'
 
+const code = [
+  // { title:"C",link:"/pages/wiki/swift",icon:"./wiki/c.png",desc:"回炉重造" },
+  { title:"SwiftUI",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png",desc:"SwiftUI" },
+    // { title:"Git",link:"/pages/wiki/swift",icon:"./wiki/git.png",desc:"Git" },
 
-const mobile = [
-  {title:"Swift",link:"/pages/wiki/swift",icon:"./wiki/swiftui.png",desc:"SwiftUI"}
 ]
+
+const os = [
+  { title:"Windows",link:"/pages/wiki/swift",icon:"./wiki/windows.png",desc:"Windows" },
+  { title:"Linux",link:"/pages/wiki/swift",icon:"./wiki/linux.png",desc:"Linux" },
+]
+
 </script>
 
 <VPTeamPage>
@@ -29,15 +36,26 @@ const mobile = [
   </VPTeamPageTitle>
 </VPTeamPage>
 
-### Mobile
+### Code
 
 <br>
 
-<LinkCard  :items ="mobile" />
+<LinkCard  :items ="code" />
+
+
+<!-- 
+### OS
+
+<br> -->
+
+<!-- <LinkCard  :items ="os" /> -->
 
 <style>
 
 .content{
+    
     max-width: unset !important;
+
 }
+
 </style>
