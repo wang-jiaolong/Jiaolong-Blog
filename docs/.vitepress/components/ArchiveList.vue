@@ -65,9 +65,6 @@ const props = defineProps({
     width: 100%;
     margin: 0 auto;
 
-    @media (max-width: 419px) {
-        width: 95%;
-    }
 
     .header {
         display: flex;
@@ -104,6 +101,12 @@ const props = defineProps({
         padding: 10px 0;
         display: flex;
 
+
+
+        @media (max-width: 419px) {
+            display: unset;
+        }
+
         a {
             text-decoration: inherit;
             outline: none;
@@ -112,7 +115,7 @@ const props = defineProps({
 
 
         .item-box {
-            margin: 5px 10px;
+            margin: 10px 10px;
             width: 25%;
             display: block;
             border: 1px solid var(--vp-c-bg-soft);
@@ -121,6 +124,13 @@ const props = defineProps({
             height: 100%;
             background-color: var(--vp-c-bg-soft);
             transition: border-color 0.25s, background-color 0.25s;
+
+
+            @media (max-width: 419px) {
+                width: unset;
+                margin: 20px 5px;
+
+            }
 
             // &:first-child{
             //     margin-left: 0px;
@@ -142,6 +152,10 @@ const props = defineProps({
                 width: 100%;
                 height: 140px;
                 transition: all 0.3s;
+
+                @media (max-width: 419px) {
+                    display: none;
+                }
             }
 
 
