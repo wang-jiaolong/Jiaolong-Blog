@@ -101,8 +101,6 @@ const props = defineProps({
         padding: 10px 0;
         display: flex;
 
-
-
         @media (max-width: 419px) {
             display: unset;
         }
