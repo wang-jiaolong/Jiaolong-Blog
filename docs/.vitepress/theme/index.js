@@ -8,6 +8,7 @@ import '@icon-park/vue-next/styles/index.css';
 import LinkCard from "../components/LinkCard.vue"
 import QuoteCard from "../components/QuoteCard.vue"
 import Timeline from "../components/Timeline.vue"
+import ArchiveList from "../components/ArchiveList.vue"
 
 export default {
   // ...Theme,
@@ -25,6 +26,7 @@ export default {
     ctx.app.component('LinkCard',LinkCard)
     ctx.app.component('QuoteCard',QuoteCard)
     ctx.app.component('Timeline',Timeline)
+    ctx.app.component('ArchiveList',ArchiveList)
 
   }
 

@@ -19,10 +19,17 @@ hero:
     #   text: Wiki
     #   link: /wiki
 features:
-  - title: 我的周记
-    details: 记录下我的成长和一些思考
-    icon: 📅
+
+  - title: 我的文章
+    details: 一些学习思考记录
+    icon: 📃
     linkText: 随便看看
+    link: /posts
+
+  - title: 我的周记
+    details: 每周思考复盘
+    icon: 📅
+    linkText: 每周更新
     link: /weekly
 
   - title: 我的项目
@@ -38,9 +45,9 @@ features:
     linkText: 随便看看
     link: /wiki
 
-  - title: 我的摘录
+  - title: 一些摘录
     details: 再多一点思考
-    icon: 📃
+    icon: 🗃
     linkText: 随便看看
     link: /excerpt
 

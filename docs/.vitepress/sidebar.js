@@ -10,6 +10,21 @@ export const sidebar = {
       ]
     }
   ],
+  "/pages/posts/": [
+    {
+      "text": "POSTS",
+      "items": [
+        {
+          "text": "iOS内存管理研究",
+          "link": "/pages/posts/001.iOS内存管理研究"
+        },
+        {
+          "text": "虚拟内存",
+          "link": "/pages/posts/002.虚拟内存"
+        }
+      ]
+    }
+  ],
   "/pages/project/": [
     {
       "text": "PROJECT",
