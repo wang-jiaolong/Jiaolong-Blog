@@ -20,7 +20,7 @@ export const sidebar = {
         },
         {
           "text": "虚拟内存",
-          "link": "/pages/posts/002.memory"
+          "link": "/pages/posts/002.memery"
         }
       ]
     }

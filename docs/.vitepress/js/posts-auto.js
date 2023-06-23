@@ -26,6 +26,7 @@ function traverseFolder(directoryPath) {
           title: data.title,
           date: data.date.toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(4, -3),
+          // link: filePath.replace(/\\/g, '/').slice(4, -3)+".html",
           img: data.img
         })
       }
