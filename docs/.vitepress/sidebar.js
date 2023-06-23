@@ -16,11 +16,11 @@ export const sidebar = {
       "items": [
         {
           "text": "iOS内存管理研究",
-          "link": "/pages/posts/001.iOS内存管理研究"
+          "link": "/pages/posts/001.ios-memory"
         },
         {
           "text": "虚拟内存",
-          "link": "/pages/posts/002.虚拟内存"
+          "link": "/pages/posts/002.memory"
         }
       ]
     }
@@ -111,11 +111,11 @@ export const sidebar = {
       "items": [
         {
           "text": "第一个Vue项目",
-          "link": "/pages/wiki/vue/001.第一个Vue项目"
+          "link": "/pages/wiki/vue/001.first-vue-project"
         },
         {
           "text": "在Vue3中使用使用IconPark",
-          "link": "/pages/wiki/vue/002.使用iconpark"
+          "link": "/pages/wiki/vue/002.use-iconpark"
         }
       ]
     }

@@ -39,4 +39,8 @@ function traverseFolder(directoryPath) {
 
 const directoryPath = './docs/pages/posts';
 
+
+
 export const posts =  traverseFolder(directoryPath)
+
+console.log(posts)
