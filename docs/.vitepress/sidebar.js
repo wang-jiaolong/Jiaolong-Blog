@@ -15,7 +15,7 @@ export const sidebar = {
       "text": "POSTS",
       "items": [
         {
-          "text": "iOS内存管理研究",
+          "text": "iOS内存管理机制",
           "link": "/pages/posts/001.ios-memory"
         },
         {
@@ -90,6 +90,10 @@ export const sidebar = {
         {
           "text": "No.07 | 初探效率生活",
           "link": "/pages/weekly/2023/07"
+        },
+        {
+          "text": "No.08 | 基础不牢 地动山摇",
+          "link": "/pages/weekly/2023/08"
         }
       ]
     }
