@@ -4,9 +4,9 @@
     "vitepress": "^1.0.0-beta.2"
   },
   "scripts": {
-    "dev": "node ./sidebar-auto.js && vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "docs:dev": "node ./sidebar-auto.js && vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
