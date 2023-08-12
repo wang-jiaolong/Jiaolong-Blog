@@ -15,12 +15,56 @@ export const sidebar = {
       "text": "POSTS",
       "items": [
         {
-          "text": "iOS内存管理研究",
+          "text": "iOS内存管理机制",
           "link": "/pages/posts/001.ios-memory"
         },
         {
           "text": "虚拟内存",
           "link": "/pages/posts/002.memery"
+        },
+        {
+          "text": "FFmpeg for Linux安装",
+          "link": "/pages/posts/003.FFmpeg for Linux安装"
+        },
+        {
+          "text": "使用cva6+spike搭建RISC-V环境",
+          "link": "/pages/posts/003.搭建riscv环境"
+        },
+        {
+          "text": "RISC-V V扩展1.0版本环境搭建与测试",
+          "link": "/pages/posts/006.RISC-V-V拓展环境搭建与测试"
+        },
+        {
+          "text": "移植FFmpeg到RISC-V记录",
+          "link": "/pages/posts/008.移植ffmpeg记录"
+        },
+        {
+          "text": "RISC-V Vector Extension 1.0 翻译",
+          "link": "/pages/posts/010.RISC-V V拓展1.0文档翻译"
+        },
+        {
+          "text": "RISCV-V拓展1.0解读",
+          "link": "/pages/posts/011.RISCV-V拓展1.0解读"
+        },
+        {
+          "text": "浅谈向量化和SIMD",
+          "link": "/pages/posts/012.谈向量化和SIMD"
+        },
+        {
+          "text": "x264编译测试",
+          "link": "/pages/posts/013.x264在ubuntu下编译"
+        },
+        {
+          "text": "移植x264到RISC-V",
+          "link": "/pages/posts/017.移植x264到RISC-V"
+        },
+        {
+          "text": "QEMU运行RVV",
+          "link": "/pages/posts/018.QEMU运行RVV"
+        },
+        {
+          "text": "Swift拼音排序",
+          "link": "/pages/posts/023.swift拼音排序"
         }
       ]
     }
@@ -90,6 +134,10 @@ export const sidebar = {
         {
           "text": "No.07 | 初探效率生活",
           "link": "/pages/weekly/2023/07"
+        },
+        {
+          "text": "No.08 | 基础不牢 地动山摇",
+          "link": "/pages/weekly/2023/08"
         }
       ]
     }

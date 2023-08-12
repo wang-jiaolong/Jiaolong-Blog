@@ -15,11 +15,11 @@
 
                 <a :href="item.link" class="item-box" v-for="item in items">
 
-                    <img :src="item.img" />
+                    <img :src="item.img == null ? ' /posts/default.jpg' : item.img" />
 
                     <div class="item-info">
                         <div class="title">{{ item.title }}</div>
-                        <div class="date">2023-06-21</div>
+                        <div class="date"> {{ item.date }} </div>
                     </div>
 
                 </a>
@@ -100,6 +100,7 @@ const props = defineProps({
 
         padding: 10px 0;
         display: flex;
+        flex-wrap: wrap;
 
         @media (max-width: 419px) {
             display: unset;
@@ -114,7 +115,7 @@ const props = defineProps({
 
         .item-box {
             margin: 10px 10px;
-            width: 25%;
+            width: calc(25% - 20px);
             display: block;
             border: 1px solid var(--vp-c-bg-soft);
             border-radius: 10px;
@@ -166,6 +167,9 @@ const props = defineProps({
                     line-height: 24px;
                     font-size: 16px;
                     font-weight: 600;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
 
                 .date {
