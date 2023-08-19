@@ -25,12 +25,12 @@ const { theme, page, frontmatter } = useData()
       Posts
     </template>
     <template #lead>
-      学习笔记
+      我的文章
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<ArchiveList title="Product" :items ="theme.posts" />
+<ArchiveList :items ="theme.posts" />
 
 <style>
 

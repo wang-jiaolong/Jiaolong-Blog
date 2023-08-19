@@ -1,17 +1,17 @@
 {
-  "hash": "03d14bc1",
-  "browserHash": "bcd86e31",
+  "hash": "0903b696",
+  "browserHash": "92ef9dee",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7f01b824",
+      "fileHash": "9d972437",
       "needsInterop": false
     },
     "@icon-park/vue-next": {
       "src": "../../../../node_modules/@icon-park/vue-next/es/index.js",
       "file": "@icon-park_vue-next.js",
-      "fileHash": "c16541a3",
+      "fileHash": "deef493e",
       "needsInterop": false
     }
   },
