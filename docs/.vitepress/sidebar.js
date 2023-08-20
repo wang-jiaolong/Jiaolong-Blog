@@ -69,6 +69,17 @@ export const sidebar = {
       ]
     }
   ],
+  "/pages/posts/": [
+    {
+      "text": "POSTS",
+      "items": [
+        {
+          "text": "事线app-讲讲背后的故事",
+          "link": "/pages/posts/eventline"
+        }
+      ]
+    }
+  ],
   "/pages/project/": [
     {
       "text": "PROJECT",

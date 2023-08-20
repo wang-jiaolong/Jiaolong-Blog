@@ -63,7 +63,11 @@ const props = defineProps({
 .yearList {
     width: 90%;
     margin: 0 auto;
-    
+
+    @media (max-width: 419px) {
+        width: 100%;
+    }
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -136,7 +140,9 @@ const props = defineProps({
 
             .item-info {
                 padding: 25px 30px;
-
+                @media (max-width: 419px) {
+                    padding: 15px 20px;
+                }
                 .title {
                     line-height: 24px;
                     font-size: 16px;
