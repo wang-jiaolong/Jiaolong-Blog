@@ -17,9 +17,9 @@
 
                     <div class="item-info">
                         <div class="title">{{ item.title }}</div>
-                        <!-- <div class="tags">
-                            <div class="tag"  v-for="tag in item.tags">{{ tag }}</div>
-                        </div> -->
+                        <div class="tags">
+                            <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a>
+                        </div>
                         <div class="date"> {{ item.date }} </div>
                     </div>
 
@@ -118,7 +118,7 @@ const props = defineProps({
             margin: 20px auto;
             display: block;
             border: 1px solid var(--vp-c-bg-soft);
-            border-radius: 10px;
+            border-radius: 7px;
             overflow: hidden;
             height: 100%;
             background-color: var(--vp-c-bg-soft);
@@ -139,17 +139,23 @@ const props = defineProps({
 
 
             .item-info {
-                padding: 25px 30px;
+                padding: 30px 35px;
+
                 @media (max-width: 419px) {
                     padding: 15px 20px;
                 }
+
                 .title {
                     line-height: 24px;
-                    font-size: 16px;
-                    font-weight: 600;
+                    font-size: 20px;
+                    font-weight: 500;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    
+                    @media (max-width: 419px) {
+                        font-size: 16px;
+                    }
                 }
 
                 .date {
@@ -157,14 +163,22 @@ const props = defineProps({
                     font-size: 14px;
                     font-weight: 500;
                     color: var(--vp-c-text-2);
-                    margin-top: 15px;
+                    margin-top: 10px;
                 }
 
-                .tags{
+                .tags {
+                    margin-top: 10px;
+                    margin-left: -3px;
 
-                    .tag{
-                        margin-right: 10px;
+                    .tag {
+                        margin: 3px;
+                        padding: 3px 7px;
                         display: inline-block;
+                        background: var(--vp-c-bg-soft-down);
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-radius: 5px;
+
                     }
                 }
 
