@@ -13,17 +13,17 @@
 
             <div class="postList">
 
-                <div class="item-box" v-for="item in items">
+                <a :href="item.link" class="item-box" v-for="item in items">
 
-                    <div class="item-info">
-                        <a :href="item.link" class="title">{{ item.title }}</a>
+                    <div  class="item-info">
+                        <div class="title">{{ item.title }}</div>
                         <div class="tags">
-                            <a href="#" class="tag" v-for="tag in item.tags"># {{ tag }}</a>
+                            <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
                         </div>
                         <div class="date"> {{ item.date }} </div>
                     </div>
 
-                </div>
+                </a>
 
             </div>
 
@@ -173,7 +173,8 @@ const props = defineProps({
                     .tag {
                         margin: 3px;
                         display: inline-block;
-                        // background: var(--vp-c-bg-soft-down);
+                        padding: 1px 6px;
+                        background: var(--vp-c-bg-soft-down);
                         font-size: 14px;
                         font-weight: 500;
                         border-radius: 5px;
