@@ -174,7 +174,7 @@ const props = defineProps({
                         margin: 3px;
                         display: inline-block;
                         // background: var(--vp-c-bg-soft-down);
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: 500;
                         border-radius: 5px;
 
