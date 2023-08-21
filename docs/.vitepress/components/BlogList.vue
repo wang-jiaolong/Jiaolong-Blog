@@ -13,17 +13,17 @@
 
             <div class="postList">
 
-                <a :href="item.link" class="item-box" v-for="item in items">
+                <div class="item-box" v-for="item in items">
 
                     <div class="item-info">
-                        <div class="title">{{ item.title }}</div>
+                        <a :href="item.link" class="title">{{ item.title }}</a>
                         <div class="tags">
                             <a href="#" class="tag" v-for="tag in item.tags"># {{ tag }}</a>
                         </div>
                         <div class="date"> {{ item.date }} </div>
                     </div>
 
-                </a>
+                </div>
 
             </div>
 
