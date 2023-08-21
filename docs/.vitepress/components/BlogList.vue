@@ -18,7 +18,7 @@
                     <div class="item-info">
                         <div class="title">{{ item.title }}</div>
                         <div class="tags">
-                            <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a>
+                            <a href="#" class="tag" v-for="tag in item.tags"># {{ tag }}</a>
                         </div>
                         <div class="date"> {{ item.date }} </div>
                     </div>
@@ -174,7 +174,7 @@ const props = defineProps({
                         margin: 3px;
                         padding: 0px 6px;
                         display: inline-block;
-                        background: var(--vp-c-bg-soft-down);
+                        // background: var(--vp-c-bg-soft-down);
                         font-size: 10px;
                         font-weight: 500;
                         border-radius: 5px;
