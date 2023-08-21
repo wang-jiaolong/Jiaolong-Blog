@@ -172,7 +172,7 @@ const props = defineProps({
 
                     .tag {
                         margin: 3px;
-                        padding: 4px 2px;
+                        padding: 1px 6px;
                         display: inline-block;
                         background: var(--vp-c-bg-soft-down);
                         font-size: 10px;
