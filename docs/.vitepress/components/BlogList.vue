@@ -160,7 +160,7 @@ const props = defineProps({
 
                 .date {
                     line-height: 24px;
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: 500;
                     color: var(--vp-c-text-2);
                     margin-top: 10px;
