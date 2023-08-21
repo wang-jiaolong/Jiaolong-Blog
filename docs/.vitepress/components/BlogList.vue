@@ -118,7 +118,7 @@ const props = defineProps({
             margin: 20px auto;
             display: block;
             border: 1px solid var(--vp-c-bg-soft);
-            border-radius: 7px;
+            border-radius: 10px;
             overflow: hidden;
             height: 100%;
             background-color: var(--vp-c-bg-soft);
