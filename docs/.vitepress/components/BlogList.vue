@@ -127,6 +127,11 @@ const props = defineProps({
             background-color: var(--vp-c-bg-soft);
             transition: border-color 0.25s, background-color 0.25s;
 
+
+            @media (max-width: 419px) {
+                margin: 20px auto;
+            }
+
             &:first-child{
                 margin-top: 10px;
             }
@@ -142,6 +147,10 @@ const props = defineProps({
                 object-fit: cover;
                 transition: all 0.4s;
 
+                @media (max-width: 419px) {
+                    width: 120px;
+                    height: 80px;
+                }
             }
 
             &:hover {
