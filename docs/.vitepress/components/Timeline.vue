@@ -7,7 +7,7 @@
                 <button class="timeline-cta">READ MORE</button>
             </div>
             <div class="timeline-headline">
-                <p class="timeline-subtitle">{{ item.date }}</p>
+                <p class="timeline-subtitle">{{ new Date(item.date).toLocaleDateString() }}</p>
                 <h2 class="timeline-title">{{ item.title }}</h2>
                 <!-- <p class="timeline-excerpt">{{ item.abstract }}</p> -->
             </div>

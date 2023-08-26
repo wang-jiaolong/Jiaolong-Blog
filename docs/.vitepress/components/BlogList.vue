@@ -15,12 +15,15 @@
 
                 <a :href="item.link" class="item-box" v-for="item in items">
 
-                    <div  class="item-info">
-                        <div class="title">{{ item.title }}</div>
+                    <img v-if="item.img" :src="item.img" />
+                    <div class="item-info">
+                        <div class="title">{{ item.title }}
+                            <Badge v-if="item.badge" type="tip" :text="item.badge" />
+                        </div>
                         <div class="tags">
                             <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
                         </div>
-                        <div class="date"> {{ item.date }} </div>
+                        <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
                     </div>
 
                 </a>
@@ -100,7 +103,7 @@ const props = defineProps({
 
     .postList {
 
-        padding: 10px 10px;
+        padding: 10px 30px;
         flex-wrap: wrap;
 
         @media (max-width: 419px) {
@@ -115,8 +118,8 @@ const props = defineProps({
 
 
         .item-box {
-            margin: 20px auto;
-            display: block;
+            margin: 40px auto;
+            display: flex;
             border: 1px solid var(--vp-c-bg-soft);
             border-radius: 10px;
             overflow: hidden;
@@ -124,17 +127,33 @@ const props = defineProps({
             background-color: var(--vp-c-bg-soft);
             transition: border-color 0.25s, background-color 0.25s;
 
-            // &:first-child{
-            //     margin-left: 0px;
-            // }
+            &:first-child{
+                margin-top: 10px;
+            }
 
-            // &:last-child{
-            //     margin-right: 0px;
-            // }
+            &:last-child{
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 280px;
+                height: 180px;
+                /* overflow: hidden; */
+                object-fit: cover;
+                transition: all 0.4s;
+
+            }
 
             &:hover {
                 border-color: var(--vp-c-brand);
                 background-color: var(--vp-c-bg-soft-up);
+
+                img{
+                    scale: 1.1;
+                    transition: all 0.6s;
+                    margin-right: 20px;
+                }
+
             }
 
 
@@ -147,12 +166,12 @@ const props = defineProps({
 
                 .title {
                     line-height: 24px;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 500;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    
+
                     @media (max-width: 419px) {
                         font-size: 16px;
                     }
