@@ -30,6 +30,8 @@ const { theme, page, frontmatter } = useData()
   </VPTeamPageTitle>
 </VPTeamPage>
 
+> 共 {{ theme.blogs.length }} 篇
+
 <BlogList :items ="theme.blogs" />
 
 <style>
