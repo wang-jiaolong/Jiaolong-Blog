@@ -20,8 +20,14 @@ hero:
     #   link: /wiki
 features:
 
+  - title: 技术博客
+    details: 一些学习记录
+    icon: 🧑🏻‍💻
+    linkText: 随便看看
+    link: /blogs
+
   - title: 我的文章
-    details: 一些学习思考记录
+    details: 一些想法思考
     icon: 📃
     linkText: 随便看看
     link: /posts

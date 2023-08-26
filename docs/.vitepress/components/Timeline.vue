@@ -26,8 +26,8 @@ const props = defineProps({
 </script>
 
 <style scoped lang="less">
-@import url('https://fonts.googleapis.com/css?family=Jura:400,500,600');
-@import url('https://fonts.googleapis.com/css?family=K2D:400,500,600');
+// @import url('https://fonts.googleapis.com/css?family=Jura:400,500,600');
+// @import url('https://fonts.googleapis.com/css?family=K2D:400,500,600');
 
 
 * {

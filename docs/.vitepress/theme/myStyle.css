@@ -53,3 +53,7 @@ nav {
 .VPTeamPage{
    padding-bottom: 30px !important;
 }
+
+.vp-doc p img{
+      margin:auto;
+}

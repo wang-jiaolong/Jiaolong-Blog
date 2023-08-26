@@ -9,6 +9,7 @@ import LinkCard from "../components/LinkCard.vue"
 import QuoteCard from "../components/QuoteCard.vue"
 import Timeline from "../components/Timeline.vue"
 import ArchiveList from "../components/ArchiveList.vue"
+import BlogList from "../components/BlogList.vue"
 
 export default {
   // ...Theme,
@@ -27,6 +28,7 @@ export default {
     ctx.app.component('QuoteCard',QuoteCard)
     ctx.app.component('Timeline',Timeline)
     ctx.app.component('ArchiveList',ArchiveList)
+    ctx.app.component('BlogList',BlogList)
 
   }
 

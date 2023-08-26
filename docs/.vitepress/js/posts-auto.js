@@ -27,7 +27,8 @@ function traverseFolder(directoryPath) {
           date: data.date.toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(4, -3),
           // link: filePath.replace(/\\/g, '/').slice(4, -3)+".html",
-          img: data.img
+          img: data.img,
+          tags: data.tags
         })
       }
     });
@@ -38,10 +39,8 @@ function traverseFolder(directoryPath) {
   return weeklys
 }
 
-const directoryPath = './docs/pages/posts';
+const blogsPath = './docs/pages/blogs';
+const postsPath = './docs/pages/posts';
 
-
-
-export const posts =  traverseFolder(directoryPath)
-
-console.log(posts)
+export const blogs =  traverseFolder(blogsPath)
+export const posts =  traverseFolder(postsPath)

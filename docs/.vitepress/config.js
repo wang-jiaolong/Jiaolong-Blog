@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
 import { weekly } from './js/weekly-auto'
-import { posts } from './js/posts-auto'
+import { posts,blogs } from './js/posts-auto'
 
 // import { rewrites } from './rewrites'
 // import { weekly } from './weekly'
@@ -19,6 +19,7 @@ export default defineConfig({
     outline: [2, 3, 4, 5],
     weekly:weekly,
     posts:posts,
+    blogs:blogs,
     // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
