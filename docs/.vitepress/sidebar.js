@@ -65,6 +65,10 @@ export const sidebar = {
         {
           "text": "Swift拼音排序",
           "link": "/pages/blogs/023.swift拼音排序"
+        },
+        {
+          "text": "Clean-Architecture translate",
+          "link": "/pages/blogs/024.Clean-Architecture- translate"
         }
       ]
     }
