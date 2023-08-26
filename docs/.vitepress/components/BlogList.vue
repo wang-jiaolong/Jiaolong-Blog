@@ -23,7 +23,11 @@
                         <div class="tags">
                             <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
                         </div>
-                        <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
+                        <div class="bottom-line">
+                            <!-- <div class="author">Jiaolong</div> -->
+                            <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
+                        </div>
+
                     </div>
 
                 </a>
@@ -132,11 +136,11 @@ const props = defineProps({
                 margin: 20px auto;
             }
 
-            &:first-child{
+            &:first-child {
                 margin-top: 10px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-bottom: 10px;
             }
 
@@ -148,7 +152,7 @@ const props = defineProps({
                 transition: all 0.4s;
 
                 @media (max-width: 419px) {
-                    width: 120px;
+                    width: 100px;
                     height: 80px;
                 }
             }
@@ -157,7 +161,7 @@ const props = defineProps({
                 border-color: var(--vp-c-brand);
                 background-color: var(--vp-c-bg-soft-up);
 
-                img{
+                img {
                     scale: 1.1;
                     transition: all 0.6s;
                     margin-right: 20px;
@@ -186,29 +190,34 @@ const props = defineProps({
                     }
                 }
 
-                .date {
-                    line-height: 24px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: var(--vp-c-text-2);
-                    margin-top: 10px;
-                }
+                .bottom-line {
 
-                .tags {
+                    display: flex;
                     margin-top: 10px;
-                    margin-left: -3px;
 
-                    .tag {
-                        margin: 3px;
-                        display: inline-block;
-                        padding: 1px 6px;
-                        background: var(--vp-c-bg-soft-down);
+                    .date {
+                        line-height: 24px;
                         font-size: 14px;
                         font-weight: 500;
-                        border-radius: 5px;
+                        color: var(--vp-c-text-2);
+                    }
 
+                    .tags {
+                        margin-left: -3px;
+
+                        .tag {
+                            margin: 3px;
+                            display: inline-block;
+                            padding: 1px 6px;
+                            background: var(--vp-c-bg-soft-down);
+                            font-size: 14px;
+                            font-weight: 500;
+                            border-radius: 5px;
+
+                        }
                     }
                 }
+
 
             }
         }
