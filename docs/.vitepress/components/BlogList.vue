@@ -18,7 +18,7 @@
                     <img v-if="item.img" :src="item.img" />
                     <div class="item-info">
                         <div class="title">{{ item.title }}
-                            <Badge v-if="item.badge" type="tip" :text="item.badge" />
+                            <Badge class="badge" v-if="item.badge" type="tip" :text="item.badge" />
                         </div>
                         <div class="tags">
                             <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
@@ -26,6 +26,8 @@
                         <div class="bottom-line">
                             <!-- <div class="author">Jiaolong</div> -->
                             <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
+                            <!-- <Badge class="badge-mobile" v-if="item.badge" type="tip" :text="item.badge" /> -->
+
                         </div>
 
                     </div>
@@ -153,7 +155,7 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     width: 100px;
-                    height: 80px;
+                    height: auto;
                 }
             }
 
@@ -175,6 +177,10 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     padding: 15px 20px;
+                    overflow: hidden;
+                    .badge{
+                        display: none;
+                    }
                 }
 
                 .title {
