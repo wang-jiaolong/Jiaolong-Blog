@@ -6,7 +6,7 @@ import { posts,blogs } from './js/posts-auto'
 
 // import { rewrites } from './rewrites'
 
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,7 +23,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
 
-    // sidebar: sidebar,
+    sidebar: sidebar,
 
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
@@ -41,10 +41,10 @@ export default defineConfig({
   },
 
   // rewrites: rewrites,
-  vite:{
-    plugins:[
-      // add plugin
-      AutoSidebar()
-    ]
-  },
+  // vite:{
+  //   plugins:[
+  //     // add plugin
+  //     AutoSidebar()
+  //   ]
+  // },
 })
