@@ -27,7 +27,6 @@
                             <!-- <div class="author">Jiaolong</div> -->
                             <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
                             <!-- <Badge class="badge-mobile" v-if="item.badge" type="tip" :text="item.badge" /> -->
-
                         </div>
 
                     </div>
@@ -155,7 +154,7 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     width: 100px;
-                    height: auto;
+                    height: 80px;
                 }
             }
 
@@ -176,7 +175,7 @@ const props = defineProps({
                 padding: 30px 35px;
 
                 @media (max-width: 419px) {
-                    padding: 15px 20px;
+                    padding: 10px 15px;
                     overflow: hidden;
                     .badge{
                         display: none;
