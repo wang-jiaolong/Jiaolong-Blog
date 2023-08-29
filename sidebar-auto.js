@@ -1,6 +1,6 @@
-import { fs } from "fs"
-
-
+const fs = require('fs');
+const path = require('path');
+const matter = require('gray-matter');
 
 function traverseFolder(folderPath) {
   const sidebar = {};
