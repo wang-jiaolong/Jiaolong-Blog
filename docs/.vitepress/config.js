@@ -39,7 +39,5 @@ export default defineConfig({
       lineNumbers: true,
       badge: true
     }
-  },
-
-  // rewrites: rewrites,
+  }
 })

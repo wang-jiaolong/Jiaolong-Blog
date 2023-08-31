@@ -1,6 +1,6 @@
-import { fs } from "fs"
-
-
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
 function traverseFolder(folderPath) {
   const sidebar = {};
