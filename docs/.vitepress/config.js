@@ -5,8 +5,9 @@ import { weekly } from './js/weekly-auto'
 import { posts,blogs } from './js/posts-auto'
 
 // import { rewrites } from './rewrites'
+// import { weekly } from './weekly'
 
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -41,10 +42,4 @@ export default defineConfig({
   },
 
   // rewrites: rewrites,
-  vite:{
-    plugins:[
-      // add plugin
-      AutoSidebar()
-    ]
-  },
 })

@@ -26,7 +26,7 @@ export const navbar =  [
     //   }
     // ]
   },
-  // { text: 'Wiki', link: '/wiki' },
+  { text: 'Wiki', link: '/wiki' },
   { text: 'Excerpt', link: '/excerpt' },
   { text: 'About', link: '/about' },
 

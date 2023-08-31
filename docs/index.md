@@ -20,7 +20,7 @@ hero:
     #   link: /wiki
 features:
 
-  - title: 我的博客
+  - title: 技术博客
     details: 一些学习记录
     icon: 🧑🏻‍💻
     linkText: 随便看看
@@ -44,11 +44,12 @@ features:
     linkText: 随便看看
     link: /project
 
-  # - title: Wiki
-  #   details: 到底需要记住多少命令行呢？
-  #   icon: 📚
-  #   linkText: 随便看看
-  #   link: /wiki
+
+  - title: Wiki
+    details: 到底需要记住多少命令行呢？
+    icon: 📚
+    linkText: 随便看看
+    link: /wiki
 
   - title: 一些摘录
     details: 再多一点思考
