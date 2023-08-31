@@ -45,11 +45,11 @@ features:
     link: /project
 
 
-  - title: Wiki
-    details: 到底需要记住多少命令行呢？
-    icon: 📚
-    linkText: 随便看看
-    link: /wiki
+  # - title: Wiki
+  #   details: 到底需要记住多少命令行呢？
+  #   icon: 📚
+  #   linkText: 随便看看
+  #   link: /wiki
 
   - title: 一些摘录
     details: 再多一点思考

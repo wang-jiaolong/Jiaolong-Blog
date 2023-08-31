@@ -19,6 +19,9 @@ function traverseFolder(folderPath) {
       } else if (stats.isFile() && path.extname(file) === '.md') {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(fileContent);
+        if (data.hidden){
+          continue
+        }
         const fileName = data.title || path.basename(file, '.md');
         const pathName = path.basename(file, '.md');
         var fileLink = "/pages" + path.join(parentPath, pathName).replace(/\\/g, '/');
