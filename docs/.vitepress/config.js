@@ -4,8 +4,6 @@ import { navbar } from './navbar'
 import { weekly } from './js/weekly-auto'
 import { posts,blogs } from './js/posts-auto'
 
-// import { rewrites } from './rewrites'
- 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jiaolong 's Blog",

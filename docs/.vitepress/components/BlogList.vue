@@ -3,13 +3,13 @@
 
         <div class="yearList">
 
-            <!-- <div class="header">
+            <div class="header">
                 <button @click="folder" class="left">
                     <div class="title">2023</div>
                     <iconRight class="iconRight" :class="{ rotated: isShow }" theme="outline" size="30" fill="#333" />
                 </button>
                 <div class="caption">共<span class="number"> {{ items.length }} </span>篇</div>
-            </div> -->
+            </div>
 
             <div class="postList">
 

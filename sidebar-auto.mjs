@@ -1,9 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const matter = require('gray-matter');
-
-
-
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
 function traverseFolder(folderPath) {
   const sidebar = {};
@@ -23,8 +20,8 @@ function traverseFolder(folderPath) {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(fileContent);
         if (data.hidden){
-          continue;
-        } 
+          continue
+        }
         const fileName = data.title || path.basename(file, '.md');
         const pathName = path.basename(file, '.md');
         var fileLink = "/pages" + path.join(parentPath, pathName).replace(/\\/g, '/');
@@ -41,6 +38,7 @@ function traverseFolder(folderPath) {
         } else {
           var folderText = String(parentPath.replace(/\\/g, '/'))
           sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
+
         }
       }
     }
@@ -56,6 +54,7 @@ const folderPath = './docs/pages'; // 替换为实际的文件夹路径
 const sidebar = traverseFolder(folderPath);
 
 // 输出生成的JSON对象
+console.log(JSON.stringify(sidebar, null, 2));
 const prepend = `export const sidebar = `
 fs.writeFileSync("./docs/.vitepress/sidebar.js", prepend + JSON.stringify(sidebar, null, 2))
 
