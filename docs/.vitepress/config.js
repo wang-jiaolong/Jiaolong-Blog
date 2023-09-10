@@ -5,9 +5,7 @@ import { weekly } from './js/weekly-auto'
 import { posts,blogs } from './js/posts-auto'
 
 // import { rewrites } from './rewrites'
-
-// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
-
+ 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jiaolong 's Blog",
@@ -22,13 +20,7 @@ export default defineConfig({
     // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
-
     sidebar: sidebar,
-
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
-
     footer: {
       // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2023 Jiaolong Wang'
@@ -38,13 +30,5 @@ export default defineConfig({
       lineNumbers: true,
       badge: true
     }
-  },
-
-  // rewrites: rewrites,
-  // vite:{
-  //   plugins:[
-  //     // add plugin
-  //     AutoSidebar()
-  //   ]
-  // },
+  }
 })

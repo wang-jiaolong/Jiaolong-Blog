@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
+    "esm": "^3.2.25",
     "gray-matter": "^4.0.3",
     "vue-router": "^4.2.4"
   }
