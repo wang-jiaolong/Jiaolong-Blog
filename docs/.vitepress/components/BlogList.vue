@@ -188,7 +188,7 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     height: 80px;
-                    padding: 5px 15px;
+                    padding: 8px 15px;
                     overflow: hidden;
 
                     .badge {
@@ -222,6 +222,7 @@ const props = defineProps({
                     -webkit-box-orient: vertical;
                     @media (max-width: 419px) {
                         -webkit-line-clamp: 1;
+                        padding-top: 0px;
                     }
                 }
 
