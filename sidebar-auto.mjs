@@ -34,11 +34,11 @@ function traverseFolder(folderPath) {
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 
         if (sidebar[key]) {
-          sidebar[key][0].items.push(fileObject);
+          sidebar[key][0].items.unshift(fileObject);
+          sidebar[key][0].items.sort
         } else {
           var folderText = String(parentPath.replace(/\\/g, '/'))
           sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
-
         }
       }
     }

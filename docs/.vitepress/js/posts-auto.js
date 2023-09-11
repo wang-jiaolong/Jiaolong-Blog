@@ -25,6 +25,7 @@ function traverseFolder(directoryPath) {
           weeklys.push({
             title: data.title,
             date: data.date.toLocaleDateString(),
+            description: data.description,
             link: filePath.replace(/\\/g, '/').slice(4, -3),
             badge:data.badge,
             // link: filePath.replace(/\\/g, '/').slice(4, -3)+".html",

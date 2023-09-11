@@ -17,8 +17,13 @@
 
                     <img v-if="item.img" :src="item.img" />
                     <div class="item-info">
-                        <div class="title">{{ item.title }}
+                        <div class="title">
+                            {{ item.title }}
                             <Badge class="badge" v-if="item.badge" type="tip" :text="item.badge" />
+                        </div>
+
+                        <div class="description">
+                            {{ item.description }}
                         </div>
                         <div class="tags">
                             <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
@@ -69,7 +74,7 @@ const props = defineProps({
 
 <style scoped lang="less">
 .yearList {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 
     @media (max-width: 419px) {
@@ -123,7 +128,7 @@ const props = defineProps({
 
 
         .item-box {
-            margin: 40px auto;
+            margin: 20px auto;
             display: flex;
             border: 1px solid var(--vp-c-bg-soft);
             border-radius: 10px;
@@ -146,8 +151,8 @@ const props = defineProps({
             }
 
             img {
-                width: 280px;
-                height: 180px;
+                width: 230px;
+                height: 150px;
                 /* overflow: hidden; */
                 object-fit: cover;
                 transition: all 0.4s;
@@ -172,7 +177,8 @@ const props = defineProps({
 
 
             .item-info {
-                padding: 30px 35px;
+                height: 150px;
+                padding: 20px 20px 20px 30px;
 
                 @media (max-width: 419px) {
                     padding: 10px 15px;
@@ -184,7 +190,7 @@ const props = defineProps({
 
                 .title {
                     line-height: 24px;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 500;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -193,6 +199,13 @@ const props = defineProps({
                     @media (max-width: 419px) {
                         font-size: 16px;
                     }
+                }
+
+                .description{
+                    font-size: 12px;
+                    color: var(--vp-c-text-2);
+                    padding-top: 5px;
+                    line-height: 20px;
                 }
 
                 .bottom-line {
