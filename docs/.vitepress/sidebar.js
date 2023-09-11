@@ -1,11 +1,15 @@
 export const sidebar = {
-  "/pages/": [
+  "/pages/0.template/": [
     {
-      "text": "",
+      "text": "0.TEMPLATE",
       "items": [
         {
+          "text": "000.blog",
+          "link": "/pages/0.template/000.blog"
+        },
+        {
           "text": "api-examples",
-          "link": "/pagesapi-examples"
+          "link": "/pages/0.template/api-examples"
         }
       ]
     }
@@ -29,6 +33,10 @@ export const sidebar = {
         {
           "text": "嵌套UIKit：UIPageViewController代替TabView",
           "link": "/pages/blogs/025.UIPageViewController"
+        },
+        {
+          "text": "数据流ObservedObject探究",
+          "link": "/pages/blogs/026.ObservedObject"
         }
       ]
     }
