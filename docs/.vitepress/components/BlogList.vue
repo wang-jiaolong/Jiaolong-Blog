@@ -188,7 +188,7 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     height: 80px;
-                    padding: 8px 15px;
+                    padding: 8px 8px 8px 15px;
                     overflow: hidden;
 
                     .badge {
@@ -205,7 +205,7 @@ const props = defineProps({
                     white-space: nowrap;
 
                     @media (max-width: 419px) {
-                        font-size: 14px;
+                        font-size: 15px;
                     }
                 }
 
