@@ -168,9 +168,14 @@ const props = defineProps({
                 background-color: var(--vp-c-bg-soft-up);
 
                 img {
-                    scale: 1.1;
+                    scale: 1.05;
                     transition: all 0.6s;
-                    margin-right: 20px;
+                    margin-right: 5px;
+                }
+
+                .item-info{
+                    padding-right: 15px;
+                    transition: all 0.6s;
                 }
 
             }
@@ -179,11 +184,14 @@ const props = defineProps({
             .item-info {
                 height: 150px;
                 padding: 20px 20px 20px 30px;
+                transition: all 0.6s;
 
                 @media (max-width: 419px) {
-                    padding: 10px 15px;
+                    height: 80px;
+                    padding: 5px 15px;
                     overflow: hidden;
-                    .badge{
+
+                    .badge {
                         display: none;
                     }
                 }
@@ -197,27 +205,45 @@ const props = defineProps({
                     white-space: nowrap;
 
                     @media (max-width: 419px) {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
 
-                .description{
+                .description {
                     font-size: 12px;
                     color: var(--vp-c-text-2);
                     padding-top: 5px;
                     line-height: 20px;
+                    text-overflow: -o-ellipsis-lastline;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    @media (max-width: 419px) {
+                        -webkit-line-clamp: 1;
+                    }
                 }
 
                 .bottom-line {
 
                     display: flex;
-                    margin-top: 10px;
+                    margin-top: 5px;
+
+
+                    @media (max-width: 419px) {
+                        margin-top: 0px;
+                    }
 
                     .date {
                         line-height: 24px;
                         font-size: 14px;
                         font-weight: 500;
                         color: var(--vp-c-text-2);
+
+                        @media (max-width: 419px) {
+                            font-size: 12px;
+                        }
                     }
 
                     .tags {

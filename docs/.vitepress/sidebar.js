@@ -28,7 +28,7 @@ export const sidebar = {
         },
         {
           "text": "Clean-Architecture translate",
-          "link": "/pages/blogs/024.Clean-Architecture- translate"
+          "link": "/pages/blogs/024.Clean-Architecture-translate"
         },
         {
           "text": "虚拟内存",
