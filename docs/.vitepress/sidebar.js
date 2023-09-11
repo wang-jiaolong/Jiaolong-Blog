@@ -31,10 +31,6 @@ export const sidebar = {
           "link": "/pages/blogs/024.Clean-Architecture-translate"
         },
         {
-          "text": "虚拟内存",
-          "link": "/pages/blogs/002.memery"
-        },
-        {
           "text": "iOS内存管理机制",
           "link": "/pages/blogs/001.ios-memory"
         }

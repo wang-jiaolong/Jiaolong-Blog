@@ -30,7 +30,7 @@ const { theme, page, frontmatter } = useData()
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<ArchiveList :items ="theme.posts" />
+<ArchiveList :items ="theme.weekly" />
 
 <style>
 
