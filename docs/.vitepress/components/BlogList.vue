@@ -180,7 +180,6 @@ const props = defineProps({
 
             }
 
-
             .item-info {
                 height: 150px;
                 padding: 20px 20px 20px 30px;
