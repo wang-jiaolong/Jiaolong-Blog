@@ -231,7 +231,6 @@ const props = defineProps({
                     display: flex;
                     margin-top: 5px;
 
-
                     @media (max-width: 419px) {
                         margin-top: 0px;
                     }
@@ -249,7 +248,6 @@ const props = defineProps({
 
                     .tags {
                         margin-left: -3px;
-
                         .tag {
                             margin: 3px;
                             display: inline-block;
