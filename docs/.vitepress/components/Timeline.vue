@@ -53,7 +53,9 @@ body {
     flex-direction: column;
     position: relative;
     padding: 0 75px 100px 75px;
-
+    @media (max-width: 419px) {
+        padding: 0 10px 100px 10px;
+        }
 
     &:before {
         position: absolute;
@@ -155,6 +157,7 @@ body {
 
 
         @media (max-width: 419px) {
+            width: 45%;
             margin: 15px 0;
         }
 
