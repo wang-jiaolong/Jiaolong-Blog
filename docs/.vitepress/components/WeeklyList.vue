@@ -52,14 +52,22 @@ function fix(num, length) {
             width: 55px;
             text-align: center;
             border-radius: 5px;
+            @media (max-width: 419px) {
+                font-size: 13px;
+            }
         }
 
         .title {
             margin-left: 12px;
             text-decoration-color: none;
             font-size: 18px;
-        }
 
+
+            @media (max-width: 419px) {
+                font-size: 16px;
+            }
+        }
+        
 
 
         &:hover {
