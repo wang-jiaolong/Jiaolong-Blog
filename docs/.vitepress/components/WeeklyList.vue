@@ -45,7 +45,7 @@ function fix(num, length) {
     align-items: center;
     padding: 5px 0;
     .date{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 500;
         padding: 1px 5px;
         color: var(--vp-c-text-2);
