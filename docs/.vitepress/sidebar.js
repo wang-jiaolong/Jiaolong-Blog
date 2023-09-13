@@ -87,35 +87,51 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
-          "text": "No.08 | 基础不牢 地动山摇",
+          "text": "代码重构之路",
+          "link": "/pages/weekly/2023/12"
+        },
+        {
+          "text": "目的地：上海",
+          "link": "/pages/weekly/2023/11"
+        },
+        {
+          "text": "终于有实习了，面试复盘",
+          "link": "/pages/weekly/2023/10"
+        },
+        {
+          "text": "一些实习面经",
+          "link": "/pages/weekly/2023/09"
+        },
+        {
+          "text": "基础不牢 地动山摇",
           "link": "/pages/weekly/2023/08"
         },
         {
-          "text": "No.07 | 初探效率生活",
+          "text": "初探效率生活",
           "link": "/pages/weekly/2023/07"
         },
         {
-          "text": "No.06 | 迈出Web端的第一步",
+          "text": "迈出Web端的第一步",
           "link": "/pages/weekly/2023/06"
         },
         {
-          "text": "No.05 | 对AI有了新思考",
+          "text": "对AI有了新思考",
           "link": "/pages/weekly/2023/05"
         },
         {
-          "text": "No.04 | 想法远大于技术",
+          "text": "想法远大于技术",
           "link": "/pages/weekly/2023/04"
         },
         {
-          "text": "No.03 | 可编辑的数据才有价值",
+          "text": "可编辑的数据才有价值",
           "link": "/pages/weekly/2023/03"
         },
         {
-          "text": "No.02 | 克服不了的完美主义",
+          "text": "克服不了的完美主义",
           "link": "/pages/weekly/2023/02"
         },
         {
-          "text": "No.01 | 就这样，从这周开始写周记",
+          "text": "就这样，从这周开始写周记",
           "link": "/pages/weekly/2023/01"
         }
       ]
