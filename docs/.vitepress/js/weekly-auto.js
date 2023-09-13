@@ -23,7 +23,7 @@ function traverseFolder(directoryPath) {
         const { data } = matter(fileContent);
         // weeklys[filePath.replace(/\\/g, '/').slice(5)] = "pages" + data.permalink + ".md" 
         weeklys.push({
-          title: data.title.slice(8),
+          title: data.title,
           date: data.date.toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(4, -3),
           img: data.img
