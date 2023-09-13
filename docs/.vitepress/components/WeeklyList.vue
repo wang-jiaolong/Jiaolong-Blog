@@ -1,14 +1,14 @@
 <template>
     <div class="list">
-        <div class="page" v-for="page in items">
+        <a :href="page.link" class="page" v-for="page in items">
 
             <div class="date">
                 {{ formatDateTime(page.date) }}
             </div>
-            <a :href="page.link" class="title">
+            <div class="title">
                 {{ page.title }}
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
 </template>
 
@@ -40,16 +40,16 @@ function fix(num, length) {
     .page {
         display: flex;
         align-items: center;
-        padding: 7px 0;
+        padding: 8px 0;
         transition: all 0.4s;
 
         .date {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 500;
-            padding: 1px 5px;
+            padding: px 5px;
             color: var(--vp-c-text-2);
             background: var(--vp-c-bg-soft);
-            width: 45px;
+            width: 55px;
             text-align: center;
             border-radius: 5px;
         }
@@ -57,20 +57,22 @@ function fix(num, length) {
         .title {
             margin-left: 12px;
             text-decoration-color: none;
-
+            font-size: 18px;
         }
 
-        a {
-            color: inherit;
-        }
+
 
         &:hover {
             background: var(--vp-c-bg-soft);
-            padding: 7px 5px;
+            padding-left: 5px;
             border-radius: 5px;
             transition: all 0.4s;
         }
 
     }
+    a {
+            color: inherit;
+            text-decoration: none;
+        }
 }
 </style>

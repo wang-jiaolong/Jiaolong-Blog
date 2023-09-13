@@ -31,7 +31,7 @@ const { theme, page, frontmatter } = useData()
 
 <div class="yearList" v-for="item in theme.weekly">
 
-## {{ item.title }}
+## {{ item.title }}({{ item.items.length }})
 
 <WeeklyList :items ="item.items" />
 
