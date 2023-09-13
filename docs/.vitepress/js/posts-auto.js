@@ -24,7 +24,7 @@ function traverseFolder(directoryPath) {
         if (!data.hidden){
           weeklys.push({
             title: data.title,
-            date: data.date.toLocaleDateString(),
+            date: new Date(data.date).toLocaleDateString(),
             description: data.description,
             link: filePath.replace(/\\/g, '/').slice(4, -3),
             badge:data.badge,
