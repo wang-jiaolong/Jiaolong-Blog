@@ -215,8 +215,6 @@ body {
 
         @media (max-width: 419px) {
             margin: 0 0 0 0;
-
-
         }
     }
 

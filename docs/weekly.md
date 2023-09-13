@@ -16,7 +16,6 @@ import { useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
-
 </script>
 
 <VPTeamPage style="padding-bottom: unset !important;">
@@ -37,3 +36,14 @@ const { theme, page, frontmatter } = useData()
 <WeeklyList :items ="item.items" />
 
 </div>
+
+<style scoped lang="less">
+
+.yearList {
+    padding: 0 40px;
+        @media (max-width: 419px) {
+            padding: 0 5px;
+        }
+
+}
+</style>
