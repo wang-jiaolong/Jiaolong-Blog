@@ -11,6 +11,7 @@ import Timeline from "../components/Timeline.vue"
 import ArchiveList from "../components/ArchiveList.vue"
 import BlogList from "../components/BlogList.vue"
 import AppList from "../components/AppList.vue"
+import WeeklyList from "../components/WeeklyList.vue"
 
 export default {
   // ...Theme,
@@ -31,6 +32,7 @@ export default {
     ctx.app.component('ArchiveList',ArchiveList)
     ctx.app.component('BlogList',BlogList)
     ctx.app.component('AppList',AppList)
+    ctx.app.component('WeeklyList',WeeklyList)
 
   }
 

@@ -16,7 +16,6 @@ import { useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
-
 </script>
 
 <VPTeamPage>
@@ -25,12 +24,12 @@ const { theme, page, frontmatter } = useData()
       Posts
     </template>
     <template #lead>
-      我的文章
+      记录下我的成长和一些思考
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<ArchiveList :items ="theme.weekly" />
+<Timeline :items="theme.weekly"></Timeline>
 
 <style>
 

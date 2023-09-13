@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: doc
-aside: false
+# layout: doc
+aside: true
 ---
 
 <script setup>
@@ -16,6 +16,7 @@ import { useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
+
 </script>
 
 <VPTeamPage>
@@ -24,17 +25,17 @@ const { theme, page, frontmatter } = useData()
       Weekly
     </template>
     <template #lead>
-      记录下我的成长和一些思考
+      人生流水账
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<Timeline :items="theme.weekly"></Timeline>
 
-<style>
 
-.content{
-    max-width: unset !important;
-}
+<div class="yearList" v-for="item in theme.weekly">
 
-</style>
+## {{ item.title }}
+
+<WeeklyList :items ="item.items" />
+
+</div>

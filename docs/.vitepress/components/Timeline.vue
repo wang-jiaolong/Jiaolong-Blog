@@ -51,8 +51,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 100px;
     position: relative;
+    padding: 0 75px 100px 75px;
 
 
     &:before {
@@ -111,10 +111,10 @@ body {
         font-family: 'Jura', serif;
         margin: 0;
         font-weight: normal;
-        font-size: 1.5em;
+        font-size: 16px;
         color: var(--vp-c-text-1);
         white-space: nowrap;
-        padding-top: 10px;
+        padding-top: 0px;
 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -145,9 +145,9 @@ body {
 
     &-item {
         // height: 30vh;
-        width: 45%;
+        width: 40%;
         position: relative;
-        margin: 5px 0;
+        margin: 0;
 
         &:nth-child(even) {
             align-self: flex-end;
@@ -160,7 +160,7 @@ body {
 
         &:hover {
             img {
-                scale: 1.3;
+                scale: 1.15;
                 transition: all 0.3s;
             }
         }
@@ -206,7 +206,7 @@ body {
 
 
     &-subtitle {
-        margin: 0 0 6px 0;
+        margin: 0;
         font-family: 'Jura', sans-serif;
         font-weight: normal;
         font-size: 1em;

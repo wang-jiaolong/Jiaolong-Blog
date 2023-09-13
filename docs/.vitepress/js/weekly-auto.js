@@ -39,4 +39,29 @@ function traverseFolder(directoryPath) {
 
 const directoryPath = './docs/pages/weekly';
 
-export const weekly=  traverseFolder(directoryPath).reverse()
+const weeklys = traverseFolder(directoryPath).reverse()
+
+// 创建一个空数组，用于存放结果
+const data = [];
+
+// 遍历JSON数组并按年份分类
+weeklys.forEach(item => {
+  const year = new Date(item.date).getFullYear();
+  
+  // 查找是否已经存在相同年份的数据
+  const existingYearData = data.find(d => d.title === year);
+
+  if (existingYearData) {
+    existingYearData.items.push(item);
+  } else {
+    // 如果不存在相同年份的数据，创建一个新的对象
+    data.push({
+      title: year,
+      items: [item]
+    });
+  }
+});
+
+export const weekly = data
+
+console.log(data)
