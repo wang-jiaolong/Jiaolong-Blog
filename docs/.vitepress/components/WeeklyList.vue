@@ -43,7 +43,7 @@ function fix(num, length) {
 .page{
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    padding: 7px 0;
     .date{
         font-size: 12px;
         font-weight: 500;
