@@ -19,7 +19,7 @@ const { theme, page, frontmatter } = useData()
 
 </script>
 
-<VPTeamPage>
+<VPTeamPage style="padding-bottom: unset !important;">
   <VPTeamPageTitle>
     <template #title>
       Weekly
@@ -29,8 +29,6 @@ const { theme, page, frontmatter } = useData()
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
-
-
 
 <div class="yearList" v-for="item in theme.weekly">
 
