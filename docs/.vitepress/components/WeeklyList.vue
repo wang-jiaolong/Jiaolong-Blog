@@ -55,7 +55,7 @@ function fix(num, length) {
         border-radius: 5px;
     }
     .title{
-        margin-left: 10px;
+        margin-left: 12px;
         text-decoration-color: none;
 
     }
