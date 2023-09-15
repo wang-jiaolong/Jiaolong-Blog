@@ -92,7 +92,7 @@ const props = defineProps({
 
     @media (max-width: 419px) {
         width: 100%;
-        padding: 10px 5px;
+        padding: 10px 0px;
 
     }
 
@@ -100,7 +100,7 @@ const props = defineProps({
         display: flex;
         padding: 10px 0px 30px 0;
         flex-wrap: wrap;
-        
+
         @media (max-width: 419px) {
             padding: 10px 0px 10px 0;
         }
