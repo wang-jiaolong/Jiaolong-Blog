@@ -108,8 +108,8 @@ const props = defineProps({
         .tag-btn {
             cursor: pointer;
             color:var(--vp-c-text-2);
-            padding: 3px 10px;
-            margin: 5px;
+            padding: 2px 6px;
+            margin: 3px;
             background: var(--vp-c-bg-soft);
             font-size: 14px;
             border-radius: 5px;
