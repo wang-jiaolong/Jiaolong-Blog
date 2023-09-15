@@ -19,6 +19,10 @@ export const sidebar = {
       "text": "BLOGS",
       "items": [
         {
+          "text": "Color资源管理",
+          "link": "/pages/blogs/027.Color资源管理"
+        },
+        {
           "text": "数据流ObservedObject探究",
           "link": "/pages/blogs/026.ObservedObject"
         },
