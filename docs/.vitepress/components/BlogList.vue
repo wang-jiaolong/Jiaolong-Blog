@@ -99,10 +99,12 @@ const props = defineProps({
     .tag-list {
         display: flex;
         padding: 10px 0px 30px 0;
+        flex-wrap: wrap;
+        
         @media (max-width: 419px) {
-        padding: 10px 0px 10px 0;
+            padding: 10px 0px 10px 0;
+        }
 
-    }
         .tag-btn {
             cursor: pointer;
             color:var(--vp-c-text-2);
@@ -303,6 +305,13 @@ const props = defineProps({
                             font-weight: 500;
                             border-radius: 5px;
                             color: var(--vp-c-text-2);
+
+                            @media (max-width: 419px) {
+                                padding: 0px 0px;
+                                background: unset;
+                                margin: 0px 2px;
+
+                            }
                         }
                     }
                 }
