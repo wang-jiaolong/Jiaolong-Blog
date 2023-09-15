@@ -1,15 +1,25 @@
 <template>
     <div class="PostList">
 
-        <div class="yearList">
 
-            <div class="header">
+        <div class="yearList">
+            <div class="tag-list">
+                <div class="tag-btn">
+                    全部 {{ items.length }}
+                </div>
+                <div v-for="tag in Object.keys(tags)" class="tag-btn">
+                    #{{ tag }} {{ tags[tag] }}
+                </div>
+            </div>
+
+
+            <!-- <div class="header">
                 <button @click="folder" class="left">
                     <div class="title">2023</div>
                     <iconRight class="iconRight" :class="{ rotated: isShow }" theme="outline" size="30" fill="#333" />
                 </button>
                 <div class="caption">共<span class="number"> {{ items.length }} </span>篇</div>
-            </div>
+            </div> -->
 
             <div class="postList">
 
@@ -29,9 +39,11 @@
                             <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
                         </div>
                         <div class="bottom-line">
-                            <!-- <div class="author">Jiaolong</div> -->
+                            <div class="tags">
+                                <div class="tag" v-for="tag in item.tags">#{{ tag }}</div>
+                            </div>
                             <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
-                            <!-- <Badge class="badge-mobile" v-if="item.badge" type="tip" :text="item.badge" /> -->
+
                         </div>
 
                     </div>
@@ -58,7 +70,6 @@ import {
 
 import { ref } from 'vue';
 
-
 var isShow = ref(true)
 
 function folder() {
@@ -66,6 +77,7 @@ function folder() {
 }
 
 const props = defineProps({
+    tags: {},
     items: Object
 })
 
@@ -74,12 +86,41 @@ const props = defineProps({
 
 <style scoped lang="less">
 .yearList {
+    padding: 10px 30px;
     width: 85%;
     margin: 0 auto;
 
     @media (max-width: 419px) {
         width: 100%;
+        padding: 10px 5px;
+
     }
+
+    .tag-list {
+        display: flex;
+        padding: 10px 0px 30px 0;
+        @media (max-width: 419px) {
+        padding: 10px 0px 10px 0;
+
+    }
+        .tag-btn {
+            cursor: pointer;
+            color:var(--vp-c-text-2);
+            padding: 3px 10px;
+            margin: 5px;
+            background: var(--vp-c-bg-soft);
+            font-size: 14px;
+            border-radius: 5px;
+            transition: all 0.4s;
+
+            &:hover {
+                background: var(--vp-c-brand);
+                transition: all 0.4s;
+                color:white;
+            }
+        }
+    }
+
 
     .header {
         display: flex;
@@ -113,7 +154,6 @@ const props = defineProps({
 
     .postList {
 
-        padding: 10px 30px;
         flex-wrap: wrap;
 
         @media (max-width: 419px) {
@@ -159,7 +199,7 @@ const props = defineProps({
 
                 @media (max-width: 419px) {
                     width: 100px;
-                    height: 80px;
+                    height: 90px;
                 }
             }
 
@@ -173,7 +213,7 @@ const props = defineProps({
                     margin-right: 5px;
                 }
 
-                .item-info{
+                .item-info {
                     padding-right: 15px;
                     transition: all 0.6s;
                 }
@@ -181,12 +221,16 @@ const props = defineProps({
             }
 
             .item-info {
+                width: 100%;
                 height: 150px;
-                padding: 20px 20px 20px 30px;
+                padding: 20px 20px 10px 30px;
                 transition: all 0.6s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 @media (max-width: 419px) {
-                    height: 80px;
+                    height: 90px;
                     padding: 8px 8px 8px 15px;
                     overflow: hidden;
 
@@ -219,6 +263,7 @@ const props = defineProps({
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
+
                     @media (max-width: 419px) {
                         -webkit-line-clamp: 1;
                         padding-top: 0px;
@@ -226,9 +271,10 @@ const props = defineProps({
                 }
 
                 .bottom-line {
-
+                    justify-content: space-between;
                     display: flex;
                     margin-top: 5px;
+                    align-items: center;
 
                     @media (max-width: 419px) {
                         margin-top: 0px;
@@ -247,15 +293,16 @@ const props = defineProps({
 
                     .tags {
                         margin-left: -3px;
+
                         .tag {
                             margin: 3px;
                             display: inline-block;
                             padding: 1px 6px;
                             background: var(--vp-c-bg-soft-down);
-                            font-size: 14px;
+                            font-size: 12px;
                             font-weight: 500;
                             border-radius: 5px;
-
+                            color: var(--vp-c-text-2);
                         }
                     }
                 }

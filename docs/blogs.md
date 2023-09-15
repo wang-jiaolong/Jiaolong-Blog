@@ -16,7 +16,6 @@ import { useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
-
 </script>
 
 <VPTeamPage>
@@ -30,7 +29,8 @@ const { theme, page, frontmatter } = useData()
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<BlogList :items ="theme.blogs" />
+
+<BlogList :tags="theme.tags" :items ="theme.blogs" />
 
 <style>
 

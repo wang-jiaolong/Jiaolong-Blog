@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 
 function traverseFolder(directoryPath) {
   const weeklys = [];
-
+  const tags = {};
   function traverseDirectory(directoryPath) {
     // 读取目录下的所有文件和文件夹
     const files = fs.readdirSync(directoryPath);
@@ -21,6 +21,14 @@ function traverseFolder(directoryPath) {
         // 如果是以.md结尾的文件，则执行你想要的操作
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(fileContent);
+        for (var tag in data.tags) {
+           if (tags[data.tags[tag]]){
+              tags[data.tags[tag]] = tags[data.tags[tag]]+1
+            }else{
+              tags[data.tags[tag]] = 1
+            }
+        }
+
         if (!data.hidden){
           weeklys.push({
             title: data.title,
@@ -41,17 +49,24 @@ function traverseFolder(directoryPath) {
 
   // 调用函数并传入要遍历的文件夹路径
   traverseDirectory(directoryPath);
-  return weeklys
+  return {weeklys,tags}
 }
 
 
 function compareTime(a, b) {
   return new Date(b.date) - new Date(a.date);
 }
- 
+
+function compareValue(a, b) {
+  return new Date(b) - new Date(a);
+}
+
 
 const blogsPath = './docs/pages/blogs';
 const postsPath = './docs/pages/posts';
 
-export const blogs =  traverseFolder(blogsPath).sort(compareTime)
-export const posts =  traverseFolder(postsPath).sort(compareTime)
+export const blogs =  traverseFolder(blogsPath).weeklys.sort(compareTime)
+export const posts =  traverseFolder(postsPath).weeklys.sort(compareTime)
+export const tags =  traverseFolder(blogsPath).tags
+
+console.log(tags)
