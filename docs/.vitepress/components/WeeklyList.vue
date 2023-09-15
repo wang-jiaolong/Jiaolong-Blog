@@ -40,7 +40,7 @@ function fix(num, length) {
     .page {
         display: flex;
         align-items: center;
-        padding: 8px 0;
+        padding: 6px 0;
         transition: all 0.4s;
 
         .date {
@@ -60,7 +60,7 @@ function fix(num, length) {
         .title {
             margin-left: 12px;
             text-decoration-color: none;
-            font-size: 18px;
+            font-size: 16px;
 
 
             @media (max-width: 419px) {

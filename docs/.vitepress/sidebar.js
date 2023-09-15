@@ -87,6 +87,10 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
+          "text": "重构进度：10%",
+          "link": "/pages/weekly/2023/M9W1"
+        },
+        {
           "text": "代码重构之路",
           "link": "/pages/weekly/2023/12"
         },
