@@ -18,8 +18,8 @@ export default defineConfig({
         name: 'og:title',
         content:
           pageData.frontmatter.layout === 'home'
-            ? `aaaaa`
-            : `${pageData.title} | aa`
+            ? `Jiaolong 's Blog`
+            : `${pageData.title} | Jiaolong 's Blog`
       }
     ],[
       'meta',
