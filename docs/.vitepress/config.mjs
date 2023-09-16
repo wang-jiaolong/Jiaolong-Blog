@@ -25,7 +25,10 @@ export default defineConfig({
       'meta',
       {
         name: 'og:image',
-        content:'https://www.jiaolong.xyz/logo.png'
+        content:
+          pageData.frontmatter.image === ''
+            ? 'https://www.jiaolong.xyz/logo.png'
+            : pageData.frontmatter.image
       }])
   },
   banner:'/logo.png',
