@@ -7,7 +7,7 @@ import { posts,blogs,tags } from './js/posts-auto'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jiaolong 's Blog",
-  description: "A VitePress Site",
+  // description: "A VitePress Site",
   cleanUrls: true,
   lang: 'zh-cn',
   themeConfig: {
@@ -16,7 +16,7 @@ export default defineConfig({
     posts:posts,
     blogs:blogs,
     tags:tags,
-    // logo: '/logo.png',
+    logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
     sidebar: sidebar,
