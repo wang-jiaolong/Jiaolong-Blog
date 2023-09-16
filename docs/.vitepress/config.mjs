@@ -25,7 +25,7 @@ export default defineConfig({
       'meta',
       {
         name: 'og:image',
-        content:'/logo.png'
+        content:'https://www.jiaolong.xyz/logo.png'
       }])
   },
   banner:'/logo.png',
