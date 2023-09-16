@@ -19,10 +19,6 @@ export const sidebar = {
       "text": "BLOGS",
       "items": [
         {
-          "text": "Color资源管理",
-          "link": "/pages/blogs/027.Color资源管理"
-        },
-        {
           "text": "数据流ObservedObject探究",
           "link": "/pages/blogs/026.ObservedObject"
         },
@@ -90,6 +86,10 @@ export const sidebar = {
     {
       "text": "2023",
       "items": [
+        {
+          "text": "M9W2：重新设计颜色资源模块",
+          "link": "/pages/weekly/2023/M9W2"
+        },
         {
           "text": "重构进度：10%",
           "link": "/pages/weekly/2023/M9W1"

@@ -37,6 +37,7 @@ function fix(num, length) {
 
 <style scoped lang="less">
 .list {
+    padding: 10px 0;
     .page {
         display: flex;
         align-items: center;
