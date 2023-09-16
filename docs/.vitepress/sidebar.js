@@ -87,7 +87,7 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
-          "text": "M9W2：重新设计颜色资源模块",
+          "text": "重新设计颜色资源模块",
           "link": "/pages/weekly/2023/M9W2"
         },
         {
