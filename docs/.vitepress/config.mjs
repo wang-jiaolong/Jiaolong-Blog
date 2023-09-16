@@ -7,16 +7,35 @@ import { posts,blogs,tags } from './js/posts-auto'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jiaolong 's Blog",
-  // description: "A VitePress Site",
+  description: "Welcome",
   cleanUrls: true,
   lang: 'zh-cn',
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'meta',
+      {
+        name: 'og:title',
+        content:
+          pageData.frontmatter.layout === 'home'
+            ? `aaaaa`
+            : `${pageData.title} | aa`
+      }
+    ],[
+      'meta',
+      {
+        name: 'og:image',
+        content:'/logo.png'
+      }])
+  },
+  banner:'/logo.png',
   themeConfig: {
     outline: [2, 3, 4, 5],
     weekly:weekly,
     posts:posts,
     blogs:blogs,
     tags:tags,
-    logo: '/logo.png',
+    // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
     sidebar: sidebar,

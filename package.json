@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "less": "^4.1.3",
-    "vitepress": "^1.0.0-beta.2"
+    "vitepress": "latest"
   },
   "scripts": {
     "docs:dev": "node ./sidebar-auto.mjs && vitepress dev docs",
