@@ -26,9 +26,9 @@ export default defineConfig({
       {
         name: 'og:image',
         content:
-          pageData.frontmatter.img === ''
+          pageData.frontmatter.image === ''
             ? 'https://www.jiaolong.xyz/logo.png'
-            : pageData.frontmatter.img
+            : pageData.frontmatter.image
       }])
   },
   banner:'/logo.png',
