@@ -26,8 +26,7 @@ const props = defineProps({
 </script>
 
 <style>
-
-.content{
+.content {
     max-width: unset !important;
 }
 </style>
@@ -66,7 +65,7 @@ const props = defineProps({
         .box {
             display: flex;
             // flex-direction: column;
-            padding: 12px;
+            padding: 8px;
             height: 100%;
             align-items: center;
 
@@ -80,8 +79,9 @@ const props = defineProps({
                 float: left;
                 width: 50px;
                 height: 50px;
-                margin-right: 15px;
+                margin-right: 10px;
                 border-radius: 5px;
+
                 @media (max-width: 419px) {
                     width: 35px;
                     height: 35px;
@@ -89,9 +89,16 @@ const props = defineProps({
             }
 
             .info {
+
+                overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+
                 .title {
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: 500;
+                    margin-bottom: -3px;
 
                     @media (max-width: 419px) {
                         font-size: 14px;
@@ -99,13 +106,12 @@ const props = defineProps({
                     }
                 }
 
-
-
-
                 .desc {
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 500;
                     color: var(--vp-c-text-2);
+
+
 
                     @media (max-width: 419px) {
                         width: 40px;

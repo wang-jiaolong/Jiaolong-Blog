@@ -87,6 +87,10 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
+          "text": "拖更很久的新版本上线",
+          "link": "/pages/weekly/2023/M9W3"
+        },
+        {
           "text": "重新设计颜色资源模块",
           "link": "/pages/weekly/2023/M9W2"
         },
