@@ -7,7 +7,9 @@
         display: none !important;
     }
  
-    .VPNavBarTitle.has-sidebar .title[data-v-55e263fd]{
+    .VPNavBarTitle.has-sidebar .title{
        border-bottom-color: unset;
     }
+
+
  }
