@@ -7,7 +7,7 @@
                 <div @click="selectTag('')" class="tag-btn" :class="{active: selectedTag === '' }">
                     全部 {{ items.length }}
                 </div>
-                <div @click="selectTag(tag)" v-for="tag in Object.keys(tags)" class="tag-btn" :class="{active: selectedTag === tag}">
+                <div @click="selectTag(tag)" v-for="tag in sortedTags" class="tag-btn" :class="{active: selectedTag === tag}">
                     #{{ tag }} {{ tags[tag] }}
                 </div>
             </div>
@@ -85,6 +85,8 @@ const props = defineProps({
     tags: {},
     items: Object
 })
+
+var sortedTags = ref(Object.keys(props.tags).sort(function(a,b){return props.tags[b]-props.tags[a]}))
 
 function selectTag(tag) {
     if (selectedTag.value != tag) {
@@ -329,11 +331,10 @@ function selectTag(tag) {
                             margin: 3px;
                             display: inline-block;
                             padding: 1px 6px;
-                            background: var(--vp-c-bg-soft-down);
-                            font-size: 12px;
+                            font-size: 14px;
                             font-weight: 500;
                             border-radius: 5px;
-                            color: var(--vp-c-text-2);
+                            color: var(--vp-badge-tip-text);
 
                             @media (max-width: 419px) {
                                 padding: 0px 0px;
