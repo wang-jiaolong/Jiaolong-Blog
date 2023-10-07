@@ -1,0 +1,13 @@
+/**
+ * Custom
+ * -------------------------------------------------------------------------- */
+
+.page-class-HiddenSidebar {
+    .VPSidebar {
+        display: none !important;
+    }
+ 
+    .VPNavBarTitle.has-sidebar .title[data-v-55e263fd]{
+       border-bottom-color: unset;
+    }
+ }

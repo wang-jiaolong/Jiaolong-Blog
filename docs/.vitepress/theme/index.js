@@ -3,6 +3,7 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
 import './myStyle.css'
+import './custom.css'
 import '@icon-park/vue-next/styles/index.css';
 
 import LinkCard from "../components/LinkCard.vue"
