@@ -2,7 +2,7 @@
  * Custom
  * -------------------------------------------------------------------------- */
 
-.page-class-HiddenSidebar {
+.page-post {
     .VPSidebar {
         display: none !important;
     }
