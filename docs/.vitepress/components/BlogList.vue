@@ -4,10 +4,10 @@
 
         <div class="yearList">
             <div class="tag-list">
-                <div class="tag-btn">
+                <div @click="selectTag('')" class="tag-btn" :class="{active: selectedTag === '' }">
                     全部 {{ items.length }}
                 </div>
-                <div v-for="tag in Object.keys(tags)" class="tag-btn">
+                <div @click="selectTag(tag)" v-for="tag in Object.keys(tags)" class="tag-btn" :class="{active: selectedTag === tag}">
                     #{{ tag }} {{ tags[tag] }}
                 </div>
             </div>
@@ -23,7 +23,7 @@
 
             <div class="postList">
 
-                <a :href="item.link" class="item-box" v-for="item in items">
+                <a :href="item.link" class="item-box" v-for="item in posts">
 
                     <img v-if="item.img" :src="item.img" />
                     <div class="item-info">
@@ -72,6 +72,11 @@ import { ref } from 'vue';
 
 var isShow = ref(true)
 
+var selectedTag = ref("")
+
+var posts = ref(props.items)
+
+
 function folder() {
     isShow.value = !isShow.value
 }
@@ -80,6 +85,28 @@ const props = defineProps({
     tags: {},
     items: Object
 })
+
+function selectTag(tag) {
+    if (selectedTag.value != tag) {
+        selectedTag.value = tag
+    } else {
+        selectedTag.value = ""
+    }
+
+
+
+    if (tag != "") {
+        posts.value = JSON.parse(JSON.stringify(props.items)).filter(item => {
+            if (item.tags) {
+                return JSON.parse(JSON.stringify(item.tags)).indexOf(tag) != -1
+            } else {
+                return false
+            }
+        })
+    } else {
+         posts.value = props.items
+    }
+}
 
 </script>
 
@@ -112,10 +139,11 @@ const props = defineProps({
             margin: 3px 5px;
             background: var(--vp-c-bg-soft);
             font-size: 14px;
-            border-radius: 5px;
+            font-weight: 500;
+            border-radius: 7px;
             transition: all 0.4s;
 
-            &:hover {
+            &:hover, &.active {
                 background: var(--vp-c-brand);
                 transition: all 0.4s;
                 color:white;
@@ -225,7 +253,7 @@ const props = defineProps({
             .item-info {
                 width: 100%;
                 height: 150px;
-                padding: 20px 20px 10px 30px;
+                padding: 15px 20px 10px 30px;
                 transition: all 0.6s;
                 display: flex;
                 flex-direction: column;
