@@ -16,25 +16,6 @@ import { useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
-
-const apps = [
-  {
-    title: 'Notion',
-    desc: 'All In One Workspace',
-    icon:'./icon/apps/notion.png',
-    link:'https://www.notion.so/product?fredir=1'
-  },
-  {
-    title: 'Flomo',
-    desc: '持续不断记录，意义自然浮现',
-    icon:'./icon/apps/flomo.png',
-    link:'https://www.notion.so/product?fredir=1'
-  }
-]
-
-
-
-
 </script>
 
 <VPTeamPage>
@@ -78,7 +59,3 @@ const apps = [
 
 [Go Deeper, Not Wider](https://www.raptitude.com/2017/12/go-deeper-not-wider/) —— 走得更深，而不是更宽
 
-
-### 笔记
-
-<AppList :items ="apps" />

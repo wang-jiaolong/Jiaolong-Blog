@@ -29,7 +29,5 @@ export const navbar =  [
   // { text: 'Wiki', link: '/wiki' },
   { text: 'Inbox', link: '/inbox' },
   { text: 'Excerpt', link: '/excerpt' },
-  { text: 'About', link: '/about' },
-
-
+  { text: 'About', link: '/about' }
 ]

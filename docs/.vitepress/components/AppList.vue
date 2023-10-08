@@ -1,8 +1,9 @@
 <template>
+    <h4 >{{ title }}</h4>
     <div class="linkList">
         <div v-for="item in items" class="linkCard">
             <a :href="item.link" target="_blank" class="box">
-                <img class="img" :src="item.icon" />
+                <img class="img" :src="'./icon/apps/' + item.icon" />
                 <div class="info">
                     <div class="title">
                         {{ item.title }}
@@ -20,6 +21,7 @@
 <script setup>
 
 const props = defineProps({
+    title: String,
     items: Object
 })
 
@@ -35,7 +37,7 @@ const props = defineProps({
 .linkList {
     display: flex;
     flex-wrap: wrap;
-
+    padding-bottom: 30px;
 
     a {
         text-decoration: inherit;
