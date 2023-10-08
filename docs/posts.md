@@ -29,7 +29,8 @@ const { theme, page, frontmatter } = useData()
   </VPTeamPageTitle>
 </VPTeamPage>
 
-<Timeline :items="theme.posts"></Timeline>
+<!-- <Timeline :items="theme.posts"></Timeline> -->
+<ArchiveList  :items ="theme.posts" />
 
 <style>
 

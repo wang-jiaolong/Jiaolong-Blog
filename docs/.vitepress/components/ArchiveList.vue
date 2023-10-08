@@ -115,7 +115,7 @@ const props = defineProps({
 
         .item-box {
             margin: 10px 10px;
-            width: calc(25% - 20px);
+            width: calc(33% - 20px);
             display: block;
             border: 1px solid var(--vp-c-bg-soft);
             border-radius: 10px;
@@ -149,7 +149,7 @@ const props = defineProps({
                 overflow: hidden;
                 object-fit: cover;
                 width: 100%;
-                height: 140px;
+                height: 180px;
                 transition: all 0.3s;
 
                 @media (max-width: 419px) {
