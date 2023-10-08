@@ -277,7 +277,7 @@ function selectTag(tag) {
                     font-weight: 500;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    white-space: nowrap;
+                    -webkit-line-clamp: 2;
 
                     @media (max-width: 419px) {
                         font-size: 15px;
@@ -298,8 +298,7 @@ function selectTag(tag) {
                     -webkit-box-orient: vertical;
 
                     @media (max-width: 419px) {
-                        -webkit-line-clamp: 1;
-                        padding-top: 0px;
+                        display: none;
                     }
                 }
 
