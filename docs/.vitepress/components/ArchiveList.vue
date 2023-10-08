@@ -153,7 +153,7 @@ const props = defineProps({
                 transition: all 0.3s;
 
                 @media (max-width: 419px) {
-                    display: none;
+                    // display: none;
                 }
             }
 
