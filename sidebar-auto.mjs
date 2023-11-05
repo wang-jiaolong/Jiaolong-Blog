@@ -30,12 +30,12 @@ function traverseFolder(folderPath) {
         // if (data.permalink != null) {
         //   fileLink = "pages" + data.permalink
         // }
-        const fileObject = { text: fileName, link: `${fileLink}` };
+        const fileObject = { text: fileName, link: `${fileLink}`, date:data.date, week:data.week };
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 
         if (sidebar[key]) {
           sidebar[key][0].items.unshift(fileObject);
-          sidebar[key][0].items.sort
+          sidebar[key][0].items.sort(compareTime)
         } else {
           var folderText = String(parentPath.replace(/\\/g, '/'))
           sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
@@ -58,3 +58,8 @@ console.log(JSON.stringify(sidebar, null, 2));
 const prepend = `export const sidebar = `
 fs.writeFileSync("./docs/.vitepress/sidebar.js", prepend + JSON.stringify(sidebar, null, 2))
 
+
+
+function compareTime(a, b) {
+  return new Date(b.date) - new Date(a.date);
+}

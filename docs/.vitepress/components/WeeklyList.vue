@@ -1,9 +1,10 @@
 <template>
     <div class="list">
-        <a :href="page.link" class="page" v-for="page in items">
+        <a :href="page.link" class="page" v-for="(page, index) in items">
 
             <div class="date">
-                {{ formatDateTime(page.date) }}
+                {{ page.week }}
+                <!-- {{ formatDateTime(page.date) }} -->
             </div>
             <div class="title">
                 {{ page.title }}
@@ -50,7 +51,7 @@ function fix(num, length) {
             padding: px 5px;
             color: var(--vp-c-text-2);
             background: var(--vp-c-bg-soft);
-            width: 55px;
+            width: 65px;
             text-align: center;
             border-radius: 5px;
             @media (max-width: 419px) {

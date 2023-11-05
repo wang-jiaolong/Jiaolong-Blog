@@ -156,10 +156,6 @@ const props = defineProps({
                     // display: none;
                 }
             }
-
-
-
-
             .item-info {
                 padding: 10px 15px;
 

@@ -26,7 +26,8 @@ function traverseFolder(directoryPath) {
           title: data.title,
           date: new Date(data.date).toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(4, -3),
-          img: data.img
+          img: data.img,
+          week: data.week
         })
       }
     });
@@ -39,7 +40,7 @@ function traverseFolder(directoryPath) {
 
 const directoryPath = './docs/pages/weekly';
 
-const weeklys = traverseFolder(directoryPath).reverse()
+const weeklys = traverseFolder(directoryPath).sort(compareTime)
 
 // 创建一个空数组，用于存放结果
 const data = [];
@@ -62,6 +63,10 @@ weeklys.forEach(item => {
   }
 });
 
-export const weekly = data
+export const weekly =  data.sort(compareTime)
 
 console.log(data)
+
+function compareTime(a, b) {
+  return new Date(b.date) - new Date(a.date);
+}
