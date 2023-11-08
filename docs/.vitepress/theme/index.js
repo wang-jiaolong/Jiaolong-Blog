@@ -14,16 +14,14 @@ import BlogList from "../components/BlogList.vue"
 import AppList from "../components/AppList.vue"
 import WeeklyList from "../components/WeeklyList.vue"
 
+import MyLayout from "../components/MyLayout.vue";
+
 export default {
   // ...Theme,
   extends: Theme,
-  Layout: () => {
-    return h(Theme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
-  },
+  Layout: MyLayout,
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // app.component('myLayout', MyLayout)
   },
   enhanceApp(ctx) {
     // register your custom global components

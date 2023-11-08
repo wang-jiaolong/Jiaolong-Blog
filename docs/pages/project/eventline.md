@@ -16,8 +16,6 @@ star: true
 # copyright: No Copyright
 
 ---
-
-# 事线app-讲讲背后的故事
  
 > 大家好，我是Jiaolong，时隔一年多，我的第二个App「事线」终于与大家见面了。如果你还没有用过事线，欢迎先去App Store下载体验一下，本篇文章更多的是讲开发事线的初衷和历程，而不是宣传文案。
 
