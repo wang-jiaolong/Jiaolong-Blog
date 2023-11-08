@@ -164,7 +164,7 @@ permalink: /theme/theme
 
 ### QuoteCard
 
-为本站[Excerpt](/excerpt)页面设计
+为本站Excerpt页面设计
 
 1. 新建`QuoteCard.vue`
 
