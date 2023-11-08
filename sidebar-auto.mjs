@@ -38,7 +38,7 @@ function traverseFolder(folderPath) {
           sidebar[key][0].items.sort(compareTime)
         } else {
           var folderText = String(parentPath.replace(/\\/g, '/'))
-          sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
+          // sidebar[key] = [{ text: folderText.split('/')[folderText.split('/').length - 1].toUpperCase(), items: [fileObject] }];
         }
       }
     }
