@@ -32,12 +32,6 @@ features:
   #   linkText: 随便看看
   #   link: /wiki
 
-  # - title: 一些摘录
-  #   details: 再多一点思考
-  #   icon: 🗃
-  #   linkText: 随便看看
-  #   link: /excerpt
-
   - title: 有关于我
     details: About me
     icon: 👀

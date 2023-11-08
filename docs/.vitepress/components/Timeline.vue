@@ -9,7 +9,6 @@
             <div class="timeline-headline">
                 <p class="timeline-subtitle">{{ new Date(item.date).toLocaleDateString() }}</p>
                 <h2 class="timeline-title">{{ item.title }}</h2>
-                <!-- <p class="timeline-excerpt">{{ item.abstract }}</p> -->
             </div>
 
         </a>
@@ -127,22 +126,6 @@ body {
             padding-top: 0px;
 
         }
-    }
-
-    &-excerpt {
-        font-size: 1.1em;
-        padding: 0 10px;
-        line-height: 1.4;
-        font-weight: normal;
-        margin-top: 8px;
-        font-family: 'K2D';
-        color: #929292;
-        text-overflow: -o-ellipsis-lastline;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
     }
 
     &-item {
