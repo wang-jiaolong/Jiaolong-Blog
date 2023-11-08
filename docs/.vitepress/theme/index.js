@@ -16,6 +16,7 @@ import WeeklyList from "../components/WeeklyList.vue"
 
 import MyLayout from "../components/MyLayout.vue";
 
+
 export default {
   // ...Theme,
   extends: Theme,
