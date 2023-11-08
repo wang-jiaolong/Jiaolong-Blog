@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
+    "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
     "esm": "^3.2.25",
     "gray-matter": "^4.0.3",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.1",
+    "vitepress-auto-nav-sidebar": "^0.0.5",
     "vue-router": "^4.2.4"
   }
 }

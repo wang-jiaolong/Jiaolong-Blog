@@ -1,7 +1,5 @@
 <template>
     <div class="PostList">
-
-
         <div class="yearList">
             <div class="tag-list">
                 <div @click="selectTag('')" class="tag-btn" :class="{active: selectedTag === '' }">
@@ -11,7 +9,6 @@
                     #{{ tag }} {{ tags[tag] }}
                 </div>
             </div>
-
 
             <!-- <div class="header">
                 <button @click="folder" class="left">
@@ -47,16 +44,9 @@
                         </div>
 
                     </div>
-
                 </a>
-
             </div>
-
-
-
         </div>
-
-
     </div>
 </template>
 

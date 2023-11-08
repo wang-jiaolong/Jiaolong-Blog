@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
 import { blogs,tags } from './js/posts-auto'
+import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -38,7 +39,7 @@ export default defineConfig({
     // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
-    sidebar: sidebar,
+    // sidebar: sidebar,
     footer: {
       // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2023 Jiaolong Wang'
@@ -47,6 +48,12 @@ export default defineConfig({
       toc: { level: [1, 2, 3] },
       lineNumbers: true,
       badge: true
-    }
-  }
+    },
+    plugins: [
+      AutoSidebar(),
+    ]
+  },
+  vite: {
+    plugins: [AutoSidebar({ prefix: '/pages', collapsed: false })],
+  },
 })
