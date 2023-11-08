@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
-import { weekly } from './js/weekly-auto'
-import { posts,blogs,tags } from './js/posts-auto'
+import { blogs,tags } from './js/posts-auto'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -34,8 +33,6 @@ export default defineConfig({
   banner:'/logo.png',
   themeConfig: {
     outline: [2, 3, 4, 5],
-    weekly:weekly,
-    posts:posts,
     blogs:blogs,
     tags:tags,
     // logo: '/logo.png',

@@ -63,10 +63,8 @@ function compareValue(a, b) {
 
 
 const blogsPath = './docs/pages/blogs';
-const postsPath = './docs/pages/posts';
 
 export const blogs =  traverseFolder(blogsPath).weeklys.sort(compareTime)
-export const posts =  traverseFolder(postsPath).weeklys.sort(compareTime)
 export const tags =  traverseFolder(blogsPath).tags
 
 console.log(tags)
