@@ -113,8 +113,6 @@ const props = defineProps({
                     font-weight: 500;
                     color: var(--vp-c-text-2);
 
-
-
                     @media (max-width: 419px) {
                         width: 40px;
                         height: 40px;

@@ -33,7 +33,6 @@
                             {{ item.description }}
                         </div>
                         <div class="tags">
-                            <!-- <a href="#" class="tag" v-for="tag in item.tags">{{ tag }}</a> -->
                         </div>
                         <div class="bottom-line">
                             <div class="tags">
