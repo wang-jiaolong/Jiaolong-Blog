@@ -27,10 +27,10 @@ const members = [
     <template #title>
       About me
     </template>
-      <VPTeamMembers
+    <template #lead>
+    <VPTeamMembers
     :members="members"
   />
-    <template #lead>
     <br>
 会敲代码｜看了点书｜有点想法<br><br>
 不务正业｜啥都想学｜花里胡哨<br><br>
