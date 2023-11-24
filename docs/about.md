@@ -27,6 +27,9 @@ const members = [
     <template #title>
       About me
     </template>
+      <VPTeamMembers
+    :members="members"
+  />
     <template #lead>
     <br>
 会敲代码｜看了点书｜有点想法<br><br>
@@ -34,7 +37,4 @@ const members = [
 一切值得｜保持热爱｜无限进步<br><br>
     </template>
   </VPTeamPageTitle>
-  <VPTeamMembers
-    :members="members"
-  />
 </VPTeamPage>
