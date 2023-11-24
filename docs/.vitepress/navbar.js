@@ -4,3 +4,4 @@ export const navbar =  [
   // { text: 'Wiki', link: '/wiki' },
   { text: 'About', link: '/about' }
 ]
+
