@@ -30,7 +30,7 @@ const { theme, page, frontmatter } = useData()
 </VPTeamPage>
 
 
-<BlogList :tags="theme.tags" :items ="theme.blogs" />
+<!-- <BlogList :tags="theme.tags" :items ="theme.blogs" /> -->
 
 <style>
 
