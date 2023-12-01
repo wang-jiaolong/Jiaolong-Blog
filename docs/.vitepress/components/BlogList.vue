@@ -104,14 +104,12 @@ function selectTag(tag) {
 
 <style scoped lang="less">
 .yearList {
-    padding: 10px 30px;
-    width: 85%;
+    padding: 0px 64px;
     margin: 0 auto;
 
     @media (max-width: 419px) {
         width: 100%;
-        padding: 10px 0px;
-
+        padding: 10px 24px;
     }
 
     .tag-list {

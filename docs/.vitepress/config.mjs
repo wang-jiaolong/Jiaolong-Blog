@@ -66,7 +66,7 @@ export default defineConfig({
         // 忽略一些文件
         ignores: ["index.md"],
         // 指定我们要自动构建的文档目录，默认是 .vitepress 目录
-        docs: path.resolve(process.cwd(), "../pages/blogs"),
+        // docs: path.resolve(process.cwd(), ""),
         /**
          * 指定 .vitepress 目录，默认会通过 glob 匹配到，
          * 如果页面有多个 .vitepress 需要手动配置
