@@ -4,7 +4,7 @@
     "vitepress": "latest"
   },
   "scripts": {
-    "docs:dev": "node ./sidebar-auto.mjs && vitepress dev docs",
+    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
@@ -13,8 +13,6 @@
     "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
     "esm": "^3.2.25",
     "gray-matter": "^4.0.3",
-    "vite-plugin-vitepress-auto-sidebar": "^1.6.1",
-    "vitepress-auto-nav-sidebar": "^0.0.5",
     "vue-router": "^4.2.4"
   }
 }

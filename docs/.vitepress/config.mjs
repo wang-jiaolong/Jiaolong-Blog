@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
 import { blogs,tags } from './js/posts-auto'
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+import AutoSidebar from "@iminu/vitepress-plugin-auto-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -48,12 +48,31 @@ export default defineConfig({
       toc: { level: [1, 2, 3] },
       lineNumbers: true,
       badge: true
-    },
-    plugins: [
-      AutoSidebar(),
-    ]
+    }
   },
   vite: {
-    plugins: [AutoSidebar({ prefix: '/pages', collapsed: false })],
-  },
+    plugins: [
+      AutoSidebar({
+        /**
+         * 当插件将目录结构转换为 sidebar 配置后触发，
+         * 方便我们去操作 sidebar，比如将目录排序、修改目录名称等
+         */
+        // sidebarResolved(value) {
+        //   // do sort
+        //   value["/dir2/"][0].items?.sort((a, b) => a.text - b.text);
+        //   // rename
+        //   value["/dir2/"][0].text = "sorted";
+        // },
+        // 忽略一些文件
+        ignores: ["index.md"],
+        // 指定我们要自动构建的文档目录，默认是 .vitepress 目录
+        docs: path.resolve(process.cwd(), "../pages/blogs"),
+        /**
+         * 指定 .vitepress 目录，默认会通过 glob 匹配到，
+         * 如果页面有多个 .vitepress 需要手动配置
+         */
+        // root: path.resolve(process.cwd(), "docs"),
+      })
+    ]
+  }
 })
