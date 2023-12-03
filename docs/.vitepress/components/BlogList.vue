@@ -39,7 +39,6 @@
                                 <div class="tag" v-for="tag in item.tags">#{{ tag }}</div>
                             </div>
                             <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
-
                         </div>
 
                     </div>
@@ -136,6 +135,13 @@ function selectTag(tag) {
                 background: var(--vp-c-brand);
                 transition: all 0.4s;
                 color:white;
+            }
+
+            @media (max-width: 419px) {
+                border-radius: 5px;
+                font-size: 12px;
+                padding: 3px 7px;
+                margin: 3px 3px;
             }
         }
     }
