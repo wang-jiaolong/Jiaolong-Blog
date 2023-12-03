@@ -1,6 +1,6 @@
 export const navbar =  [
   { text: 'Home', link: '/' },
-  { text: 'Blogs', link: '/blogs' },
+  { text: 'Archive', link: '/archive' },
   // { text: 'Wiki', link: '/wiki' },
   { text: 'About', link: '/about' }
 ]

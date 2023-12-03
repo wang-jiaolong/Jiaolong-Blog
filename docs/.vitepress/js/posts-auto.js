@@ -57,14 +57,34 @@ function compareTime(a, b) {
   return new Date(b.date) - new Date(a.date);
 }
 
-function compareValue(a, b) {
-  return new Date(b) - new Date(a);
-}
-
-
 const blogsPath = './docs/pages/blogs';
 
 export const blogs =  traverseFolder(blogsPath).weeklys.sort(compareTime)
 export const tags =  traverseFolder(blogsPath).tags
 
-console.log(tags)
+console.log(blogs)
+
+// 创建一个空数组，用于存放结果
+const data = [];
+
+// 遍历JSON数组并按年份分类
+blogs.forEach(item => {
+  const year = new Date(item.date).getFullYear();
+  
+  // 查找是否已经存在相同年份的数据
+  const existingYearData = data.find(d => d.title === year);
+
+  if (existingYearData) {
+    existingYearData.items.push(item);
+  } else {
+    // 如果不存在相同年份的数据，创建一个新的对象
+    data.push({
+      title: year,
+      items: [item]
+    });
+  }
+});
+
+export const years =  data.sort(compareTime)
+
+console.log(years)

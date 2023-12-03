@@ -8,35 +8,35 @@ hero:
   # image:
   #   src: /logo.png
   #   alt: VitePress
-  actions:
-    - theme: brand
-      text: 归档
-      link: /pages/weekly/2023/01
-    - theme: brand
-      text: 有关于我
-      link: /project
+  # actions:
+    # - theme: brand
+    #   text: 归档
+    #   link: /pages/weekly/2023/01
+    # - theme: brand
+    #   text: 有关于我
+    #   link: /project
     # - theme: alt
     #   text: Wiki
     #   link: /wiki
-# features:
+features:
 
-  # - title: 技术博客
-  #   details: 一些学习记录
-  #   icon: 🧑🏻‍💻
-  #   linkText: 随便看看
-  #   link: /blogs
+  - title: 技术博客
+    details: 一些学习记录
+    # icon: 🧑🏻‍💻
+    # linkText: 随便看看
+    link: /blogs
 
-  # - title: Wiki
-  #   details: 到底需要记住多少命令行呢？
-  #   icon: 📚
-  #   linkText: 随便看看
-  #   link: /wiki
+  - title: Wiki
+    details: 到底需要记住多少命令行呢？
+    # icon: 📚
+    # linkText: 随便看看
+    link: /wiki
 
-  # - title: 有关于我
-  #   details: About me
-  #   icon: 👀
-  #   linkText: 随便看看
-  #   link: /about
+  - title: 有关于我
+    details: About me
+    # icon: 👀
+    # linkText: 随便看看
+    link: /about
     
 ---
 
@@ -61,7 +61,9 @@ const { theme, page, frontmatter } = useData()
 
 
 <style>
-.VPContent {
+.VPContent{
+  &.is-home {
   width: 1000px  !important;
 }
+} 
 </style>

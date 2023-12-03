@@ -1,7 +1,8 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: doc
-aside: false
+# layout: doc
+# aside: false
+sidebar: true
 ---
 
 <script setup>
@@ -30,7 +31,15 @@ const { theme, page, frontmatter } = useData()
 </VPTeamPage>
 
 
-<BlogList :tags="theme.tags" :items ="theme.blogs" />
+
+<div class="archiveList" v-for="item in theme.years">
+
+## {{ item.title }}({{ item.items.length }})
+
+<ArchiveList :items ="item.items" />
+
+</div>
+
 
 <style>
 
@@ -38,4 +47,15 @@ const { theme, page, frontmatter } = useData()
     max-width: unset !important;
 }
 
+</style>
+
+<style scoped lang="less">
+
+.archiveList {
+        /* width: 80%; */
+    margin: 0 auto;
+        @media (max-width: 419px) {
+            padding: 0 5px;
+        }
+}
 </style>

@@ -114,7 +114,7 @@ function selectTag(tag) {
 
     .tag-list {
         display: flex;
-        padding: 10px 0px 30px 0;
+        padding: 35px 0px 30px 0;
         flex-wrap: wrap;
 
         @media (max-width: 419px) {

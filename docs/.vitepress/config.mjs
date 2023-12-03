@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
-import { blogs,tags } from './js/posts-auto'
+import { blogs,tags,years } from './js/posts-auto'
 import AutoSidebar from "@iminu/vitepress-plugin-auto-sidebar";
 
 // https://vitepress.dev/reference/site-config
@@ -36,6 +36,7 @@ export default defineConfig({
     outline: [2, 3, 4, 5],
     blogs:blogs,
     tags:tags,
+    years:years,
     // logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav:navbar,
