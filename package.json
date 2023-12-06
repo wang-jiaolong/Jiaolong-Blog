@@ -13,6 +13,7 @@
     "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
     "esm": "^3.2.25",
     "gray-matter": "^4.0.3",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.1",
     "vue-router": "^4.2.4"
   }
 }

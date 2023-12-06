@@ -20,22 +20,22 @@ hero:
     #   link: /wiki
 features:
 
-  - title: 技术博客
-    details: 一些学习记录
+  - title: 📚 博客归档
+    # details: 一些学习记录
     # icon: 🧑🏻‍💻
-    # linkText: 随便看看
-    link: /blogs
+    linkText: 随便看看
+    link: /archive
 
-  - title: Wiki
-    details: 到底需要记住多少命令行呢？
-    # icon: 📚
-    # linkText: 随便看看
-    link: /wiki
+  - title: 📃 Reading List
+    # details: 到底需要记住多少命令行呢？
+    # icon: 
+    linkText: 值得一读
+    link: /pages
 
-  - title: 有关于我
-    details: About me
+  - title: 👀 有关于我
+    # details: About me
     # icon: 👀
-    # linkText: 随便看看
+    linkText: 无限进步
     link: /about
     
 ---
