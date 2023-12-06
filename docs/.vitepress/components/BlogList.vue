@@ -296,7 +296,7 @@ function selectTag(tag) {
 
                 @media (max-width: 419px) {
                     height: 90px;
-                    padding: 8px 8px 8px 15px;
+                    padding: 10px 12px;
                     overflow: hidden;
 
                     .badge {
