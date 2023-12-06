@@ -2,10 +2,11 @@
     <div class="PostList">
         <div class="yearList">
             <div class="tag-list">
-                <div @click="selectTag('')" class="tag-btn" :class="{active: selectedTag === '' }">
+                <div @click="selectTag('')" class="tag-btn" :class="{ active: selectedTag === '' }">
                     全部 {{ items.length }}
                 </div>
-                <div @click="selectTag(tag)" v-for="tag in sortedTags" class="tag-btn" :class="{active: selectedTag === tag}">
+                <div @click="selectTag(tag)" v-for="tag in sortedTags" class="tag-btn"
+                    :class="{ active: selectedTag === tag }">
                     #{{ tag }} {{ tags[tag] }}
                 </div>
             </div>
@@ -43,6 +44,43 @@
 
                     </div>
                 </a>
+
+
+            </div>
+
+            <div class="postList-mobile">
+
+                <a :href="item.link" class="item-box" v-for="item in posts">
+
+                    <div class="item-info">
+                        <div class="title">
+                            {{ item.title }}
+                            <Badge class="badge" v-if="item.badge" type="tip" :text="item.badge" />
+                        </div>
+
+                        <div class="middle">
+
+                            <div class="description">
+                                {{ item.description }}
+                            </div>
+
+                            <img v-if="item.img" :src="item.img" />
+
+                        </div>
+
+                        <div class="tags">
+                        </div>
+                        <div class="bottom-line">
+                            <div class="tags">
+                                <div class="tag" v-for="tag in item.tags">#{{ tag }}</div>
+                            </div>
+                            <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
+                        </div>
+
+                    </div>
+                </a>
+
+
             </div>
         </div>
     </div>
@@ -74,7 +112,7 @@ const props = defineProps({
     items: Object
 })
 
-var sortedTags = ref(Object.keys(props.tags).sort(function(a,b){return props.tags[b]-props.tags[a]}))
+var sortedTags = ref(Object.keys(props.tags).sort(function (a, b) { return props.tags[b] - props.tags[a] }))
 
 function selectTag(tag) {
     if (selectedTag.value != tag) {
@@ -94,7 +132,7 @@ function selectTag(tag) {
             }
         })
     } else {
-         posts.value = props.items
+        posts.value = props.items
     }
 }
 
@@ -103,12 +141,13 @@ function selectTag(tag) {
 
 <style scoped lang="less">
 .yearList {
-    padding: 0px 64px;
+    padding: 20px 64px;
     margin: 0 auto;
 
     @media (max-width: 419px) {
         width: 100%;
-        padding: 10px 24px;
+        padding: 20px 24px;
+
     }
 
     .tag-list {
@@ -122,7 +161,7 @@ function selectTag(tag) {
 
         .tag-btn {
             cursor: pointer;
-            color:var(--vp-c-text-2);
+            color: var(--vp-c-text-2);
             padding: 5px 10px;
             margin: 3px 5px;
             background: var(--vp-c-bg-soft);
@@ -131,16 +170,17 @@ function selectTag(tag) {
             border-radius: 7px;
             transition: all 0.4s;
 
-            &:hover, &.active {
+            &:hover,
+            &.active {
                 background: var(--vp-c-brand);
                 transition: all 0.4s;
-                color:white;
+                color: white;
             }
 
             @media (max-width: 419px) {
                 border-radius: 5px;
                 font-size: 12px;
-                padding: 3px 7px;
+                padding: 2px 7px;
                 margin: 3px 3px;
             }
         }
@@ -182,7 +222,7 @@ function selectTag(tag) {
         flex-wrap: wrap;
 
         @media (max-width: 419px) {
-            display: unset;
+            display: none;
         }
 
         a {
@@ -344,6 +384,175 @@ function selectTag(tag) {
 
     }
 
+    .postList-mobile {
+        display: none;
+        flex-wrap: wrap;
 
-}
-</style>
+        @media (max-width: 419px) {
+            display: unset;
+        }
+
+        a {
+            text-decoration: inherit;
+            outline: none;
+            color: inherit;
+        }
+
+
+        .item-box {
+            margin: 20px auto;
+            display: flex;
+            border: 1px solid var(--vp-c-bg-soft);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            background-color: var(--vp-c-bg-soft);
+            transition: border-color 0.25s, background-color 0.25s;
+
+
+            @media (max-width: 419px) {
+                margin: 20px auto;
+            }
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            &:last-child {
+                margin-bottom: 10px;
+            }
+
+
+            &:hover {
+                border-color: var(--vp-c-brand);
+                background-color: var(--vp-c-bg-soft-up);
+
+                img {
+                    scale: 1.05;
+                    transition: all 0.6s;
+                    margin-right: 5px;
+                }
+
+                .item-info {
+                    padding-right: 15px;
+                    transition: all 0.6s;
+                }
+
+            }
+
+            .item-info {
+                width: 100%;
+                padding: 15px 20px 10px 30px;
+                transition: all 0.6s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @media (max-width: 419px) {
+                    padding: 8px 8px 8px 15px;
+                    overflow: hidden;
+
+                    .badge {
+                        display: none;
+                    }
+                }
+
+                .middle {
+
+                    display: flex;
+                    padding: 5px 0px;
+
+                    img {
+                        width: 120px;
+                        height: 70px;
+                        // overflow: hidden;
+                        object-fit: cover;
+                        transition: all 0.4s;
+                        border-radius: 5px;
+                        // padding: 5px 10px;
+                    }
+
+
+                    .description {
+                        font-size: 12px;
+                        font-weight: normal;
+                        padding-right: 10px;
+                        color: var(--vp-c-text-2);
+                        max-height: 6em;
+                        /* 设置最大高度，相当于3行文本的高度 */
+                        overflow: hidden;
+                        /* 超出部分隐藏 */
+                        line-height: 1.5em;
+                        /* 设置行高，确保正常显示文本 */
+                        text-overflow: ellipsis;
+                        /* 当文本溢出时显示省略号（可选） */
+
+                    }
+                }
+
+
+
+                .title {
+                    line-height: 24px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
+
+                    @media (max-width: 419px) {
+                        font-size: 15px;
+                    }
+                }
+
+
+                .bottom-line {
+                    justify-content: space-between;
+                    display: flex;
+                    margin-top: 5px;
+                    align-items: center;
+
+                    @media (max-width: 419px) {
+                        margin-top: 0px;
+                    }
+
+                    .date {
+                        line-height: 24px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: var(--vp-c-text-2);
+
+                        @media (max-width: 419px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .tags {
+                        margin-left: -3px;
+
+                        .tag {
+                            margin: 3px;
+                            display: inline-block;
+                            padding: 1px 6px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            border-radius: 5px;
+                            color: var(--vp-badge-tip-text);
+
+                            @media (max-width: 419px) {
+                                padding: 0px 0px;
+                                background: unset;
+                                margin: 0px 2px;
+
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+}</style>
