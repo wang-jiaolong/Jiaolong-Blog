@@ -52,7 +52,7 @@ const { page, frontmatter } = useData()
 
 
     .info {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
 }
