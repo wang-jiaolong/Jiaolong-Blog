@@ -11,10 +11,9 @@
                 <div class="weekly-title">
                     <div class="title">
                         <div class="text">{{ page.title }}</div>
-                        <Badge type="tip" :text="String(frontmatter.date).slice(0, 10)" />
                     </div>
                     <div class="info">
-                        <div class="date">🗓️ {{ new Date(frontmatter.date).toLocaleDateString() }}</div>
+                        <Badge type="tip" :text="'🗓️' + new Date(frontmatter.date).toLocaleDateString()" />
                     </div>
                 </div>
                 
