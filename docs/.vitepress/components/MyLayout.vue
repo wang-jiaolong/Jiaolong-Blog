@@ -13,7 +13,7 @@
                         <div class="text">{{ page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="tip" :text="'🗓️' + new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge type="tip" :text="'🗓️ ' + new Date(frontmatter.date).toLocaleDateString()" />
                     </div>
                 </div>
                 
@@ -52,8 +52,7 @@ const { page, frontmatter } = useData()
 
 
     .info {
-        display: inline;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
 }
