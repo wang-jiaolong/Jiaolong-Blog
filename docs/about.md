@@ -25,7 +25,9 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      About me
+      About me    
+      <br>
+    <br>
     </template>
     <template #lead>
     <VPTeamMembers
@@ -38,3 +40,17 @@ const members = [
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
+
+
+<style>
+
+.avatar-img{
+    
+    background: white;
+
+}
+
+.links {
+  display: none !important;
+}
+</style>

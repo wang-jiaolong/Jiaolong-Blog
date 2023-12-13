@@ -52,6 +52,8 @@ const { theme, page, frontmatter } = useData()
 <style scoped lang="less">
 
 .archiveList {
+    max-width: 750px;
+
         /* width: 80%; */
     margin: 0 auto;
         @media (max-width: 419px) {
