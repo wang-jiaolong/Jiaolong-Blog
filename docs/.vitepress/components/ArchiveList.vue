@@ -2,11 +2,13 @@
     <div class="list">
         <a :href="page.link" class="page" v-for="(page, index) in items">
 
-            <div class="date">
-                {{ formatDateTime(page.date) }}
-            </div>
+       
             <div class="title">
                 {{ page.title }}
+            </div>
+
+            <div class="date">
+                {{ formatDateTime(page.date) }}
             </div>
         </a>
     </div>
@@ -40,11 +42,12 @@ function fix(num, length) {
     padding: 10px 0;
     .page {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         padding: 6px 0;
         transition: all 0.4s;
 
         .date {
+            margin-right: 12px;
             font-size: 14px;
             font-weight: 500;
             padding: px 5px;
@@ -59,7 +62,6 @@ function fix(num, length) {
         }
 
         .title {
-            margin-left: 12px;
             text-decoration-color: none;
             font-size: 16px;
 
