@@ -12,8 +12,9 @@
                         <div class="text">{{ page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="info" :text="new Date(frontmatter.date).toLocaleDateString()" />
                         <Badge type="tip" v-for="item in frontmatter.tags" :text="item" />
+                        <Badge type="info" :text="new Date(frontmatter.date).toLocaleDateString()" />
+
                     </div>
                 </div>
 
