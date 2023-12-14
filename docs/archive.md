@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: doc
-# aside: false
+aside: false
 sidebar: true
 ---
 
