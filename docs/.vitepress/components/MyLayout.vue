@@ -1,5 +1,4 @@
 <template>
-    
     <div v-if="frontmatter.layout === 'doc'">
         <Layout />
 
@@ -13,10 +12,11 @@
                         <div class="text">{{ page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="tip" :text="new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge type="info" :text="new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge type="tip" v-for="item in frontmatter.tags" :text="item" />
                     </div>
                 </div>
-                
+
             </template>
         </Layout>
 
@@ -41,18 +41,19 @@ const { page, frontmatter } = useData()
     .title {
         display: flex;
         align-items: flex-start;
-        .text{
+
+        .text {
             letter-spacing: -0.02em;
-        line-height: 40px;
-        font-size: 32px;
-        font-weight: bold;
+            line-height: 40px;
+            font-size: 32px;
+            font-weight: bold;
         }
-        
+
     }
 
 
     .info {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
 }
