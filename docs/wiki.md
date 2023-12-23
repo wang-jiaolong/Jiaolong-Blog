@@ -48,7 +48,7 @@ const os = [
 
 <br> -->
 
-<!-- <LinkCard  :items ="os" /> -->
+<LinkCard  :items ="os" />
 
 <style>
 

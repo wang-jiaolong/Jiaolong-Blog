@@ -20,26 +20,25 @@ hero:
     #   link: /wiki
 features:
 
-  - title: 📚 博客归档
+  - title: 📚 Archive
     # details: 一些学习记录
     # icon: 🧑🏻‍💻
-    linkText: 随便看看
+    linkText: 
     link: /archive
 
-  - title: 📃 Reading List
+  - title: 📃 Map
     # details: 到底需要记住多少命令行呢？
     # icon: 
-    linkText: 值得一读
+    linkText: 
     link: /pages
 
-  - title: 👀 有关于我
+  - title: 👀 About me
     # details: About me
     # icon: 👀
-    linkText: 无限进步
+    linkText: 
     link: /about
     
 ---
-
 
 <script setup>
 

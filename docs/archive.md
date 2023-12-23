@@ -22,11 +22,11 @@ const { theme, page, frontmatter } = useData()
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      Blogs
+      Arvhive
     </template>
-    <template #lead>
+    <!-- <template #lead>
       学习笔记
-    </template>
+    </template> -->
   </VPTeamPageTitle>
 </VPTeamPage>
 

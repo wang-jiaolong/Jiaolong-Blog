@@ -3,7 +3,7 @@
         <div class="yearList">
             <div class="tag-list">
                 <div @click="selectTag('')" class="tag-btn" :class="{ active: selectedTag === '' }">
-                    全部 {{ items.length }}
+                    All {{ items.length }}
                 </div>
                 <div @click="selectTag(tag)" v-for="tag in sortedTags" class="tag-btn"
                     :class="{ active: selectedTag === tag }">

@@ -20,29 +20,34 @@ const { theme, page, frontmatter } = useData()
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      Inbox
+      Map
     </template>
-    <template #lead>
+    <!-- <template #lead>
       收集箱
-    </template>
+    </template> -->
   </VPTeamPageTitle>
 </VPTeamPage>
 
 
 
-## 技术博客
+## Blog
 
 > 一些时常会拜读的技术博客
 
 - [肘子的Swift记事本](https://www.fatbobman.com/) —— Swift技术博客
 
 
-<br>
-<br>
+
+## Quick Start
+
+>   从入门到放弃
+
+- [Hacking with Swift](https://www.hackingwithswift.com/quick-start/swiftui) —— SwiftUI by Example
 
 
-## iOS
+## Best Practice
 
 **Swift**
 
 - [What is a Computed Property in Swift?](https://www.avanderlee.com/swift/computed-property/)
+
