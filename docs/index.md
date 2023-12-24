@@ -26,7 +26,7 @@ features:
     linkText: 
     link: /archive
 
-  - title: 📃 Map
+  - title: 📃 Reading List
     # details: 到底需要记住多少命令行呢？
     # icon: 
     linkText: 

@@ -20,11 +20,11 @@ const { theme, page, frontmatter } = useData()
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      Map
+      Reading list
     </template>
-    <!-- <template #lead>
-      收集箱
-    </template> -->
+    <template #lead>
+      Best Practice
+    </template>
   </VPTeamPageTitle>
 </VPTeamPage>
 
@@ -44,10 +44,12 @@ const { theme, page, frontmatter } = useData()
 
 - [Hacking with Swift](https://www.hackingwithswift.com/quick-start/swiftui) —— SwiftUI by Example
 
+## Architecture
 
-## Best Practice
+- [「及游册」技术架构大揭秘](https://suoxing.noto.so/dev/travelog/arch)
 
-**Swift**
+
+## Swift & SwiftUI
 
 - [What is a Computed Property in Swift?](https://www.avanderlee.com/swift/computed-property/)
-
+- [How can I have two alerts on one view in SwiftUI?](https://stackoverflow.com/questions/58069516/how-can-i-have-two-alerts-on-one-view-in-swiftui)
