@@ -47,7 +47,7 @@ const { theme, page, frontmatter } = useData()
 ## Architecture
 
 - [「及游册」技术架构大揭秘](https://suoxing.noto.so/dev/travelog/arch)
-
+- [Clean Architecture for SwiftUI](https://nalexn.github.io/clean-architecture-swiftui/?utm_source=nalexn_github)
 
 ## Swift & SwiftUI
 
