@@ -3,6 +3,6 @@ export const navbar =  [
   { text: 'Archive', link: '/archive' },
   { text: 'Pages', link: '/pages' },
   // { text: 'Wiki', link: '/wiki' },
-  { text: 'About', link: 'www.jiaolong.xyz' }
+  { text: 'About', link: 'https://www.jiaolong.xyz' }
 ]
 
