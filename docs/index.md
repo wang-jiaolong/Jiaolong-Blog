@@ -36,7 +36,7 @@ features:
     # details: About me
     # icon: 👀
     linkText: 
-    link: /about
+    link: www.jiaolong.xyz
     
 ---
 
