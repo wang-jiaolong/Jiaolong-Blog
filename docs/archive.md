@@ -22,7 +22,7 @@ const { theme, page, frontmatter } = useData()
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      Arvhive
+      Archive
     </template>
     <!-- <template #lead>
       学习笔记
