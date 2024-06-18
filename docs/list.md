@@ -34,10 +34,10 @@ const { theme, page, frontmatter } = useData()
 
 > 一些时常会拜读的技术博客
 
-| Link                                            | Description   |      |
-| ----------------------------------------------- | ------------- | ---- |
-| [肘子的Swift记事本](https://www.fatbobman.com/) | Swift技术博客 |      |
-|                                                 |               |      |
+| Link                                           | Description   |
+| ---------------------------------------------- | ------------- |
+| 肘子的Swift记事本](https://www.fatbobman.com/) | Swift技术博客 |
+|                                                |               |
 
 
 
