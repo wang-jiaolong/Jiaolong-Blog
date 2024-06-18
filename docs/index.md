@@ -30,7 +30,7 @@ features:
     # details: 到底需要记住多少命令行呢？
     # icon: 
     linkText: 
-    link: /pages
+    link: /list
 
   - title: 👀 About me
     # details: About me
