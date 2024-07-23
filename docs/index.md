@@ -58,7 +58,6 @@ const { theme, page, frontmatter } = useData()
 
 <BlogList :tags="theme.tags" :items ="theme.blogs" />
 
-
 <style>
 .VPContent{
   &.is-home {

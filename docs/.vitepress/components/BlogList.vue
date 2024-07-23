@@ -96,6 +96,11 @@ import {
 
 import { ref } from 'vue';
 
+const props = defineProps({
+    tags: {},
+    items: Object
+})
+
 var isShow = ref(true)
 
 var selectedTag = ref("")
@@ -106,11 +111,6 @@ var posts = ref(props.items)
 function folder() {
     isShow.value = !isShow.value
 }
-
-const props = defineProps({
-    tags: {},
-    items: Object
-})
 
 var sortedTags = ref(Object.keys(props.tags).sort(function (a, b) { return props.tags[b] - props.tags[a] }))
 
